@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.696 224.667">
+  <g id="Group_1" data-name="Group 1" transform="translate(-55.869 -35.199)">
+    <g class="art" id="art">
+      <path class="art" id="Path_4" data-name="Path 4" d="M200.9,194.568c1.251-8.157-7.782-41.608-26.694-48.7-15.166-5.688-33.949-.3-47.834,7.89s-18.072,7.02-18.072,7.02V334.033s7.319.458,21.358,0,22.787-.347,35.637-9.1,15.765-25.912,15.765-25.912,1.461-22.442,5.1-33.532,9.039-13.9,9.039-13.9-3.989-11.813-3.3-22.337,1.964-10.763,5.1-19.306S199.653,202.725,200.9,194.568Z" transform="translate(41.859 -75.396)" stroke="#000" stroke-width="3"/>
+      <path class="art" id="Path_7" data-name="Path 7" d="M108.435,195.08c-1.251-8.157.928-46.051,19.84-53.143,15.166-5.688,40.8,4.143,54.688,12.332s18.072,7.02,18.072,7.02V334.545s-7.319.458-21.358,0-22.787-.347-35.637-9.1-15.765-25.912-15.765-25.912-1.461-22.442-5.1-33.532-9.039-13.9-9.039-13.9,3.989-11.813,3.3-22.337-1.964-10.763-5.1-19.306S109.686,203.237,108.435,195.08Z" transform="translate(-50.719 -75.907)" fill="#e9f80a" stroke="#000" stroke-width="3"/>
+    </g>
+    <g class="perspectives" id="perspectives">
+      <path class="perspectives" id="Path_1" data-name="Path 1" d="M210.768,218.7c-2.336-6.01-7.85-40.875-26.762-47.968-15.166-5.688-33.7.564-47.583,8.754s-17.361,6.056-17.361,6.056-31.747-50.339.025-48.685,39.141-.93,61.709,8.137c6.454,2.593,17.631,7.312,25.125,25.739S213.1,224.714,210.768,218.7Z" transform="translate(31.317 -100.62)" fill="#e9f80a" stroke="#000" stroke-width="3"/>
+      <path class="perspectives" id="Path_6" data-name="Path 6" d="M132.668,155.306s-12.92-1.355-18.822,11.177-5.634,44.494-4.593,49.238c.167,1.355,1.7-17.678,7.313-26.853s8.887-4.586,14.189-10.183a31.214,31.214,0,0,0,7.018-12.2s5.67,8.111,20.417,14.226,43.923,5.705,43.923,5.705V137.25s-35.071-.026-49.984,5.185S132.668,155.306,132.668,155.306Z" transform="translate(-51.709 -101.033)" stroke="#000" stroke-width="3"/>
+    </g>
+    <g class="code" id="code">
+      <g id="Mouth" transform="translate(136.349 191.124)">
+        <path class="code" id="Path_8" data-name="Path 8" d="M44.242,32.145,57.963,19.208" transform="translate(-44.242 -19.208)" fill="none" stroke="#000" stroke-width="3"/>
+        <path class="code" id="Path_10" data-name="Path 10" d="M44.242,19.208,57.963,32.145" transform="translate(-44.242 -0.864)" fill="none" stroke="#000" stroke-width="3"/>
+        <path class="code" id="Path_9" data-name="Path 9" d="M57.963,32.145,44.242,19.208" transform="translate(-30.246 -19.208)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+        <path class="code" id="Path_11" data-name="Path 11" d="M57.963,19.208,44.242,32.145" transform="translate(-30.246 -0.864)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+      </g>
+      <g id="Eye_Left" data-name="Eye Left" transform="translate(85.336 102.817)">
+        <path class="code" id="Path_12" data-name="Path 12" d="M52.726,31.537,65.3,21.393" transform="translate(-52.726 -9.912)" fill="none" stroke="#000" stroke-width="3"/>
+        <path class="code" id="Path_14" data-name="Path 14" d="M65.3,31.537,52.726,21.393" transform="translate(-20.686 -9.912)" fill="none" stroke="#000" stroke-width="3"/>
+        <path class="code" id="Path_13" data-name="Path 13" d="M52.726,21.393,65.3,31.537" transform="translate(-52.726 0.037)" fill="none" stroke="#000" stroke-width="3"/>
+        <path class="code" id="Path_15" data-name="Path 15" d="M65.3,21.393,52.726,31.537" transform="translate(-20.686 0.037)" fill="none" stroke="#000" stroke-width="3"/>
+        <g id="Slash" transform="matrix(0.966, 0.259, -0.259, 0.966, 28.727, 0)">
+          <line class="code" id="Line_3" data-name="Line 3" y2="23.14" transform="translate(0 0)" fill="none" stroke="#000" stroke-width="3"/>
+          <line class="code" id="Line_5" data-name="Line 5" y2="23.14" transform="translate(0 23.14)" fill="none" stroke="#000" stroke-width="3"/>
+        </g>
+      </g>
+      <g id="Eye_Right" data-name="Eye Right" transform="translate(170.034 103.112)">
+        <path class="code" id="Path_12-2" data-name="Path 12" d="M52.726,32.032l13.185-10.64" transform="translate(-52.726 -9.351)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+        <path class="code" id="Path_14-2" data-name="Path 14" d="M65.912,32.032,52.726,21.393" transform="translate(-19.12 -9.351)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+        <path class="code" id="Path_13-2" data-name="Path 13" d="M52.726,21.393l13.185,10.64" transform="translate(-52.726 1.084)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+        <path class="code" id="Path_15-2" data-name="Path 15" d="M65.912,21.393,52.726,32.032" transform="translate(-19.12 1.084)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+        <g id="Slash-2" data-name="Slash" transform="matrix(0.966, 0.259, -0.259, 0.966, 30.13, 0)">
+          <line class="code" id="Line_3-2" data-name="Line 3" y2="24.271" transform="translate(0)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+          <line class="code" id="Line_5-2" data-name="Line 5" y2="24.271" transform="translate(0 24.271)" fill="none" stroke="#e9f80a" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
