@@ -1,0 +1,206 @@
+@keyframes glow
+{
+    0%
+    {
+        /* color: rgb(6, 27, 32); */
+        /* stroke: rgb(6, 27, 32); */
+        /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0); */
+    }
+
+    50%
+    {
+        /* color: rgb(194, 34, 34); */
+        stroke: rgb(255, 81, 58);
+        stroke-width: 4;
+        text-shadow: 3px 3px 3px rgb(255, 81, 58);
+    }
+
+    100%
+    {
+        /* color: rgb(6, 27, 32); */
+        /* stroke: rgb(6, 27, 32); */
+        /* text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.0); */
+    }
+}
+
+
+.my-nav-fluid
+{
+    background-image: linear-gradient(to right, #BEF2FF, #BEFFD4);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.32);
+    position: sticky;
+}
+
+.my-logo
+{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.my-nav-items
+{
+    margin-left: 25px;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+.my-bg-blue
+{
+    background-color: #BEF2FF;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.my-bg-green
+{
+    background-color: #BEFFD4;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+svg
+{
+    width: 60%;
+}
+
+.my-hero-text
+{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    /* text-decoration: underline;
+    text-underline-position: under; */
+}
+
+.art
+{
+    animation: glow 3s 6;
+}
+
+.code
+{
+    animation: glow 3s 5;
+    animation-delay: 3s;
+}
+
+.perspectives
+{
+    animation: glow 3s 4;
+    animation-delay: 6s;
+}
+
+.quotes
+{
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+}
+
+.normal
+{
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.my-button
+{
+    background-color: rgb(38, 0, 255);
+    padding: 12px 20px;
+    border-radius: 15px 0px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.my-button-light
+{
+    background-color: rgba(38, 0, 255, 0);
+    padding: 12px 20px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 15px 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.my-button:hover
+{
+    border-radius: 0px 15px;
+    transition-duration: 200ms;
+}
+
+.my-button-light:hover
+{
+    border-radius: 0px 15px;
+    transition-duration: 200ms;
+}
+
+.my-button:active
+{
+    background-color: rgb(93, 65, 255);
+}
+
+.mi-vertical-center
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.tile-main
+{
+    background-color: #EC524D;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tile-secondary
+{
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+@media (min-width: 768px)
+{
+    svg
+    {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* font-family: 'Cabin Sketch', cursive;
+font-family: 'Muli', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif; */
