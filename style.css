@@ -61,7 +61,7 @@
 
 .skill-head-card
 {
-    background-color: #EC524D;
+    background-color: rgb(233, 79, 74);
     border-radius: 10px 10px 0px 0px ;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.16);
 }
@@ -219,6 +219,14 @@ h2
     font-size: 1.12rem;
     text-align: center;
 
+}
+
+.logo-design-images
+{
+    width: 90%;
+    box-shadow: 3px 3px 6px rgba(184, 8, 2, 0.315);
+    border-radius: 10px;
+    /* border: 5px solid rgba(0, 0, 0, 0.16); */
 }
 
 
