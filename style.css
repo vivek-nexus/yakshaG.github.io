@@ -59,6 +59,22 @@
     padding-bottom: 4rem;
 }
 
+.skill-head-card
+{
+    background-color: #EC524D;
+    border-radius: 10px 10px 0px 0px ;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.16);
+}
+
+.content-card
+{
+    background-color: white;
+    margin: 1%;
+    border-radius: 10px;
+    min-width: 16rem;
+    max-width: 23.1rem;
+}
+
 svg
 {
     width: 60%;
@@ -90,17 +106,6 @@ svg
     animation-delay: 6s;
 }
 
-.quotes
-{
-    font-family: 'Merienda', cursive;
-    font-size: 2rem;
-}
-
-.normal
-{
-    font-family: 'Muli', sans-serif;
-    font-size: 1rem;
-}
 
 a:hover
 {
@@ -174,7 +179,7 @@ a:hover
 h1
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding-bottom: 1.5rem;
 }
@@ -182,6 +187,38 @@ h1
 h2
 {
     font-family: 'Montserrat', sans-serif;
+}
+
+.quotes
+{
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+}
+
+.normal
+{
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+}
+
+.tags
+{
+    background-color: rgb(184, 8, 2);
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-family: 'Muli', sans-serif;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.card-title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.12rem;
+    text-align: center;
+
 }
 
 
