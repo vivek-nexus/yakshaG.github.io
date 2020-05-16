@@ -232,6 +232,19 @@ h2
     /* border: 5px solid rgba(0, 0, 0, 0.16); */
 }
 
+.board
+{
+    background-color: #6F6C6C;
+    height: 100%;
+    padding: 2rem;
+}
+
+.no-board
+{
+    height: 75px;
+}
+
+
 
 
 
