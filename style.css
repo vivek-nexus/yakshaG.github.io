@@ -236,6 +236,8 @@ h2
 {
     background-color: #6F6C6C;
     height: 100%;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.25rem;
     padding: 2rem;
 }
 
