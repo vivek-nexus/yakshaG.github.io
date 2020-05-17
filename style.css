@@ -247,6 +247,13 @@ h2
     height: 75px;
 }
 
+.mi-carousel-images
+{
+    height: 480px;
+    /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.32); */
+}
+
+
 
 
 
