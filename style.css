@@ -249,8 +249,11 @@ h2
 
 .mi-carousel-images
 {
-    height: 100%;
-    width: auto;
+    max-height:100%; 
+    max-width:100%;
+    /* vertical-align: middle; */
+    /* height: 100%; */
+    /* width: 100%; */
     /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.32); */
 }
 

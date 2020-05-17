@@ -587,22 +587,22 @@
             <!-- Images Carousel -->
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" style="background-color: rgba(0, 0, 0, 0.226);">
-                  <div class="carousel-item active" style="height: 75px;">
+                  <div class="carousel-item active" style="height: 360px;">
                     <img src="images/scene01.jpg" class="d-block mx-auto mi-carousel-images" alt="...">
                   </div>
-                  <div class="carousel-item" style="height: 75px;">
+                  <div class="carousel-item" style="height: 360px;">
                     <img src="images/scene02.jpg" class="d-block mx-auto mi-carousel-images" alt="...">
                   </div>
-                  <div class="carousel-item" style="height: 75px;">
+                  <div class="carousel-item" style="height: 360px;">
                     <img src="images/scene03.jpg" class="d-block mx-auto mi-carousel-images" alt="...">
                   </div>
-                  <div class="carousel-item" style="height: 75px;">
+                  <div class="carousel-item" style="height: 360px;">
                     <img src="images/scene04.jpg" class="d-block mx-auto mi-carousel-images" alt="...">
                   </div>
-                  <div class="carousel-item" style="height: 75px;">
-                    <img src="images/scene05.jpg" class="d-block mx-auto mi-carousel-images" alt="...">
+                  <div class="carousel-item" style="height: 360px;">
+                    <img src="images/scene05.jpg" class="d-block mx-auto img-fluid mi-carousel-images" alt="...">
                   </div>
-                  <div class="carousel-item" style="height: 75px;">
+                  <div class="carousel-item" style="height: 360px;">
                     <img src="images/scene06.jpg" class="d-block mx-auto mi-carousel-images" alt="...">
                   </div>
                 </div>
@@ -634,10 +634,19 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $("#lightSlider").lightSlider(); 
-        });
-      </script>
+    
+    <!-- <script type="text/javascript">
+        (function() {
+        
+        var img = document.getElementsByClassName("carousel-item active").firstChild;
+        img.onload = function() {
+            if(img.height > img.width) {
+                img.height = '100%';
+                img.width = 'auto';
+            }
+        };
+        
+        }());
+        </script> -->
 </body>
 </html>
