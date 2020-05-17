@@ -26,7 +26,8 @@
 
 .my-nav-fluid
 {
-    background-image: linear-gradient(to right, #BEF2FF, #BEFFD4);
+    /* background-image: linear-gradient(to right, #BEF2FF, #BEFFD4); */
+    background-color: rgb(164, 237, 255);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.32);
     position: sticky;
 }
@@ -62,7 +63,7 @@
 .skill-head-card
 {
     background-color: rgb(233, 79, 74);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.16); */
 }
 
