@@ -87,26 +87,26 @@ function findVariation(product){
 
 function findLimits(product){
     let limits=[];
-    let days=Number(numberOfDays(previousDate, presentDate));
+    let temp=[];
+    // let days=Number(numberOfDays(previousDate, presentDate));
     let sales=findSale(product);
     let percentStock = 0.04 * Number(document.querySelector(`[name=${product}-stock-present]`).value);
 
-    let indicativeSales=(days/365)*600000;
-
+    let indicativeSales=600000;
 
     if(product==='ms' || product === 'power'){
-        limits[0] = Math.min(indicativeSales,sales) * (0.75/100);
-        limits[1] = (sales > indicativeSales) ? (sales-indicativeSales)*(0.6/100) : 0 ;
+        temp[0] = Math.min(indicativeSales,sales) * (0.75/100);
+        temp[1] = (sales > indicativeSales) ? (sales-indicativeSales)*(0.6/100) : 0 ;
     }
 
     else{
-        limits[0] = Math.min(indicativeSales,sales) * (0.25/100);
-        limits[1] = (sales > indicativeSales) ? (sales-indicativeSales)*(0.2/100) : 0 ;
+        temp[0] = Math.min(indicativeSales,sales) * (0.25/100);
+        temp[1] = (sales > indicativeSales) ? (sales-indicativeSales)*(0.2/100) : 0 ;
     }
 
     // console.log(limits);
 
-    limits[0] = -1 * (Number(limits[0]) + Number(limits[1]) + percentStock);
+    limits[0] = -1 * (Number(temp[0]) + Number(temp[1]) + percentStock);
     limits[1] = percentStock;
 
 
@@ -116,7 +116,6 @@ function findLimits(product){
 }
 
 function getResult(product){
-
     let variation=findVariation(product);
     document.querySelector(`.${product}-result`).textContent=`${product.toUpperCase()}: ${variation}`;
 
@@ -130,12 +129,9 @@ function getResult(product){
         document.querySelector(`.${product}-result`).style.color='white';
         document.querySelector(`.${product}-result`).style.backgroundColor='red';
     }
-
-
 }
 
-function checkDateInput(){
-
+function checkDateAndFire(){
     if(document.querySelector("[name='previous-date']").value===""){
         errorMessage.textContent='Please enter previous inspection date';
         return;
@@ -152,7 +148,7 @@ function checkDateInput(){
 const calculate=document.querySelector("#calculate");
 const errorMessage=document.querySelector("#error-message");
 
-calculate.addEventListener('click', checkDateInput);
+calculate.addEventListener('click', checkDateAndFire);
 // calculate.addEventListener('click', () => {getResult('ms');});
 // calculate.addEventListener('click', () => {getResult('power');});
 // calculate.addEventListener('click', () => {getResult('hsd');});
