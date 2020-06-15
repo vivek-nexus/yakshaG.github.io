@@ -26,7 +26,7 @@ function addRow(product){
     productSecton.appendChild(customMeterRow);
 
     const productCol=document.createElement('div');
-    productCol.setAttribute('class', 'col-2');
+    productCol.setAttribute('class', 'col-4');
     customMeterRow.appendChild(productCol);
 
     const productName=document.createElement('p');
