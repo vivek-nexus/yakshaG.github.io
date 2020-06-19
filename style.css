@@ -34,8 +34,9 @@
 
 .my-logo
 {
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 2.5rem;
+    /* font-family: 'Cabin Sketch', cursive; */
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -84,8 +85,9 @@ svg
 
 .my-hero-text
 {
-    font-family: 'Bree Serif', serif;
-    font-size: 3rem;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Merienda', cursive;
+    font-size: 2.5rem;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
     /* text-decoration: underline;
     text-underline-position: under; */
