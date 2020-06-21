@@ -19,24 +19,39 @@
             border-radius: 5px;
             font-weight: bold;
         }
+        .tags
+        {
+            background-color: rgb(235, 235, 235);
+            padding: 5px 10px;
+            border: 1px solid rgb(2, 61, 255);
+            border-radius: 5px;
+            color: rgb(2, 61, 255);
+        }
     </style>
 </head>
 <body>
 
-    <h1 class="text-center py-4">We Speak!</h1>
-    <div class="container">
-        <p class="font-weight-bold">This page uses Text to Speech Engine of your device to speak your content.</p>
-        <p>You can use this to Proof-read your articles, Listen to stuff instead of reading them, Pronunciation and Accents and even just to have fun!</p>
-        
-        <hr style="border: 1px solid black;">
+    <h1 class="text-center py-4" style="color: rgb(2, 61, 255);">We Speak!</h1>
+    <div class="container mb-4 text-center">
+        <p class="">This page uses Text to Speech Engine of your device to speak your content.</p>
+        <div class="row justify-content-center">
+            <div class="col-auto m-2 tags">Proof-read your articles</div>
+            <div class="col-auto m-2 tags">Listen to stuff</div>
+            <div class="col-auto m-2 tags">Pronunciation and Accents</div>
+        </div>
+        <!-- <hr style="border: 1px solid black;"> -->
     </div>
 
 
-    <div class="container text-center">
+    <div class="container text-center pt-3" style="background-color: rgb(209, 220, 253); border-radius: 5px;">
         <h3><label for="input-text" class="text-center">Type or Paste your content below</label></h3>
-        <textarea name="input-text" id="input-text" cols="40" rows="5" class="d-block mb-4 mx-auto" autofocus></textarea>
+        <textarea name="input-text" id="input-text" cols="40" rows="10" class="d-block mb-4 mx-auto" autofocus>This page uses Text to Speech Engine of your device to speak your content.
 
-        <p class="text-center p-2 mx-auto" style="background-color: rgb(218, 218, 218); border-radius: 5px; max-width: 480px">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience</p>
+You can use this to proof-read your articles, listen to stuff instead of reading them, explore pronunciation and accents and even just to have fun!
+
+Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience.</textarea>
+
+        <p class="text-center p-2 mx-auto" style="background-color: rgb(255, 255, 255); border-radius: 5px; max-width: 480px">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience</p>
 
         <div>
             <label for="input-rate">Rate</label>
@@ -52,21 +67,22 @@
                 <option value="" data-voice-name="" data-voice-lang="">Choose</option>
             </select>
         </div>
-        <button class="d-block my-4 mx-auto" id="speak-button">Speak</button>
-        <hr style="border: 1px solid black;">
+        <button class="mx-auto my-4" id="stop-button">Stop</button>
+        <button class="mx-auto" id="speak-button">Speak</button>
+        <!-- <hr style="border: 1px solid black;"> -->
     </div>
     
     
 
     <section>
         <div class="container text-center mb-4">
-            <button id="pause-button">Pause</button>
-            <button id="resume-button">Resume</button>
-            <button id="stop-button">Stop</button>
+            <!-- <button id="pause-button">Pause</button> -->
+            <!-- <button id="resume-button">Resume</button> -->
+            <!-- <button id="stop-button">Stop</button> -->
         </div>
         <div class="container text-center mb-5" >
-            <p class="font-weight-bold">READING BELOW TEXT</p>
-            <p id="reading-text" class="p-2 mx-auto" style="background-color: rgb(209, 220, 253); border-radius: 5px; max-width: 480px;"></p>
+            <h3>Reading Below Text</h3>
+            <p id="reading-text" class="mx-auto p-3" style="background-color: rgb(209, 220, 253); border-radius: 5px; max-width: 480px;"></p>
         </div>
     </section>
 

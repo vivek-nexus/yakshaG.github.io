@@ -3,11 +3,13 @@ const inputRate=document.querySelector('#input-rate');
 const inputPitch=document.querySelector('#input-pitch');
 const inputVoice=document.querySelector('#input-voice');
 const speakButton=document.querySelector('#speak-button');
-const pauseButton=document.querySelector('#pause-button');
-const resumeButton=document.querySelector('#resume-button');
+// const pauseButton=document.querySelector('#pause-button');
+// const resumeButton=document.querySelector('#resume-button');
+const stopButton=document.querySelector('#stop-button');
 const readingText=document.querySelector('#reading-text');
 
 let voices=[];
+let stopAll=false;
 
 const synthObj=window.speechSynthesis;
 
@@ -32,8 +34,8 @@ function populateVoices(){
 }
 
 
-async function speaker(){
-  const speakObj = new SpeechSynthesisUtterance(readingText.textContent);
+async function speaker(textPart){
+  const speakObj = new SpeechSynthesisUtterance(textPart);
   const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
   for(let i=0; i<voices.length; i++){
@@ -51,7 +53,7 @@ async function showReadingText(textPart){
   // console.log(textPart);
   readingText.textContent=textPart;
   readingText.scrollIntoView();
-  await speaker();
+  await speaker(textPart);
   return new Promise(resolve => {resolve();});
 }
 
@@ -67,6 +69,10 @@ async function parseSentences(){
 
 
   for(let i=0; i<sentences.length; i++){
+    if(stopAll===true){
+      stopAll=false;
+      break;
+    }
     await showReadingText(sentences[i]);
   }
 }
@@ -83,10 +89,9 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 // alert("Sorry! This browser does not have support for Text to Speech. Please try Chrome or Firefox.");
 
 
-speakButton.addEventListener('click', speaker);
+// speakButton.addEventListener('click', speaker);
 speakButton.addEventListener('click', parseSentences);
-pauseButton.addEventListener('click', window.speechSynthesis.pause);
-
+stopButton.addEventListener('click', function(){speechSynthesis.cancel(); stopAll=true;})
 
 
 
