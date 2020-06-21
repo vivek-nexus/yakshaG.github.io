@@ -2,6 +2,7 @@ const inputText=document.querySelector('#input-text');
 const inputRate=document.querySelector('#input-rate');
 const inputPitch=document.querySelector('#input-pitch');
 const inputVoice=document.querySelector('#input-voice');
+const resetButton=document.querySelector('#reset-button');
 const speakButton=document.querySelector('#speak-button');
 // const pauseButton=document.querySelector('#pause-button');
 // const resumeButton=document.querySelector('#resume-button');
@@ -90,6 +91,7 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 
 
 // speakButton.addEventListener('click', speaker);
+resetButton.addEventListener('click', function(){inputText.value=""});
 speakButton.addEventListener('click', parseSentences);
 stopButton.addEventListener('click', function(){speechSynthesis.cancel(); stopAll=true;})
 
