@@ -63,7 +63,7 @@ async function parseSentences(){
     return;
   }
 
-  let sentences=inputText.value.split('.');
+  let sentences=inputText.value.split(/[.|!|?]+/g);
 
 
   for(let i=0; i<sentences.length; i++){
