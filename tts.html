@@ -43,7 +43,7 @@
     </div>
 
 
-    <div class="container text-center pt-3" style="background-color: rgb(209, 220, 253); border-radius: 5px;">
+    <div class="container text-center p-5" style="background-color: rgb(209, 220, 253); border-radius: 5px;">
         <h3><label for="input-text" class="text-center">Type or Paste your content below</label></h3>
         <textarea name="input-text" id="input-text" rows="7" class="d-block mb-4 mx-auto" style="width: 90%;" autofocus>This page uses Text to Speech Engine of your device to speak your content.
 
@@ -51,17 +51,17 @@ You can use this to proof-read your articles, listen to stuff instead of reading
 
 Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience.</textarea>
 
-        <p class="text-center p-2 mx-auto" style="background-color: rgb(255, 255, 255); border-radius: 5px; max-width: 360px;">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience</p>
+        <p class="text-center p-2 mx-auto" style="background-color: rgba(255, 255, 255, 0); border-radius: 5px; max-width: 360px;">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience</p>
 
-        <div>
+        <div class="mx-auto" style="width: 90%; background-color: white; border-radius: 5px; padding-top: 10px;">
             <label for="input-rate">Rate</label>
             <input type="range" min="0.5" max="2" value="1" step="0.1" id="input-rate">
         </div>
-        <div>
+        <div class="mx-auto" style="width: 90%; background-color: white;">
             <label for="input-pitch">Pitch</label>
-            <input type="range" min="0" max="2" value="1" step="0.1" id="input-pitch">
+            <input type="range" min="0" max="2" value="1" step="0.1" id="input-pitch" style="border-color: black;">
         </div>
-        <div>
+        <div class="mx-auto" style="width: 90%; background-color: white; border-radius: 5px;">
             <label for="input-voice" class="mr-2">Voice</label>
             <select name="input-voice" id="input-voice">
                 <option value="" data-voice-name="" data-voice-lang="">Choose</option>
