@@ -9,25 +9,27 @@ let voices=[];
 
 const synthObj=window.speechSynthesis;
 
-voices=synthObj.getVoices().sort(function(a,b){
-  if(a.name.toUpperCase() < b.name.toUpperCase())
-    return -1;
-  else if(a.name.toUpperCase() > b.name.toUpperCase())
-    return 1;
-  else
-    return 0;
-});
-
-if(voices.length===0)
-  alert("Sorry! This browser does not have support for Text to Speech. Please try Chrome or Firefox.");
-
-for(let i=0; i<voices.length; i++){
-  const option = document.createElement('option');
-  option.textContent=`${voices[i].name} (${voices[i].lang})`;
-  option.setAttribute('data-voice-name', voices[i].name);
-  option.setAttribute('data-voice-lang', voices[i].lang);
-  inputVoice.appendChild(option);
+function populateVoices(){
+  voices=synthObj.getVoices().sort(function(a,b){
+    if(a.name.toUpperCase() < b.name.toUpperCase())
+      return -1;
+    else if(a.name.toUpperCase() > b.name.toUpperCase())
+      return 1;
+    else
+      return 0;
+  });
+ 
+  
+  for(let i=0; i<voices.length; i++){
+    const option = document.createElement('option');
+    option.textContent=`${voices[i].name} (${voices[i].lang})`;
+    option.setAttribute('data-voice-name', voices[i].name);
+    option.setAttribute('data-voice-lang', voices[i].lang);
+    inputVoice.appendChild(option);
+  }
 }
+
+
 
 function speaker(){
   const speakObj = new SpeechSynthesisUtterance(inputText.value);
@@ -47,6 +49,17 @@ function showReadingText(){
   readingText.textContent=inputText.value;
   readingText.scrollIntoView();
 }
+
+populateVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = populateVoices;
+}
+
+// console.log(voices);
+
+// if(voices.length==0)
+// alert("Sorry! This browser does not have support for Text to Speech. Please try Chrome or Firefox.");
+
 
 speakButton.addEventListener('click', speaker);
 speakButton.addEventListener('click', showReadingText)
