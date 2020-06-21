@@ -35,6 +35,11 @@ function speaker(){
   const speakObj = new SpeechSynthesisUtterance(inputText.value);
   const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
+  if(selectedVoice===''){
+    alert("Please select Voice from the list");
+    return;
+  }
+
   for(let i=0; i<voices.length; i++){
     if(selectedVoice === voices[i].name)
       speakObj.voice=voices[i];
