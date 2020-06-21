@@ -3,6 +3,8 @@ const inputRate=document.querySelector('#input-rate');
 const inputPitch=document.querySelector('#input-pitch');
 const inputVoice=document.querySelector('#input-voice');
 const speakButton=document.querySelector('#speak-button');
+const pauseButton=document.querySelector('#pause-button');
+const resumeButton=document.querySelector('#resume-button');
 const readingText=document.querySelector('#reading-text');
 
 let voices=[];
@@ -30,9 +32,30 @@ function populateVoices(){
 }
 
 
+async function speaker(){
+  const speakObj = new SpeechSynthesisUtterance(readingText.textContent);
+  const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
-function speaker(){
-  const speakObj = new SpeechSynthesisUtterance(inputText.value);
+  for(let i=0; i<voices.length; i++){
+    if(selectedVoice === voices[i].name)
+      speakObj.voice=voices[i];
+  }
+  speakObj.rate=inputRate.value;
+  speakObj.pitch-inputPitch.value;
+  synthObj.speak(speakObj);
+  
+  return new Promise(resolve => {speakObj.onend = resolve;});
+}
+
+async function showReadingText(textPart){
+  // console.log(textPart);
+  readingText.textContent=textPart;
+  readingText.scrollIntoView();
+  await speaker();
+  return new Promise(resolve => {resolve();});
+}
+
+async function parseSentences(){
   const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
   if(selectedVoice===''){
@@ -40,20 +63,14 @@ function speaker(){
     return;
   }
 
-  for(let i=0; i<voices.length; i++){
-    if(selectedVoice === voices[i].name)
-      speakObj.voice=voices[i];
+  let sentences=inputText.value.split('.');
+
+
+  for(let i=0; i<sentences.length; i++){
+    await showReadingText(sentences[i]);
   }
-
-  speakObj.rate=inputRate.value;
-  speakObj.pitch-inputPitch.value;
-  synthObj.speak(speakObj);
 }
 
-function showReadingText(){
-  readingText.textContent=inputText.value;
-  readingText.scrollIntoView();
-}
 
 populateVoices();
 if (speechSynthesis.onvoiceschanged !== undefined) {
@@ -67,7 +84,8 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 
 
 speakButton.addEventListener('click', speaker);
-speakButton.addEventListener('click', showReadingText)
+speakButton.addEventListener('click', parseSentences);
+pauseButton.addEventListener('click', window.speechSynthesis.pause);
 
 
 
