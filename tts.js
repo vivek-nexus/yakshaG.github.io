@@ -91,7 +91,10 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 
 
 // speakButton.addEventListener('click', speaker);
-resetButton.addEventListener('click', function(){inputText.value=""});
+resetButton.addEventListener('click', function(){
+  inputText.value="";
+  inputText.focus();
+});
 speakButton.addEventListener('click', parseSentences);
 stopButton.addEventListener('click', function(){speechSynthesis.cancel(); stopAll=true;})
 
