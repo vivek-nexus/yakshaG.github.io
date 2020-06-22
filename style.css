@@ -10,9 +10,9 @@
     50%
     {
         /* color: rgb(194, 34, 34); */
-        stroke: rgb(255, 81, 58);
+        stroke: rgb(0, 60, 255);
         stroke-width: 4;
-        text-shadow: 3px 3px 3px rgb(255, 81, 58);
+        text-shadow: 3px 3px 3px rgb(0, 60, 255);
     }
 
     100%
@@ -23,11 +23,16 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .my-nav-fluid
 {
     /* background-image: linear-gradient(to right, #BEF2FF, #BEFFD4); */
-    background-color: rgb(164, 237, 255);
+    /* background-color: rgb(131, 179, 255); */
+    background-color: rgb(0, 60, 255);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.32);
     position: sticky;
 }
@@ -49,14 +54,15 @@
 
 .my-bg-blue
 {
-    background-color: #BEF2FF;
+    background-color: rgb(255, 255, 255);
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
 .my-bg-green
 {
-    background-color: #BEFFD4;
+    background-color: rgb(203, 234, 255);
+    /* background-color: #BEFFD4; */
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -118,7 +124,7 @@ a:hover
 
 .my-button
 {
-    background-color: rgb(38, 0, 255);
+    background-color: rgb(0, 60, 255);
     padding: 12px 20px;
     border-radius: 15px 0px;
     color: white;
