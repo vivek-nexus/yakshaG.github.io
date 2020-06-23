@@ -1,3 +1,4 @@
+const fullScreenButton=document.querySelector('#full-screen-button');
 const inputText=document.querySelector('#input-text');
 const inputRate=document.querySelector('#input-rate');
 const inputPitch=document.querySelector('#input-pitch');
@@ -91,6 +92,10 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 
 
 // speakButton.addEventListener('click', speaker);
+fullScreenButton.addEventListener('click', function(){
+  document.documentElement.webkitRequestFullScreen();
+});
+
 resetButton.addEventListener('click', function(){
   inputText.value="";
   inputText.focus();
