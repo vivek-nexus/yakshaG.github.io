@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Speak! Articles, Text and more</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?&family=Merienda&family=Montserrat:wght@400;700&family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         html{
             scroll-behavior: smooth;
@@ -18,7 +21,22 @@
             border: none;
             border-radius: 5px;
             font-weight: bold;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.25rem;
         }
+
+        h1, h3
+        {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        p, label, input, textarea
+        {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.25rem;
+        }
+
         .tags
         {
             background-color: rgb(235, 235, 235);
@@ -26,69 +44,103 @@
             border: 1px solid rgb(2, 61, 255);
             border-radius: 5px;
             color: rgb(2, 61, 255);
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.25rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="container" style="background-color: rgb(2, 61, 255); box-shadow: 0px 5px 10px rgb(129, 129, 129);">
-        <a href="#"><p class="text-light" id="full-screen-button" style="text-align: right;">Go Full Screen</p></a>
-        <h1 class="text-center text-light py-4" >We Speak!</h1>
+    <!-- TOP NAVIGATION BAR -->
+    <div class="container-fluid my-nav-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand my-logo" href="index.html">Vivek G</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ml-0 ml-md-5 my-nav-items text-center">
+                    <a class="nav-link" target="_blank" href="Resume_VivekG.pdf">Resume<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active ml-0 ml-md-5 my-nav-items text-center">
+                        <a class="nav-link" href="explore.html">Explore<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active ml-0 ml-md-5 my-nav-items text-center">
+                    <a class="nav-link" href="index.html#contact">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </div>
     </div>
 
-    <div class="container py-4 text-center" style="background-color: rgb(209, 220, 253);">
-        <p class="">This page uses Text to Speech Engine of your device to speak your content.</p>
-        <div class="row justify-content-center">
+    <div class="container-fluid mb-0" style="background-color: rgb(203, 234, 255);">
+        <div class="container">
+            <a href="#"><p id="full-screen-button" style="text-align: right;">Go Full Screen</p></a>
+            <h1 class="text-center my-0 py-4" >We Speak!</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4 mt-0 text-center" style="background-color: rgb(203, 234, 255);">
+        <div class="container">
+            <p>This page uses Text to Speech Engine of your device to speak your content.</p>
+            <div class="row justify-content-center">
             <div class="col-auto m-2 tags">Proof-read articles</div>
             <div class="col-auto m-2 tags">Listen to news/text</div>
             <div class="col-auto m-2 tags">Pronunciation and Accents</div>
+            </div>
         </div>
         <!-- <hr style="border: 1px solid black;"> -->
     </div>
 
 
-    <div class="container text-center p-5" style="background-color: rgb(209, 220, 253); border-radius: 5px;">
-        <h3><label for="input-text" class="text-center">Type or Paste your content below</label></h3>
-        <textarea name="input-text" id="input-text" rows="7" class="d-block mx-auto" style="width: 90%;" autofocus>This page uses Text to Speech Engine of your device to speak your content.
+    <div class="container-fluid text-center p-5" style="background-color: rgb(203, 234, 255); border-radius: 5px;">
+        <div class="container">
+            <label for="input-text" class="text-center"><h3>Type or Paste your content below</h3></label>
+            <textarea name="input-text" id="input-text" rows="7" class="d-block mx-auto" style="width: 90%;" autofocus>This page uses Text to Speech Engine of your device to speak your content.
 
 You can use this to proof-read your articles, listen to news or web pages instead of reading them, explore pronunciation and accents and even just to have fun!
 
 Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience.</textarea>
 
-        <button class="my-3" id="reset-button" style="background-color: white; color: rgb(2, 61, 255);">Clear Content</button>
+            <button class="my-3" id="reset-button" style="background-color: white; color: rgb(2, 61, 255);">Clear Content</button>
 
-        <p class="text-center p-2 mx-auto" style="background-color: rgba(255, 255, 255, 0); border-radius: 5px; max-width: 360px;">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience</p>
+            <p class="text-center p-2 mx-auto" style="max-width: 480px;">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience.</p>
 
-        <div class="mx-auto" style="width: 90%; background-color: white; border-radius: 5px 5px 0px 0px; padding-top: 10px;">
-            <label for="input-rate">Rate</label>
-            <input type="range" min="0.5" max="2" value="1" step="0.1" id="input-rate">
+            <div class="mx-auto" style="width: 90%; background-color: white; border-radius: 5px 5px 0px 0px; padding-top: 10px;">
+                <label for="input-rate">Rate</label>
+                <input type="range" min="0.5" max="2" value="1" step="0.1" id="input-rate">
+            </div>
+            <div class="mx-auto" style="width: 90%; background-color: white;">
+                <label for="input-pitch">Pitch</label>
+                <input type="range" min="0" max="2" value="1" step="0.1" id="input-pitch" style="border-color: black;">
+            </div>
+            <div class="mx-auto" style=" width: 90%; background-color: white; border-radius: 0px 0px 5px 5px;">
+                <label for="input-voice" class="mr-2">Voice</label>
+                <select name="input-voice" id="input-voice">
+                    <option value="" data-voice-name="" data-voice-lang="">Choose</option>
+                </select>
+                <p>For more on Voices and Settings, please see your device <span class="font-weight-bold">Text Speech Engine Settings</span></p>
+            </div>
+            <button class="mx-auto my-4" id="stop-button">Stop</button>
+            <button class="mx-auto" id="speak-button">Speak</button>
+            <!-- <hr style="border: 1px solid black;"> -->
         </div>
-        <div class="mx-auto" style="width: 90%; background-color: white; border-radius: 0px 0px 5px 5px;">
-            <label for="input-pitch">Pitch</label>
-            <input type="range" min="0" max="2" value="1" step="0.1" id="input-pitch" style="border-color: black;">
-        </div>
-        <div class="mx-auto">
-            <label for="input-voice" class="mr-2">Voice</label>
-            <select name="input-voice" id="input-voice">
-                <option value="" data-voice-name="" data-voice-lang="">Choose</option>
-            </select>
-        </div>
-        <button class="mx-auto my-4" id="stop-button">Stop</button>
-        <button class="mx-auto" id="speak-button">Speak</button>
-        <!-- <hr style="border: 1px solid black;"> -->
     </div>
     
     
 
     <section>
-        <div class="container text-center mb-4">
+        <div class="container-fluid text-center mb-4">
             <!-- <button id="pause-button">Pause</button> -->
             <!-- <button id="resume-button">Resume</button> -->
             <!-- <button id="stop-button">Stop</button> -->
         </div>
-        <div class="container text-center mb-5" >
+        <div class="container-fluid text-center mb-5" >
             <h3>Reading Below Text</h3>
-            <p id="reading-text" class="mx-auto p-3" style="background-color: rgb(209, 220, 253); border-radius: 5px; max-width: 480px;"></p>
+            <p id="reading-text" class="mx-auto p-3" style="background-color: rgb(203, 234, 255); border-radius: 5px; max-width: 480px;"></p>
         </div>
     </section>
 
