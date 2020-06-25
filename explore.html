@@ -650,10 +650,11 @@
         const splashHidden=document.querySelector('.splash-screen');
         const actualBody=document.querySelector('.body');
         actualBody.style.display='none';
-        document.addEventListener('DOMContentLoaded', function(){
+        function loadBody(){
             splashHidden.style.display='none';
             actualBody.style.display='block';
-        });
+        };
+        window.onload = loadBody;
     </script>
 
 
