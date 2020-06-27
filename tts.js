@@ -13,6 +13,8 @@ const readingText=document.querySelector('#reading-text');
 let voices=[];
 let stopAll=false;
 let pause=false;
+pauseButton.disabled=true;
+resumeButton.disabled=true;
 
 const synthObj=window.speechSynthesis;
 
@@ -87,6 +89,9 @@ async function parseSentences(){
     return;
   }
 
+  pauseButton.disabled=false;
+  resumeButton.disabled=false;
+
   let sentences=inputText.value.split(/[.|!|?]+/g);
 
   console.log("Finished parsing sentences!")
@@ -107,6 +112,9 @@ async function parseSentences(){
   }
 
   speakButton.disabled=false;
+  pauseButton.disabled=true;
+  resumeButton.disabled=true;
+
 }
 
 
