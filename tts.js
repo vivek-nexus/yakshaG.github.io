@@ -5,13 +5,14 @@ const inputPitch=document.querySelector('#input-pitch');
 const inputVoice=document.querySelector('#input-voice');
 const resetButton=document.querySelector('#reset-button');
 const speakButton=document.querySelector('#speak-button');
-// const pauseButton=document.querySelector('#pause-button');
-// const resumeButton=document.querySelector('#resume-button');
+const pauseButton=document.querySelector('#pause-button');
+const resumeButton=document.querySelector('#resume-button');
 const stopButton=document.querySelector('#stop-button');
 const readingText=document.querySelector('#reading-text');
 
 let voices=[];
 let stopAll=false;
+let pause=false;
 
 const synthObj=window.speechSynthesis;
 
@@ -33,6 +34,14 @@ function populateVoices(){
     option.setAttribute('data-voice-lang', voices[i].lang);
     inputVoice.appendChild(option);
   }
+}
+
+
+async function pausedResume(){
+  return new Promise(resolve => {
+    resumeButton.onclick = resolve; 
+    stopButton.onclick = resolve;
+  });
 }
 
 
@@ -71,6 +80,13 @@ async function parseSentences(){
 
 
   for(let i=0; i<sentences.length; i++){
+    
+    if(pause===true){
+      await pausedResume();
+      i--;
+      pause=false;
+    }
+
     if(stopAll===true){
       stopAll=false;
       break;
@@ -96,13 +112,20 @@ fullScreenButton.addEventListener('click', function(){
   document.documentElement.webkitRequestFullScreen();
 });
 
+
 resetButton.addEventListener('click', function(){
   inputText.value="";
   inputText.focus();
 });
-speakButton.addEventListener('click', parseSentences);
-stopButton.addEventListener('click', function(){speechSynthesis.cancel(); stopAll=true;})
 
+speakButton.addEventListener('click', function(){
+  speechSynthesis.cancel(); 
+  stopButton.click();
+  stopAll=false;
+  parseSentences();
+});
+stopButton.addEventListener('click', function(){speechSynthesis.cancel(); readingText.textContent=''; stopAll=true;})
+pauseButton.addEventListener('click',function(){speechSynthesis.cancel(); pause=true;})
 
 
 
