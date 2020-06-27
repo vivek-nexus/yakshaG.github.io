@@ -36,6 +36,16 @@ function populateVoices(){
   }
 }
 
+function stopAllFunction(){
+  speechSynthesis.cancel(); 
+  readingText.textContent=''; 
+  stopAll=true;
+}
+
+function pauseFunction(){
+  speechSynthesis.cancel(); pause=true;
+}
+
 
 async function pausedResume(){
   return new Promise(resolve => {
@@ -73,12 +83,13 @@ async function parseSentences(){
 
   if(selectedVoice===''){
     alert("Please select Voice from the list");
+    speakButton.disabled=false;
     return;
   }
 
   let sentences=inputText.value.split(/[.|!|?]+/g);
 
-
+  console.log("Finished parsing sentences!")
   for(let i=0; i<sentences.length; i++){
     
     if(pause===true){
@@ -91,8 +102,11 @@ async function parseSentences(){
       stopAll=false;
       break;
     }
+    console.log(`Sentence ${i+1} sent for reading...`)
     await showReadingText(sentences[i]);
   }
+
+  speakButton.disabled=false;
 }
 
 
@@ -119,13 +133,11 @@ resetButton.addEventListener('click', function(){
 });
 
 speakButton.addEventListener('click', function(){
-  speechSynthesis.cancel(); 
-  stopButton.click();
-  stopAll=false;
+  speakButton.disabled=true;
   parseSentences();
 });
-stopButton.addEventListener('click', function(){speechSynthesis.cancel(); readingText.textContent=''; stopAll=true;})
-pauseButton.addEventListener('click',function(){speechSynthesis.cancel(); pause=true;})
+stopButton.addEventListener('click', stopAllFunction)
+pauseButton.addEventListener('click',pauseFunction)
 
 
 
