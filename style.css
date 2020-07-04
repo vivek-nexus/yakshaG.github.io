@@ -27,6 +27,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body
+{
+    background: linear-gradient(135deg, rgb(203, 234, 255) 40%, white 30%, white 80%, rgb(203, 234, 255) 80%, rgb(203, 234, 255) );
+    background-attachment: fixed;
+}
 
 .my-nav-fluid
 {
@@ -54,34 +59,50 @@ html{
 
 .my-bg-blue
 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    /* background: linear-gradient(135deg, white 50%, rgb(203, 234, 255) 50%, rgb(203, 234, 255)); */
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
 .my-bg-green
 {
-    background-color: rgb(203, 234, 255);
+    /* background: linear-gradient(135deg, rgb(203, 234, 255) 50%, white 50%, white); */
     /* background-color: #BEFFD4; */
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
+
+
 .skill-head-card
 {
     background-color: rgb(233, 79, 74);
     border-radius: 10px 10px 0px 0px;
-    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.16); */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.16);
 }
 
 .content-card
 {
     /* background-color: rgb(253, 239, 238); */
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
     margin: 1%;
     border-radius: 10px;
     min-width: 15rem;
     max-width: 23.1rem;
+}
+
+.content-card:hover
+{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.32);
+    transition-delay: 100ms;
+    transition-duration: 300ms;
+}
+
+.content-card:hover div:hover
+{
+    background-image: none;
 }
 
 svg
@@ -191,13 +212,14 @@ h1
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 h2
 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
+    
 }
 
 .quotes
