@@ -11,6 +11,7 @@ const stopButton=document.querySelector('#stop-button');
 const readingText=document.querySelector('#reading-text');
 
 let voices=[];
+let date= new Date();
 let stopAll=false;
 let pause=false;
 pauseButton.disabled=true;
@@ -45,7 +46,8 @@ function stopAllFunction(){
 }
 
 function pauseFunction(){
-  speechSynthesis.cancel(); pause=true;
+  speechSynthesis.cancel(); 
+  pause=true;
 }
 
 
@@ -57,7 +59,7 @@ async function pausedResume(){
 }
 
 
-async function speaker(textPart){
+function speaker(textPart){
   const speakObj = new SpeechSynthesisUtterance(textPart);
   const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
@@ -144,8 +146,8 @@ speakButton.addEventListener('click', function(){
   speakButton.disabled=true;
   parseSentences();
 });
-stopButton.addEventListener('click', stopAllFunction)
-pauseButton.addEventListener('click',pauseFunction)
+stopButton.addEventListener('click', stopAllFunction);
+pauseButton.addEventListener('click',pauseFunction);
 
 
 
