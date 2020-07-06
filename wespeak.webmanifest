@@ -4,8 +4,8 @@
     "display": "standalone",
     "icons": [
       {
-        "src": "images/tts.png",
-        "type": "image/png",
+        "src": "/images/tts.png",
+        "type": "/image/png",
         "sizes": "192x192"
       }
     ],
