@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?&family=Merienda&family=Montserrat:wght@400;700&family=Muli:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">  
-    <link rel="manifest" href="/wespeak.webmanifest">
+    <link rel="manifest" href="/js/wespeak.webmanifest">
     <style>
         html{
             scroll-behavior: smooth;
@@ -18,9 +18,11 @@
         {
             background-color: rgb(2, 61, 255);
             color: white;
+            margin: 0px 5px;
             padding: 5px 10px;
             border: none;
             border-radius: 5px;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.32);
             font-weight: bold;
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 1.25rem;
@@ -53,6 +55,24 @@
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 1.25rem;
         }
+
+        textarea
+        {
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 1.25rem;
+        }
+
+        #reading-text
+        {
+            background-color: rgb(203, 234, 255); 
+            border-radius: 5px; 
+            max-width: 480px;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+        }
+        
     </style>
 </head>
 <body style="background:none;">
@@ -83,11 +103,11 @@
         </div>
     </div>
 
-    <div class="container-fluid mb-0" style="background-color: rgb(203, 234, 255);">
+    <!-- <div class="container-fluid mb-0" style="background-color: rgb(203, 234, 255);">
         <div class="container pt-3">
             <div class="row justify-content-end">
                 <div class="col-auto">
-                    <!-- <button id="add-button">Add to home screen</button> -->
+                    <button id="add-button">Add to home screen</button>
                 </div>
                 <div class="col-auto mr-4">
                     <button id="full-screen-button">Go Full Screen</button>
@@ -96,7 +116,7 @@
                        
             <h1 class="text-center my-0 py-4" >We Speak!</h1>
         </div>
-    </div>
+    </div> -->
 
     
 
@@ -116,7 +136,7 @@
     <div class="container-fluid text-center p-5" style="background-color: rgb(203, 234, 255); border-radius: 5px;">
         <div class="container">
             <label for="input-text" class="text-center"><h3>Type or Paste your content below</h3></label>
-            <textarea name="input-text" id="input-text" rows="7" class="d-block mx-auto" style="width: 90%;">This page uses Text to Speech Engine of your device to speak your content.
+            <textarea name="input-text" id="input-text" rows="7" class="d-block mx-auto" style="width: 90%; font-size: 1.5rem;">This page uses Text to Speech Engine of your device to speak your content.
 
 You can use this to proof-read your articles, listen to news or web pages instead of reading them, explore pronunciation and accents and even just to have fun!
 
@@ -124,7 +144,7 @@ Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a m
 
             <button class="my-3" id="reset-button" style="background-color: white; color: rgb(2, 61, 255);">Clear Content</button>
 
-            <p class="text-center p-2 mx-auto" style="max-width: 480px;">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience.</p>
+            <!-- <p class="text-center p-2 mx-auto" style="max-width: 480px;">Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a more natural experience.</p> -->
 
             <div class="mx-auto" style="width: 90%; background-color: white; border-radius: 5px 5px 0px 0px; padding-top: 10px;">
                 <label for="input-rate">Rate</label>
@@ -142,7 +162,7 @@ Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a m
                 <p>For more on Voices and Settings, please see your device <span class="font-weight-bold">Text Speech Engine Settings</span></p>
             </div>
             <!-- <button class="mx-auto my-4" id="stop-button">Stop</button> -->
-            <button class="mx-auto" id="speak-button">Speak</button>
+            
             <!-- <hr style="border: 1px solid black;"> -->
         </div>
     </div>
@@ -150,17 +170,21 @@ Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a m
     
 
     <section>
-        <div class="container-fluid text-center my-4">
-            <button id="prev-button">Prev</button>
-            <button id="stop-button">Stop</button>
-            <button id="pause-button">Pause</button>
-            <button id="resume-button">Resume</button>
-            <button id="next-button">Next</button>
+        
+        <div class="container-fluid d-flex justify-content-center align-items-center text-center my-4">
+            <button id="prev-button"><img src="images/previous.svg" alt=""></button>
+            <button id="speak-button"><img src="images/play.svg" alt=""></button>
+            <button id="pause-button"><img src="images/pause.svg" alt=""></button>
+            <button id="resume-button"><img src="images/play.svg" alt=""></button>
+            <button id="next-button"><img src="images/next.svg" alt=""></button>
         </div>
+
         <div class="container-fluid text-center mb-5" >
+            <button id="stop-button" class="mb-4">Reset</button>
             <h3>Reading Below Text</h3>
-            <p id="reading-text" class="mx-auto p-3" style="background-color: rgb(203, 234, 255); border-radius: 5px; max-width: 480px;"></p>
+            <p id="reading-text" class="mx-auto p-3"></p>
         </div>
+        
     </section>
 
     <footer class="mt-5"><p class="text-center">Designed by Vivek G. Copyright 2020.</p></footer>
@@ -169,8 +193,8 @@ Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a m
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="tts.js"></script>
-    <script src="nosleep.js"></script>
+    <script src="js/tts.js"></script>
+    <!-- <script src="js/nosleep.js"></script> -->
     
 </body>
 </html>
