@@ -26,6 +26,7 @@ nextButton.disabled=true;
 
 const synthObj=window.speechSynthesis;
 
+
 //Execution Statements and Event Handlers
 populateVoices();
 if (speechSynthesis.onvoiceschanged !== undefined) {
@@ -95,6 +96,10 @@ function populateVoices(){
 //Loops over sentences and sends to showReadingText
 //Handles Previous, Stop, Pause, Resume and Next Buttons
 async function parseSentences(){
+  let screenLock = new NoSleep();
+  screenLock.enable();
+  console.log('Screen Locked!');
+  
   const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
   if(selectedVoice===''){
@@ -128,10 +133,11 @@ async function parseSentences(){
       stopAll=false;
       break;
     }
-    console.log(`Sentence ${i+1} sent for reading...`)
+    console.log(`Sentence ${i+1} sent for reading...`);
     await showReadingText(sentences[i]);
   }
 
+  screenLock.disable();
   speakButton.disabled=false;
   pauseButton.disabled=true;
   resumeButton.disabled=true;
@@ -144,7 +150,7 @@ async function parseSentences(){
 //Waits until speaking is over
 //Returns promise after completion
 async function showReadingText(textPart){
-  // console.log(textPart);
+  
   readingText.textContent=textPart;
   readingText.scrollIntoView();
   await speaker(textPart);
@@ -194,12 +200,4 @@ async function pausedResume(){
   });
 }
 
-
-
-
-
-
-
-
-//ADD TO HOME SCREEN PROGRESSIVE WEBAPP
 
