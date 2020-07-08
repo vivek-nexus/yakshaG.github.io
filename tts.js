@@ -96,10 +96,6 @@ function populateVoices(){
 //Loops over sentences and sends to showReadingText
 //Handles Previous, Stop, Pause, Resume and Next Buttons
 async function parseSentences(){
-  let screenLock = new NoSleep();
-  screenLock.enable();
-  console.log('Screen Locked!');
-  
   const selectedVoice = inputVoice.selectedOptions[0].getAttribute('data-voice-name');
 
   if(selectedVoice===''){
@@ -137,7 +133,6 @@ async function parseSentences(){
     await showReadingText(sentences[i]);
   }
 
-  screenLock.disable();
   speakButton.disabled=false;
   pauseButton.disabled=true;
   resumeButton.disabled=true;
@@ -150,10 +145,14 @@ async function parseSentences(){
 //Waits until speaking is over
 //Returns promise after completion
 async function showReadingText(textPart){
-  
+  let screenLock = new NoSleep();
+  screenLock.enable();
+  console.log('Screen Locked!');
   readingText.textContent=textPart;
   readingText.scrollIntoView();
   await speaker(textPart);
+  screenLock.disable();
+  console.log('Screen Unlocked.')
   return new Promise(resolve => {resolve();});
 }
 
