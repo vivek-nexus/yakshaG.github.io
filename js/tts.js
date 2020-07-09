@@ -1,4 +1,4 @@
-// const fullScreenButton=document.querySelector('#full-screen-button');
+const fullScreenButton=document.querySelector('#full-screen-button');
 const inputText=document.querySelector('#input-text');
 const inputRate=document.querySelector('#input-rate');
 const inputPitch=document.querySelector('#input-pitch');
@@ -35,9 +35,9 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
   speechSynthesis.onvoiceschanged = populateVoices;
 }
 
-// fullScreenButton.addEventListener('click', function(){
-//   document.body.requestFullscreen();
-// });
+fullScreenButton.addEventListener('click', function(){
+  document.body.requestFullscreen();
+});
 
 resetButton.addEventListener('click', function(){
   inputText.value="";
