@@ -7,73 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?&family=Merienda&family=Montserrat:wght@400;700&family=Muli:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/tts.css">  
     <link rel="manifest" href="/js/wespeak.webmanifest">
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-
-        button
-        {
-            background-color: rgb(2, 61, 255);
-            color: white;
-            margin: 0px 5px;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.32);
-            font-weight: bold;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1.25rem;
-        }
-
-        button:disabled
-        {
-            background-color: rgb(110, 144, 255);
-        }
-
-        h1, h3
-        {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-        }
-
-        p, label, input, textarea
-        {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1.25rem;
-        }
-
-        .tags
-        {
-            background-color: rgb(235, 235, 235);
-            padding: 5px 10px;
-            border: 1px solid rgb(2, 61, 255);
-            border-radius: 5px;
-            color: rgb(2, 61, 255);
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1.25rem;
-        }
-
-        textarea
-        {
-            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
-            border: none;
-            border-radius: 5px;
-            padding: 15px;
-            font-size: 1.25rem;
-        }
-
-        #reading-text
-        {
-            background-color: rgb(203, 234, 255); 
-            border-radius: 5px; 
-            max-width: 480px;
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
-        }
-        
-    </style>
+    
 </head>
 <body style="background:none;">
     
@@ -179,9 +116,22 @@ Mobile devices(Android/iOS) contain better Text to Speech Engines, providing a m
             <button id="next-button"><img src="images/next.svg" alt=""></button>
         </div>
 
-        <div class="container-fluid text-center mb-5" >
+        <div class="container text-center mb-5" >
             <button id="stop-button" class="mb-4">Reset</button>
-            <h3>Reading Below Text</h3>
+
+            <div class="row justify-content-center">
+                <div class="col-auto"><h3>Reading Below Text</h3></div>
+                <div class="col-2">
+                    <div class="animation-wrapper justify-content-center mb-3 mb-sm-0" style="height: 30px;">
+                        <div class="line1 speaking-animation"></div>
+                        <div class="line2 speaking-animation"></div>
+                        <div class="line3 speaking-animation"></div>
+                        <div class="line4 speaking-animation"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <p id="reading-text" class="mx-auto p-3"></p>
         </div>
         
