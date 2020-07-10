@@ -11,6 +11,7 @@ const stopButton=document.querySelector('#stop-button');
 const prevButton=document.querySelector('#prev-button');
 const nextButton=document.querySelector('#next-button');
 const readingText=document.querySelector('#reading-text');
+const animation=document.querySelector('.animation-wrapper');
 
 //Setting Variables
 let voices=[];
@@ -25,6 +26,7 @@ prevButton.disabled=true;
 nextButton.disabled=true;
 pauseButton.style.display = 'none';
 resumeButton.style.display = 'none';
+animation.style.display='none';
 
 const synthObj=window.speechSynthesis;
 
@@ -45,15 +47,11 @@ resetButton.addEventListener('click', function(){
 });
 
 speakButton.addEventListener('click', function(){
-  speakButton.style.display = 'none';
-  pauseButton.style.display = 'inline';
   parseSentences();
 });
 stopButton.addEventListener('click', stopAllFunction);
 
 pauseButton.addEventListener('click', function(){
-  pauseButton.style.display = 'none';
-  resumeButton.style.display = 'inline';
   pauseFunction();
 });
 
@@ -112,6 +110,10 @@ async function parseSentences(){
     return;
   }
 
+  speakButton.style.display = 'none';
+  pauseButton.style.display = 'inline';
+  animation.style.display='flex';
+
   prevButton.disabled=false;
   nextButton.disabled=false;
 
@@ -124,6 +126,7 @@ async function parseSentences(){
       await pausedResume();
       resumeButton.style.display = 'none';
       pauseButton.style.display = 'inline';
+      animation.style.display='flex';
       i--;
       pause=false;
     }
@@ -148,6 +151,7 @@ async function parseSentences(){
   speakButton.style.display = 'inline';
   pauseButton.style.display = 'none';
   resumeButton.style.display = 'none';
+  animation.style.display='none';
 }
 
 //Displays Reading text and calls speaker
@@ -161,7 +165,7 @@ async function showReadingText(textPart){
   readingText.scrollIntoView();
   await speaker(textPart);
   screenLock.disable();
-  console.log('Screen Unlocked.')
+  console.log('Screen Unlocked.');
   return new Promise(resolve => {resolve();});
 }
 
@@ -198,6 +202,7 @@ function pauseFunction(){
 //Stops TTS and sets variable values
 function stopAllFunction(){
   speakButton.style.display = 'inline';
+  animation.style.display='none';
   speechSynthesis.cancel(); 
   readingText.textContent=''; 
   stopAll=true;
@@ -208,6 +213,7 @@ function stopAllFunction(){
 function pausedResume(){
   resumeButton.style.display = 'inline';
   pauseButton.style.display = 'none';
+  animation.style.display='none';
   return new Promise(resolve => {
     resumeButton.onclick = resolve; 
     stopButton.onclick = resolve;
