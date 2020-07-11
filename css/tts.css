@@ -79,7 +79,7 @@ p, label, input, textarea
     font-size: 1.25rem;
 }
 
-textarea
+textarea, input[type="url"]
 {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
     border: none;
