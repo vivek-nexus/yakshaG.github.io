@@ -12,6 +12,8 @@ const prevButton=document.querySelector('#prev-button');
 const nextButton=document.querySelector('#next-button');
 const readingText=document.querySelector('#reading-text');
 const animation=document.querySelector('.animation-wrapper');
+const inputURL=document.querySelector('#input-url');
+const fetchButton=document.querySelector('#fetch-button');
 
 //Setting Variables
 let voices=[];
@@ -40,6 +42,8 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 fullScreenButton.addEventListener('click', function(){
   document.body.requestFullscreen();
 });
+
+fetchButton.addEventListener('click', fetchArticle);
 
 resetButton.addEventListener('click', function(){
   inputText.value="";
@@ -73,6 +77,8 @@ nextButton.addEventListener('click',function(){
 
 
 
+
+
 //FUNCTIONS SECTION
 
 //Fetches and Populates the Voices Array in Alphabetical Order
@@ -94,6 +100,36 @@ function populateVoices(){
     option.setAttribute('data-voice-lang', voices[i].lang);
     inputVoice.appendChild(option);
   }
+}
+
+
+async function fetchArticle(){
+  let result='';
+  website='https://cors-anywhere.herokuapp.com/'+inputURL.value;
+  console.log(website);
+
+  console.log(`Fetching from ${website}`);
+  await fetch(website).then(function (response) {
+  // The API call was successful!
+  return response.text();
+  }).then(function (html) {
+  // Convert the HTML string into a document object
+  const parser = new DOMParser();
+  let doc = parser.parseFromString(html, 'text/html');
+  // Get the article content tags
+    let array = doc.querySelectorAll('h1, h2, h3, p');
+    for (element of array){
+        console.log(element.textContent);
+        result+= element.textContent+`.
+        `;
+    }
+    }).catch(function (err) {
+        // There was an error
+        console.warn('Something went wrong.', err);
+    });
+    // console.log(result);
+
+    inputText.value=result; 
 }
 
 
