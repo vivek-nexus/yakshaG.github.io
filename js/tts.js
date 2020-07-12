@@ -14,6 +14,7 @@ const readingText=document.querySelector('#reading-text');
 const animation=document.querySelector('.animation-wrapper');
 const inputURL=document.querySelector('#input-url');
 const fetchButton=document.querySelector('#fetch-button');
+const fetchAnimation=document.querySelector('#fetch-animation');
 
 //Setting Variables
 let voices=[];
@@ -105,6 +106,8 @@ function populateVoices(){
 
 async function fetchArticle(){
   let result='';
+  inputText.value='';
+  fetchAnimation.style.display='inline';
   website='https://cors-anywhere.herokuapp.com/'+inputURL.value;
   console.log(website);
 
@@ -130,6 +133,7 @@ async function fetchArticle(){
     // console.log(result);
 
     inputText.value=result; 
+    fetchAnimation.style.display='none';
 }
 
 
