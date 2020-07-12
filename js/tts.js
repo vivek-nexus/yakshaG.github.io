@@ -132,7 +132,8 @@ async function fetchArticle(){
     });
     // console.log(result);
 
-    inputText.value=result; 
+    inputText.value=result;
+    inputText.scrollIntoView(); 
     fetchAnimation.style.display='none';
 }
 
