@@ -15,6 +15,7 @@ const animation=document.querySelector('.animation-wrapper');
 const inputURL=document.querySelector('#input-url');
 const fetchButton=document.querySelector('#fetch-button');
 const fetchAnimation=document.querySelector('#fetch-animation');
+const progressBar=document.querySelector('#progress-bar');
 
 //Setting Variables
 let voices=[];
@@ -182,6 +183,7 @@ async function parseSentences(){
       break;
     }
     console.log(`Sentence ${i+1} sent for reading...`);
+    progressBar.setAttribute('value', (i/(sentences.length-1))*100);
     await showReadingText(sentences[i]);
   }
 
@@ -246,6 +248,7 @@ function stopAllFunction(){
   animation.style.display='none';
   speechSynthesis.cancel(); 
   readingText.textContent=''; 
+  progressBar.setAttribute('value',0)
   stopAll=true;
 }
 
