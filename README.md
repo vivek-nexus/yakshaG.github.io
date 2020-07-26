@@ -1,1 +1,1 @@
-# See me :) at https://yakshag.github.io
+# Head to https://yakshag.github.io :)
