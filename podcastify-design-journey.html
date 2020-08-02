@@ -204,13 +204,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
-        // document.querySelector('.down-arrow').addEventListener('click', function(){
-            // document.querySelector('#explore').scrollIntoView();
-        // });
         // Page Analytics
         let date= new Date();
         telegramMessage=`Podcastify%20Design%20Design%20Journey%0A${date.getFullYear()}%20${date.getMonth()+1}%20${date.getDate()}%0A${date.getHours()}%20${date.getMinutes()}%20${date.getSeconds()}%0A${navigator.platform}%0A${navigator.userAgent}`;
-        // fetch(`https://api.telegram.org/bot1391541181:AAF86uEn063OXGO7hiNhNtAQVuE7oYoxVCA/sendMessage?chat_id=425970658&text=${telegramMessage}&parse_mode=Markdown`);
+        fetch(`https://api.telegram.org/bot1391541181:AAF86uEn063OXGO7hiNhNtAQVuE7oYoxVCA/sendMessage?chat_id=425970658&text=${telegramMessage}&parse_mode=Markdown`);
     </script>
     
 </body>
