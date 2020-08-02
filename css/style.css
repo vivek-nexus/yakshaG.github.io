@@ -23,6 +23,8 @@
     }
 }
 
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -82,6 +84,15 @@ body
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.32);
 }
 
+.project-card
+{
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.32);
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2.5rem;
+}
+
 .content-card
 {
     /* background-color: rgb(253, 239, 238); */
@@ -95,7 +106,14 @@ body
 
 .content-card:hover
 {
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.32);
+    transition-delay: 100ms;
+    transition-duration: 300ms;
+}
+
+.project-card:hover
+{
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.32);
     transition-delay: 100ms;
     transition-duration: 300ms;
 }
@@ -147,12 +165,19 @@ a:hover
 {
     background-color: rgb(0, 60, 255);
     padding: 12px 20px;
+    border: none;
     border-radius: 15px 0px;
     color: white;
     font-family: 'Muli', sans-serif;
     font-size: 1rem;
     font-weight: bold;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    text-align: center;
+}
+
+.special
+{
+    border-radius: 0px 15px;
 }
 
 .my-button-light
@@ -173,6 +198,11 @@ a:hover
 {
     border-radius: 0px 15px;
     transition-duration: 200ms;
+}
+
+.special:hover
+{
+    border-radius: 15px 0px;
 }
 
 .my-button-light:hover
@@ -251,7 +281,6 @@ h2
     font-weight: bold;
     font-size: 1.12rem;
     text-align: center;
-
 }
 
 .logo-design-images
@@ -289,14 +318,15 @@ h2
     /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.32); */
 }
 
-.carousel-inner .carousel-item{ 
+.carousel-inner .carousel-item
+{ 
     height:800px; 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     /* max-height:100%; 
     max-width:100%; */
- }
+}
 
 
 
