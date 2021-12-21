@@ -1,3 +1,18 @@
+let greetingMessage = document.querySelector('#greetings');
+let myDate = new Date();
+let hrs = myDate.getHours();
+let message;
+if (hrs < 12)
+    message = 'Morning! Vivek here!';
+else if (hrs >= 12 && hrs <= 17)
+    message = 'Afternoon! Vivek here!';
+else if (hrs >= 17 && hrs <= 24)
+    message = 'Evening! Vivek here!';
+greetingMessage.innerHTML=message;
+
+
+
+
 let hiddenCards = document.querySelectorAll('.hidden-cards');
 
 hiddenCards.forEach(element => {
