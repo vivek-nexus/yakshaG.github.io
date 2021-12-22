@@ -1,18 +1,22 @@
+
+// Dynamic greeting message
 let greetingMessage = document.querySelector('#greetings');
 let myDate = new Date();
 let hrs = myDate.getHours();
 let message;
-if (hrs < 12)
+if (hrs <= 6)
+    message = 'Night! Vivek here!';
+else if (hrs > 6 && hrs <= 12)
     message = 'Morning! Vivek here!';
-else if (hrs >= 12 && hrs <= 17)
+else if (hrs > 12 && hrs <= 17)
     message = 'Afternoon! Vivek here!';
-else if (hrs >= 17 && hrs <= 24)
+else if (hrs > 17 && hrs <= 24)
     message = 'Evening! Vivek here!';
 greetingMessage.innerHTML=message;
 
 
 
-
+// Show more or show less cards
 let hiddenCards = document.querySelectorAll('.hidden-cards');
 
 hiddenCards.forEach(element => {
@@ -39,6 +43,7 @@ showLessButton.addEventListener('click', function(){
 })
 
 
+// Headshake animation for emojis of first three cards
 document.querySelector('#design').addEventListener('mouseenter', function(){
     document.querySelector('#heart').classList.add('animate__animated')
     document.querySelector('#heart').classList.add('animate__headShake')
@@ -71,3 +76,5 @@ document.querySelector('#content').addEventListener('mouseenter', function(){
     }, 1000);
 
 } )
+
+
