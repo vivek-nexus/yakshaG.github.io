@@ -6,11 +6,11 @@ let hrs = myDate.getHours();
 let message;
 if (hrs <= 6)
     message = 'Night! Vivek here!';
-else if (hrs > 6 && hrs <= 12)
+else if (hrs > 6 && hrs < 12)
     message = 'Morning! Vivek here!';
-else if (hrs > 12 && hrs <= 17)
+else if (hrs >= 12 && hrs < 17)
     message = 'Afternoon! Vivek here!';
-else if (hrs > 17 && hrs <= 24)
+else if (hrs >= 17 && hrs < 24)
     message = 'Evening! Vivek here!';
 greetingMessage.innerHTML=message;
 
