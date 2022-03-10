@@ -4,9 +4,9 @@ let greetingMessage = document.querySelector('#greetings');
 let myDate = new Date();
 let hrs = myDate.getHours();
 let message;
-if (hrs <= 6)
+if (hrs < 4)
     message = 'Night! Vivek here!';
-else if (hrs > 6 && hrs < 12)
+else if (hrs >= 4 && hrs < 12)
     message = 'Morning! Vivek here!';
 else if (hrs >= 12 && hrs < 17)
     message = 'Afternoon! Vivek here!';
