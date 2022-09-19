@@ -1,8 +1,36 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  content: [],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+      colors: {
+        "primary": {
+          900: "#004d40",
+          800: "#00695c",
+          700: "#00796b",
+          600: "#00897b",
+          500: "#009688",
+          400: "#26a69a",
+          300: "#4db6ac",
+          200: "#80cbc4",
+          100: "#b2dfdb",
+          50: "#e0f2f1"
+        }
+      },
+      screens: {
+        'md': '840px',
+      },
+    },
   },
+
   plugins: [],
 }
