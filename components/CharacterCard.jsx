@@ -1,5 +1,5 @@
 import Button from "./Button";
-import cardData from "../constants/character-cards";
+import characterCardData from "../constants/character-cards";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -31,23 +31,23 @@ function CardContent(props) {
                     <h3
                         className={`text-primary-700 ${props.heroCard ? `md:text-5xl text-3xl` : `text-3xl`} pb-4`}
                     >
-                        {cardData[props.cardNumber - 1].cardIcon}
+                        {characterCardData[props.cardNumber - 1].cardIcon}
                     </h3>
 
                     <div>
                         <h3
                             className={`font-semibold pb-2 ${props.heroCard ? `md:text-3xl text-xl` : `text-xl`}`}
                         >
-                            {cardData[props.cardNumber - 1].cardTitle}
+                            {characterCardData[props.cardNumber - 1].cardTitle}
                         </h3>
                         <p
                             className={`${props.heroCard ? `md:text-xl text-gray-500` : `text-gray-400`}`}
                         >
-                            {cardData[props.cardNumber - 1].cardSubTitle}
+                            {characterCardData[props.cardNumber - 1].cardSubTitle}
                         </p>
                         {props.withButton &&
                             <div className="mt-6">
-                                <Button type={`${props.heroCard ? `primary` : `secondary`}`}>{cardData[props.cardNumber - 1].cardButtonText}</Button>
+                                <Button type={`${props.heroCard ? `primary` : `secondary`}`}>{characterCardData[props.cardNumber - 1].cardButtonText}</Button>
                             </div>
                         }
                     </div>
@@ -69,7 +69,7 @@ function CharacterCard(props) {
                 ? <a href="https://www.linkedin.com/in/vivek-g-india" target="_blank">
                     <CardContent {...props} />
                 </a >
-                : <Link href={`${props.withButton ? cardData[props.cardNumber - 1].linkTo : ``}`}>
+                : <Link href={`${props.withButton ? characterCardData[props.cardNumber - 1].linkTo : ``}`}>
                     {props.withButton
                         ? <a><CardContent {...props} /></a>
                         : <CardContent {...props} />

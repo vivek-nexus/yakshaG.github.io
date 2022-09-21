@@ -1,4 +1,4 @@
-const cardData = [
+const characterCardData = [
     {
         "cardNumber": "1",
         "cardIcon": "❤️",
@@ -65,4 +65,4 @@ const cardData = [
 
 ]
 
-export default cardData;
+export default characterCardData;

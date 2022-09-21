@@ -27,8 +27,11 @@ module.exports = {
         }
       },
       screens: {
-        'md': '840px',
+        "md": "840px",
       },
+      boxShadow: {
+        "designProjectCard": ["rgba(0, 0, 0, 0.16) 0px 3px 6px", "0px 3px 6px rgba(0, 0, 0, 0.23)"]
+      }
     },
   },
 
