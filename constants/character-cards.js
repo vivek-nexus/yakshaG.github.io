@@ -2,7 +2,7 @@ const cardData = [
     {
         "cardNumber": "1",
         "cardIcon": "❤️",
-        "cardTitle": "I am a UX designer",
+        "cardTitle": "I am a product designer",
         "cardSubTitle": "Because the heart says so",
         "cardButtonText": "Take a look ->",
         "linkTo": "/design"
@@ -11,7 +11,7 @@ const cardData = [
         "cardNumber": "2",
         "cardIcon": "👨‍💻",
         "cardTitle": "I am a developer",
-        "cardSubTitle": "Because I believe in execution",
+        "cardSubTitle": "Because execution is the real game",
         "cardButtonText": "See projects ->",
         "linkTo": "/code"
     },
@@ -36,7 +36,7 @@ const cardData = [
         "cardTitle": "I'm an artist",
         "cardSubTitle": "Because I picked up a brush long ago?",
         "cardButtonText": "See art ->",
-        "linkTo": "/photography"
+        "linkTo": "/art"
     },
     {
         "cardNumber": "6",
