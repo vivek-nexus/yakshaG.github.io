@@ -6,12 +6,12 @@ import projectCardData from "../constants/project-cards";
 function LeftCard(props) {
     return (
         <div
-            className={`rounded-lg shadow-designProjectCard 
+            className={`flex flex-col rounded-lg shadow-md border-2 border-primary-200
             ${props.className}  
-            ${props.desktop ? (props.inView ? `animate__animated animate__fadeInLeft` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)} `}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)} `}
         >
             <img src={`/images/${props.projectImage}`} className="rounded-lg"></img>
-            <h5 className="text-lg font-bold text-center rounded-b-lg py-4 px-8 md:px-6 -mt-8 bg-primary-100/70 backdrop-blur-sm" style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px -4px 4px" }}>{props.projectTitle}</h5>
+            <h4 className="text-xl font-bold text-center rounded-b-lg py-4 px-8 md:px-6 -mt-4 bg-primary-100 backdrop-blur-sm" style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px -4px 4px" }}>{props.projectTitle}</h4>
         </div>)
 }
 
@@ -20,7 +20,7 @@ function Pin1(props) {
         <div
             className={`md:absolute ml-12 -my-4 z-10 md:top-1/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-200 rounded-full shadow-md 
             ${props.className}
-            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rubberBand` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
         >
         </div>)
 }
@@ -30,7 +30,7 @@ function Pin2(props) {
         <div
             className={`md:absolute ml-auto mr-12 -my-4 z-10 md:top-2/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-200 rounded-full shadow-md
             ${props.className} 
-            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rubberBand` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
         >
         </div>)
 }
@@ -38,15 +38,17 @@ function Pin2(props) {
 function RightCard(props) {
     return (
         <div
-            className={`bg-white rounded-lg shadow-designProjectCard p-8 md:p-12 border border-gray-200 
+            className={`bg-white rounded-lg shadow-md border-2 border-primary-200 p-8 md:p-12 
             ${props.className} 
-            ${props.desktop ? (props.inView ? `animate__animated animate__fadeInRight` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpLeft` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
         >
             <p className="mb-4">{props.projectDescription}</p>
             <div className="mb-6">
                 {props.tags.map((item, i) => (<Pill key={i} accent="text-primary-700" bg="bg-primary-50">{item}</Pill>))}
             </div>
-            {props.buttons.map((item, i) => (<a key={i} href={item.buttonLink} target="_blank"><Button type="secondary">{item.buttonText}</Button></a>))}
+            <div className="flex gap-2 flex-wrap">
+                {props.buttons.map((item, i) => (<div className="shrink-0 mb-1" key={i}><a href={item.buttonLink} target="_blank"><Button type="secondary">{item.buttonText}</Button></a></div>))}
+            </div>
 
         </div>)
 }

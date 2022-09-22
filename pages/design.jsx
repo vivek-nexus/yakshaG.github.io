@@ -1,6 +1,7 @@
 import DesignProjectCard from "../components/DesignProjectCard";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import projectCardData from "../constants/project-cards";
 
 function Design() {
     return (
@@ -18,8 +19,9 @@ function Design() {
                 <div className="mb-24" id="contact">
                     <h2 className="text-4xl text-center text-primary-700 mb-6">Recent projects</h2>
                     <div className="flex flex-col gap-12">
-                        <DesignProjectCard cardNumber={1} />
-                        <DesignProjectCard cardNumber={2} />
+                        {projectCardData.map((item, i) => (<DesignProjectCard key={i} cardNumber={item.cardNumber} />))}
+                        {/* <DesignProjectCard cardNumber={1} /> */}
+                        {/* <DesignProjectCard cardNumber={2} /> */}
                     </div>
                 </div>
             </div>
