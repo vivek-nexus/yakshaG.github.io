@@ -2,11 +2,12 @@ import Button from "./Button";
 import Pill from "./Pill";
 import { useInView } from 'react-intersection-observer';
 import projectCardData from "../constants/project-cards";
+import ReactHtmlParser from 'react-html-parser';
 
 function LeftCard(props) {
     return (
         <div
-            className={`flex flex-col rounded-lg shadow-md border-2 border-primary-200
+            className={`flex flex-col rounded-lg shadow-md border-2 border-primary-500
             ${props.className}  
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)} `}
         >
@@ -18,9 +19,9 @@ function LeftCard(props) {
 function Pin1(props) {
     return (
         <div
-            className={`md:absolute ml-12 -my-4 z-10 md:top-1/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-200 rounded-full shadow-md 
+            className={`md:absolute ml-12 -my-4 z-10 md:top-1/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-500 rounded-full shadow-md 
             ${props.className}
-            ${props.desktop ? (props.inView ? `animate__animated animate__rubberBand` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
         >
         </div>)
 }
@@ -28,9 +29,9 @@ function Pin1(props) {
 function Pin2(props) {
     return (
         <div
-            className={`md:absolute ml-auto mr-12 -my-4 z-10 md:top-2/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-200 rounded-full shadow-md
+            className={`md:absolute ml-auto mr-12 -my-4 z-10 md:top-2/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-500 rounded-full shadow-md
             ${props.className} 
-            ${props.desktop ? (props.inView ? `animate__animated animate__rubberBand` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
         >
         </div>)
 }
@@ -38,11 +39,11 @@ function Pin2(props) {
 function RightCard(props) {
     return (
         <div
-            className={`bg-white rounded-lg shadow-md border-2 border-primary-200 p-8 md:p-12 
+            className={`bg-white rounded-lg shadow-md border-2 border-primary-500 p-8 md:p-12 
             ${props.className} 
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpLeft` : ``) : (props.inView ? `animate__animated animate__fadeInUp` : ``)}`}
         >
-            <p className="mb-4">{props.projectDescription}</p>
+            <p className="mb-4">{ReactHtmlParser(props.projectDescription)}</p>
             <div className="mb-6">
                 {props.tags.map((item, i) => (<Pill key={i} accent="text-primary-700" bg="bg-primary-50">{item}</Pill>))}
             </div>

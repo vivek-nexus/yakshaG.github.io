@@ -4,7 +4,7 @@ const projectCardData = [
         "projectImage": "aa-webapp.svg",
         "projectTitle": "How we designed the consent manager—AA web app",
         "projectDescription": "Designed one of the early consent managers of the Account Aggregator framework in India",
-        "tags": ["UX Design", "VX Design"],
+        "tags": ["UX Design"],
         "buttons": [
             {
                 "buttonText": "Setu design blog ↗",
@@ -29,7 +29,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "e-resume.png",
         "projectTitle": "E-Resume — Open source resume builder",
-        "projectDescription": "A free tool with 350+ stars on Github and with multiple templates",
+        "projectDescription": "A free tool with <b>350+</b> stars on Github — supports multiple templates",
         "tags": ["Full stack design", "Front end development"],
         "buttons": [
             {
@@ -37,8 +37,21 @@ const projectCardData = [
                 "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
             },
             {
-                "buttonText": "Read on Medium ↗",
+                "buttonText": "Medium ↗",
                 "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
+            }
+        ]
+    },
+    {
+        "cardNumber": "4",
+        "projectImage": "whatsapp-ui-kit.svg",
+        "projectTitle": "WhatsApp UI kit for chat bot design — Android",
+        "projectDescription": "Figma community resource with <b>2000+</b> downloads 😎",
+        "tags": ["Advanced auto layout", "Figma components"],
+        "buttons": [
+            {
+                "buttonText": "Get it from Figma ↗",
+                "buttonLink": "https://www.figma.com/community/file/1087129513242287190"
             }
         ]
     }
