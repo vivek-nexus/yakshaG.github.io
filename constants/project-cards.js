@@ -7,7 +7,7 @@ const projectCardData = [
         "tags": ["UX Design"],
         "buttons": [
             {
-                "buttonText": "Setu design blog ↗",
+                "buttonText": "Rea on Setu design blog ↗",
                 "buttonLink": "https://blog.setu.co/articles/account-aggregator-how-we-designed-the-consent-manager-aa-web-app"
             }
         ]
@@ -20,13 +20,26 @@ const projectCardData = [
         "tags": ["User research", "Information architecture"],
         "buttons": [
             {
-                "buttonText": "UX Planet ↗",
+                "buttonText": "Read on UX Planet ↗",
                 "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
             }
         ]
     },
     {
         "cardNumber": "3",
+        "projectImage": "whatsapp-ui-kit.svg",
+        "projectTitle": "Figma community — WhatsApp UI kit (android)    ",
+        "projectDescription": "Figma community resource with <b>2000+</b> downloads 😎",
+        "tags": ["Advanced auto layout", "Figma components"],
+        "buttons": [
+            {
+                "buttonText": "Get it from Figma ↗",
+                "buttonLink": "https://www.figma.com/community/file/1087129513242287190"
+            }
+        ]
+    },
+    {
+        "cardNumber": "4",
         "projectImage": "e-resume.png",
         "projectTitle": "E-Resume — Open source resume builder",
         "projectDescription": "A free tool with <b>350+</b> stars on Github — supports multiple templates",
@@ -37,21 +50,8 @@ const projectCardData = [
                 "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
             },
             {
-                "buttonText": "Medium ↗",
+                "buttonText": "Read on Medium ↗",
                 "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
-            }
-        ]
-    },
-    {
-        "cardNumber": "4",
-        "projectImage": "whatsapp-ui-kit.svg",
-        "projectTitle": "WhatsApp UI kit for chat bot design — Android",
-        "projectDescription": "Figma community resource with <b>2000+</b> downloads 😎",
-        "tags": ["Advanced auto layout", "Figma components"],
-        "buttons": [
-            {
-                "buttonText": "Get it from Figma ↗",
-                "buttonLink": "https://www.figma.com/community/file/1087129513242287190"
             }
         ]
     }
