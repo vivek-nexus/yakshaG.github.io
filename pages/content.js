@@ -5,8 +5,12 @@ import Link from "next/link";
 import Head from "next/head";
 import contentCardData from "../constants/content-cards";
 import ContentCard from "../components/ContentCard";
+import Tabs from "../components/Tabs";
+import { useState } from "react";
 
 function Content() {
+    const [activeTab, setActiveTab] = useState(1);
+
     return (
         <>
             <Head>
@@ -25,7 +29,7 @@ function Content() {
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Read to understand, write to clarify</h2>
                         <p className="text-center">
-                            <span className="text-2xl">📜</span> I love to write in English and translate most of them to Kannada
+                            <span className="text-2xl">📜</span> I love to write in English and translate as much as possible to Kannada
                         </p>
                     </div>
 
@@ -43,10 +47,23 @@ function Content() {
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Free form writing</h2>
-                        <div className="grid gap-4 grid-cols-4 md:grid-cols-3 sm-grid-cols-2">
-                            {contentCardData.map((item) => (
-                                <ContentCard key={item} cardNumber={item.cardNumber} />
-                            ))}
+                        {/* <Tabs
+                            activeTab={activeTab}
+                            setActiveTab={setActiveTab}
+                        /> */}
+                        <h4 className="text-2xl text-center text-primary-700 mb-6">In and around design</h4>
+                        <div className="mb-12 mx-4 md:mx-32 grid gap-4 grid-cols-1 sm:grid-cols-2">
+                            <ContentCard cardNumber={4} />
+                            <ContentCard cardNumber={5} />
+                            <ContentCard cardNumber={6} />
+                            <ContentCard cardNumber={7} />
+                        </div>
+
+                        <h4 className="text-2xl text-center text-primary-700 mb-6">Everything else</h4>
+                        <div className="mb-12 mx-4 md:mx-32 grid gap-4 grid-cols-1 sm:grid-cols-2">
+                            <ContentCard cardNumber={1} />
+                            <ContentCard cardNumber={2} />
+                            <ContentCard cardNumber={3} />
                         </div>
                     </div>
 

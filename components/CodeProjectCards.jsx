@@ -43,7 +43,7 @@ function CodeProjectCards(props) {
         if (inView1 == true) {
             timeOut1 = setTimeout(() => {
                 setInView1Delayed(true);
-            }, 1500);
+            }, 3000);
         }
         else {
             return () => {
@@ -58,7 +58,7 @@ function CodeProjectCards(props) {
         if (inView2 == true) {
             timeOut2 = setTimeout(() => {
                 setInView2Delayed(true);
-            }, 1500);
+            }, 3000);
         }
         else {
             return () => {

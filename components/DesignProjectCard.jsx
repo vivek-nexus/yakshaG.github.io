@@ -9,7 +9,7 @@ function LeftCard(props) {
         <div
             className={`flex-col justify-between group rounded-lg overflow-hidden shadow-md border-2 border-primary-500
             ${props.className}  
-            ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight` : ``) : (props.inView ? `animate__animated animate__fadeIn` : ``)} `}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)} `}
         >
             <img src={`/images/${props.projectImage}`} className="group-hover:grayscale duration-500"></img>
             <h4 className="text-xl font-bold text-center rounded-b-lg py-4 px-8 md:px-6 bg-primary-100" style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px -4px 4px" }}>{props.projectTitle}</h4>
@@ -21,7 +21,7 @@ function Pin1(props) {
         <div
             className={`md:absolute ml-12 -my-4 z-10 md:top-1/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-500 rounded-full shadow-md 
             ${props.className}
-            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__fadeIn` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)}`}
         >
         </div>)
 }
@@ -31,7 +31,7 @@ function Pin2(props) {
         <div
             className={`md:absolute ml-auto mr-12 -my-4 z-10 md:top-2/3 md:left-1/2 md:-m-4 w-2 md:w-8 py-4 md:py-1 bg-primary-500 rounded-full shadow-md
             ${props.className} 
-            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__fadeIn` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateIn` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)}`}
         >
         </div>)
 }
@@ -41,7 +41,7 @@ function RightCard(props) {
         <div
             className={`bg-white rounded-lg shadow-md border-2 border-primary-500 p-8 md:p-12 
             ${props.className} 
-            ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpLeft` : ``) : (props.inView ? `animate__animated animate__fadeIn` : ``)}`}
+            ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpLeft` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)}`}
         >
             <p className="mb-4">{ReactHtmlParser(props.projectDescription)}</p>
             <div className="mb-6">
