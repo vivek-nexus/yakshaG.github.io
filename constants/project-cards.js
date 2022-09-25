@@ -47,11 +47,11 @@ const projectCardData = [
         "buttons": [
             {
                 "buttonText": "See it live ↗",
-                "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
+                "buttonLink": "https://resume-builder-git-v2-sadanandpai.vercel.app/"
             },
             {
                 "buttonText": "Read on Medium ↗",
-                "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
+                "buttonLink": "https://medium.com/@yakshag/e-resume-build-a-professional-resume-design-case-study-3dc02a6359ea"
             }
         ]
     }
