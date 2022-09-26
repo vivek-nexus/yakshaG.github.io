@@ -27,12 +27,13 @@ function CodeProjectCards(props) {
     const [ref1, inView1] = useInView({
         // triggerOnce: true,
         rootMargin: '0px 0px',
-        initialInView: true,
+        threshold: 0.2,
     })
 
     const [ref2, inView2] = useInView({
         // triggerOnce: true,
         rootMargin: '0px 0px',
+        threshold: 0.2,
     })
 
     const [inView1Delayed, setInView1Delayed] = useState(false);

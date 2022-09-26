@@ -42,7 +42,7 @@ const projectCardData = [
         "cardNumber": "4",
         "projectImage": "e-resume.png",
         "projectTitle": "E-Resume — Open source resume builder",
-        "projectDescription": "A free tool with <b>350+</b> stars on Github — supports multiple templates",
+        "projectDescription": "A free tool with <b>400+</b> stars on Github — supports multiple templates",
         "tags": ["Full stack design", "Front end development"],
         "buttons": [
             {

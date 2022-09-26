@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className="mb-24" id="contact">
           <h2 className="text-4xl text-center text-primary-700 mb-6">About me</h2>
-          <p className="text-center">I work at <a className="underline underline-offset-4" href="https://setu.co">Setu</a>, off Bengaluru in India.</p>
+          <p className="text-center">I work at <a className="underline underline-offset-4" href="https://setu.co" target="_blank">Setu</a>, off Bengaluru in India.</p>
           <p className="text-center">Setu is a fintech API infrastructure company, now part of Pine Labs.</p>
         </div>
 
