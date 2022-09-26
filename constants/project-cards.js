@@ -7,7 +7,7 @@ const projectCardData = [
         "tags": ["UX Design"],
         "buttons": [
             {
-                "buttonText": "Rea on Setu design blog ↗",
+                "buttonText": "Read on Setu design blog ↗",
                 "buttonLink": "https://blog.setu.co/articles/account-aggregator-how-we-designed-the-consent-manager-aa-web-app"
             }
         ]

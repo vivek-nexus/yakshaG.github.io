@@ -10,7 +10,7 @@ function Content() {
     return (
         <>
             <Head>
-                <title>Code — Vivek</title>
+                <title>Art — Vivek</title>
                 <meta name="description" content="I am a product designer because..." />
                 <link rel="icon" href="/images/face-white-bg.png" />
             </Head>
