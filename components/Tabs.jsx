@@ -1,34 +1,61 @@
+import { useState } from "react";
 
 function Tab(props) {
     return (
         <div
-            className={`px-2 mx-2 font-bold cursor-pointer ${(props.number == props.activeTab) && ``}`}
+            className={`px-0.5 font-bold cursor-pointer rounded-md`}
             onClick={() => { props.setActiveTab(props.number) }}
         >
-
-            {props.number == 1 ? `Design` : `Everything else`}
-            <div className={`mt-4 h-1 rounded-t-full transition-colors duration-300  ${(props.number == props.activeTab) ? `bg-primary-700` : `bg-transparent`}`}></div>
+            <div className={`p-1 rounded-lg transition-colors delay-100 duration-500 ${(props.number == props.activeTab) ? `bg-primary-700` : `bg-transparent`}`}>
+                <img className="rounded-md" src={`/images/art${props.number}.jpg`} width="36px" />
+            </div>
         </div >)
 }
 
 
 
 
-function Tabs(props) {
+function Tabs() {
+    const [activeTab, setActiveTab] = useState(1);
 
     return (
-        <div className="pt-4 mb-4 flex items-end justify-center rounded-b-lg border-b border-gray-300 sticky top-[80px] bg-white backdrop-blur-sm z-20 shadow-md">
-            <Tab
-                number={1}
-                activeTab={props.activeTab}
-                setActiveTab={props.setActiveTab}
-            />
-            <Tab
-                number={2}
-                activeTab={props.activeTab}
-                setActiveTab={props.setActiveTab}
-            />
-        </div>
+        <>
+            <div className="py-2 mb-4 flex justify-center items-center rounded-b-lg sticky top-[80px] bg-white/70 backdrop-blur-sm z-20">
+                <Tab
+                    number={1}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                />
+                <Tab
+                    number={2}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                />
+                <Tab
+                    number={3}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                />
+                <Tab
+                    number={4}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                />
+                <Tab
+                    number={5}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                />
+                <Tab
+                    number={6}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                />
+            </div>
+            <div key={activeTab} className="mb-12 mx-auto w-full md:w-1/2">
+                <img className="animate__animated animate__zoomIn rounded-lg shadow-designProjectCard hover:grayscale duration-500" src={`/images/art${activeTab}.jpg`} />
+            </div>
+        </>
     )
 }
 
