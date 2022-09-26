@@ -115,7 +115,7 @@ function CodeProjectCards(props) {
                     <div className={`h-[480px] ${inView2Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
                         <div className="flex flex-col items-center">
                             <img className="w-24 ml-6" src="/images/loader.svg" />
-                            <p>Loading live app..</p>
+                            <p>Loading live site..</p>
                         </div>
                     </div>
                     <iframe className={`${inView2Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://yakshag.github.io/project-pratima/icons" width="100%" height="480px" />

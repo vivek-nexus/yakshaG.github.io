@@ -3,9 +3,7 @@ import NavBar from "../components/NavBar";
 import Button from "../components/Button";
 import Link from "next/link";
 import Head from "next/head";
-import contentCardData from "../constants/content-cards";
 import ContentCard from "../components/ContentCard";
-import Tabs from "../components/Tabs";
 import { useState } from "react";
 
 function Content() {
@@ -78,7 +76,7 @@ function Content() {
                     </div>
                 </div>
 
-
+                <Footer />
             </div>
         </>
     )

@@ -46,7 +46,7 @@ function Content() {
                     </div>
                 </div>
 
-
+                <Footer />
             </div>
         </>
     )
