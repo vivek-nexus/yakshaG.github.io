@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Head from "next/head";
 import Tabs from "../components/Tabs";
+import LinkedInCard from "../components/LinkedInCard";
 
 function Content() {
 
@@ -36,6 +37,13 @@ function Content() {
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Fine arts</h2>
                         <Tabs />
+                    </div>
+
+                    <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
+
+                    <div className="mb-24">
+                        <h2 className="text-4xl text-center text-primary-700 mb-6">Thought of the page</h2>
+                        <LinkedInCard number={"4"} height="480px" />
                     </div>
 
                     <div className="mb-24">

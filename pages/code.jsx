@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Head from "next/head";
 import CodeProjectCards from "../components/CodeProjectCards";
+import LinkedInCard from "../components/LinkedInCard";
 
 function Design() {
     return (
@@ -37,6 +38,14 @@ function Design() {
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Current projects</h2>
                         <CodeProjectCards />
                         <p className="text-center"><a href="https://github.com/yakshaG" target="_blank" className="text-blue-500 font-bold">See more projects on Github ↗</a></p>
+                    </div>
+
+
+                    <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
+
+                    <div className="mb-24">
+                        <h2 className="text-4xl text-center text-primary-700 mb-6">Thought of the page</h2>
+                        <LinkedInCard number={"1"} height="360px" />
                     </div>
 
                     <div className="mb-24">

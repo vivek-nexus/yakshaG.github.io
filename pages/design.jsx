@@ -5,6 +5,7 @@ import projectCardData from "../constants/project-cards";
 import Button from "../components/Button";
 import Link from "next/link";
 import Head from "next/head";
+import LinkedInCard from "../components/LinkedInCard";
 
 function Design() {
     return (
@@ -52,12 +53,21 @@ function Design() {
                         </div>
                     </div>
 
+                    <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
+
+                    <div className="mb-24">
+                        <h2 className="text-4xl text-center text-primary-700 mb-6">Thought of the page</h2>
+                        <LinkedInCard number={"2"} height="360px" />
+                    </div>
+
                     <div className="mb-24">
                         <div className="flex justify-between items-center">
                             <Link href="/"><a><Button type="secondary"><span className="material-symbols-outlined mr-1">home</span></Button></a></Link>
                             <Link href="/code"><a><Button type="primary">Code -&gt;</Button></a></Link>
                         </div>
                     </div>
+
+
                 </div>
                 <Footer />
             </div >

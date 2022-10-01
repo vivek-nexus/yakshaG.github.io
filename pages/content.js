@@ -5,6 +5,7 @@ import Link from "next/link";
 import Head from "next/head";
 import ContentCard from "../components/ContentCard";
 import { useState } from "react";
+import LinkedInCard from "../components/LinkedInCard";
 
 function Content() {
     const [activeTab, setActiveTab] = useState(1);
@@ -63,6 +64,13 @@ function Content() {
                             <ContentCard cardNumber={2} />
                             <ContentCard cardNumber={3} />
                         </div>
+                    </div>
+
+                    <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
+
+                    <div className="mb-24">
+                        <h2 className="text-4xl text-center text-primary-700 mb-6">Thought of the page</h2>
+                        <LinkedInCard number={"3"} height="360px" />
                     </div>
 
                     <div className="mb-24">
