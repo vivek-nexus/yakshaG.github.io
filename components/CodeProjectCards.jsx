@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 function RepoDetails(props) {
     return (
         <div className={`${props.className} p-8 bg-primary-100`}>
-            <h4 className="text-xl text-blue-500 font-bold border-b-2 border-white pb-2 mb-4">
-                <a href={props.repoURL} target="_blank" className="flex items-center">
+            <h4 className="text-xl text-blue-500 font-bold pb-2 mb-4">
+                <a href={props.repoURL} target="_blank" className="flex items-center underline underline-offset-4">
                     <img width="36px" className="inline stroke-blue-500" src="/images/github-blue.svg"></img>{props.repoTitle}
                 </a>
             </h4>
@@ -77,7 +77,7 @@ function CodeProjectCards(props) {
                     repoTitle="listen"
                     repoURL="https://github.com/yakshaG/listen"
                     repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface"
-                    repoTags='{text-to-speech} {PWA} {nextJS}'
+                    repoTags='{text-to-speech} {PWA} {next.js}'
                     repoButtons={
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://yakshag.github.io/listen/app" }]
                     }
@@ -101,8 +101,8 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
                     repoURL="https://github.com/yakshaG/google-meet-slack-integration"
-                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>50+ users</b> world wide and growing 🚀"
-                    repoTags='{chrome-extension} {slack-app} {express-js}'
+                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>150+ users</b> world wide and growing 🚀"
+                    repoTags='{chrome-extension} {slack-app} {express.js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chrome.google.com/webstore/detail/kddjlbegfaiogihndmglihcgommbjmkc" }]
                     }
@@ -122,12 +122,12 @@ function CodeProjectCards(props) {
                 </div>
                 <RepoDetails
                     className="basis-1/2"
-                    repoTitle="icon-library-framework"
+                    repoTitle="project-pratima"
                     repoURL="https://github.com/yakshaG/project-pratima"
-                    repoDescription="Ready to use front end, for showcasing an icon library"
-                    repoTags='{nextJS} {framer}'
+                    repoDescription="Official website of Project Pratima, showcasing payment icons and usage documentation"
+                    repoTags='{next.js} {framer motion} {tailwind CSS}'
                     repoButtons={
-                        [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://yakshag.github.io/project-pratima/icons" }]
+                        [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://paymentscouncil.in/project-pratima/" }]
                     }
                 />
             </div >

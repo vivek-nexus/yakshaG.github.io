@@ -29,7 +29,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.svg",
         "projectTitle": "Figma community — WhatsApp UI kit (android)    ",
-        "projectDescription": "Figma community resource with <b>2000+</b> downloads 😎",
+        "projectDescription": "Figma community resource with <b>3700+</b> downloads 😎",
         "tags": ["Advanced auto layout", "Figma components"],
         "buttons": [
             {
@@ -42,16 +42,16 @@ const projectCardData = [
         "cardNumber": "4",
         "projectImage": "e-resume.png",
         "projectTitle": "E-Resume — Open source resume builder",
-        "projectDescription": "A free tool with <b>400+</b> stars on Github — supports multiple templates",
+        "projectDescription": "A free tool with <b>600+</b> stars on Github — supports multiple templates",
         "tags": ["Full stack design", "Front end development"],
         "buttons": [
             {
                 "buttonText": "See it live ↗",
-                "buttonLink": "https://resume-builder-git-v2-sadanandpai.vercel.app/"
+                "buttonLink": "https://e-resume.vercel.app/"
             },
             {
-                "buttonText": "Read on Medium ↗",
-                "buttonLink": "https://medium.com/@yakshag/e-resume-build-a-professional-resume-design-case-study-3dc02a6359ea"
+                "buttonText": "Read on UX Planet ↗",
+                "buttonLink": "https://uxplanet.org/e-resume-build-a-professional-resume-design-case-study-3dc02a6359ea?gi=dcbeb9ec7e26"
             }
         ]
     }

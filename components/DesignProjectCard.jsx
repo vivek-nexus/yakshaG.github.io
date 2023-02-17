@@ -58,7 +58,8 @@ function RightCard(props) {
 function DesignProjectCard(props) {
     const [ref, inView] = useInView({
         triggerOnce: true,
-        rootMargin: '0px 0px',
+        rootMargin: "0px 0px",
+        threshold: 0.5,
     })
 
     return (

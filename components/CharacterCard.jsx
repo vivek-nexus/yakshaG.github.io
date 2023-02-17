@@ -54,8 +54,8 @@ function CardContent(props) {
                 </>
                 :
                 <div>
-                    <h3 className="text-xl font-bold pb-2">Easter egg!</h3>
-                    <p className="text-lg text-gray-500">Some skills are more than just a UI card, aren't they? 😉</p>
+                    <h3 className="text-xl font-bold pb-2">You found the easter egg!</h3>
+                    <p className="text-lg text-gray-500">This is one of the dabbas you were not supposed to click on 😉</p>
                 </div>
             }
         </div>
