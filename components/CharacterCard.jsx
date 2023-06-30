@@ -55,7 +55,7 @@ function CardContent(props) {
                 :
                 <div>
                     <h3 className="text-xl font-bold pb-2">You found the easter egg!</h3>
-                    <p className="text-lg text-gray-500">This is one of the dabbas you were not supposed to click on 😉</p>
+                    <p className="text-lg text-gray-500">We'll talk about this when you say hi!😉</p>
                 </div>
             }
         </div>

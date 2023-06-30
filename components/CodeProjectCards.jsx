@@ -101,7 +101,7 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
                     repoURL="https://github.com/yakshaG/google-meet-slack-integration"
-                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>150+ users</b> world wide and growing 🚀"
+                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>300+ users</b> world wide and growing 🚀"
                     repoTags='{chrome-extension} {slack-app} {express.js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chrome.google.com/webstore/detail/kddjlbegfaiogihndmglihcgommbjmkc" }]
@@ -109,8 +109,24 @@ function CodeProjectCards(props) {
                 />
             </div >
 
+            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12 flex flex-col-reverse md:flex-row">
+                <RepoDetails
+                    className="basis-1/2"
+                    repoTitle="slack-on-keys"
+                    repoURL="https://github.com/yakshaG/slack-on-keys"
+                    repoDescription="⚡ Control your Slack from any app window with keyboard shortcuts ⚡ Set up custom keyboard shortcuts for various Slack actions"
+                    repoTags='{electron.js} {cross-platform-desktop-app} {slack-app}'
+                    repoButtons={
+                        [{ "buttonText": "Download desktop app ↗", "buttonLink": "https://github.com/yakshaG/slack-on-keys#slack-on-keys" }]
+                    }
+                />
+                <div className="basis-1/2 bg-[#382F5D] p-3">
+                    <img className="" src="/images/slack-on-keys.png"></img>
+                </div>
+            </div >
 
-            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-6">
+
+            {/* <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-6">
                 <div ref={ref2} className="basis-1/2">
                     <div className={`h-[480px] ${inView2Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
                         <div className="flex flex-col items-center">
@@ -130,7 +146,7 @@ function CodeProjectCards(props) {
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://paymentscouncil.in/project-pratima/" }]
                     }
                 />
-            </div >
+            </div > */}
 
 
         </>
