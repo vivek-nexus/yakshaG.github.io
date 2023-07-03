@@ -1,10 +1,27 @@
 const projectCardData = [
     {
         "cardNumber": "1",
+        "projectImage": "aa-webapp.png",
+        "projectTitle": "Award winning AA consent approval UI (Samvaad 2023)",
+        "projectDescription": "Designed one of the early consent approval UIs of the Account Aggregator(AA) framework in India",
+        "tags": ["UX Design", "Motion design", "Front end development"],
+        "buttons": [
+            {
+                "buttonText": "Try it live ↗",
+                "buttonLink": "https://demo-aa.setu.co/"
+            },
+            {
+                "buttonText": "See award video ↗",
+                "buttonLink": "https://youtu.be/KmmIXpXsKhs?t=419"
+            }
+        ]
+    },
+    {
+        "cardNumber": "2",
         "projectImage": "project-pratima.png",
         "projectTitle": "Project Pratima, a payments icon library for India",
         "projectDescription": "Collaborated with designers from the payments industry, under the PCI umbrella. Additionally, developed the project website.",
-        "tags": ["Industry collaboration", "Icon metaphors", "Web development"],
+        "tags": ["Industry collaboration", "Icon metaphors", "Front end development"],
         "buttons": [
             {
                 "buttonText": "Project website ↗",
@@ -16,19 +33,7 @@ const projectCardData = [
             }
         ]
     },
-    {
-        "cardNumber": "2",
-        "projectImage": "aa-webapp.svg",
-        "projectTitle": "How we designed the consent manager—AA web app",
-        "projectDescription": "Designed one of the early consent managers of the Account Aggregator framework in India",
-        "tags": ["UX Design"],
-        "buttons": [
-            {
-                "buttonText": "Read on Setu design blog ↗",
-                "buttonLink": "https://blog.setu.co/articles/account-aggregator-how-we-designed-the-consent-manager-aa-web-app"
-            }
-        ]
-    },
+
 
     // {
     //     "cardNumber": "2",
@@ -46,8 +51,8 @@ const projectCardData = [
     {
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.svg",
-        "projectTitle": "Figma community — WhatsApp UI kit (android)    ",
-        "projectDescription": "Figma community resource with <b>5800+</b> downloads 😎",
+        "projectTitle": "Figma community — WhatsApp UI kit (Android)    ",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>5800+</b> downloads 😎",
         "tags": ["Advanced auto layout", "Figma components"],
         "buttons": [
             {
@@ -64,7 +69,7 @@ const projectCardData = [
         "tags": ["Full stack design", "Front end development"],
         "buttons": [
             {
-                "buttonText": "See it live ↗",
+                "buttonText": "Try it live ↗",
                 "buttonLink": "https://e-resume.vercel.app/"
             },
             {
