@@ -83,13 +83,13 @@ function CodeProjectCards(props) {
                     }
                 />
                 <div ref={ref1} className="basis-1/2">
-                    <div className={`h-[480px] ${inView1Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
+                    <div className={`h-[600px] ${inView1Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
                         <div className="flex flex-col items-center">
                             <img className="w-24 ml-6" src="/images/loader.svg" />
                             <p>Loading live web app..</p>
                         </div>
                     </div>
-                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://yakshag.github.io/listen/app" width="100%" height="480px" />
+                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://yakshag.github.io/listen/app" width="100%" height="600px" />
                 </div>
             </div >
 

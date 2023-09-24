@@ -52,7 +52,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.svg",
         "projectTitle": "Figma community — WhatsApp UI kit (Android)    ",
-        "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>5800+</b> downloads 😎",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>7700+</b> downloads 😎",
         "tags": ["Advanced auto layout", "Figma components"],
         "buttons": [
             {
