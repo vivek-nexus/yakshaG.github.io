@@ -7,7 +7,7 @@ import ReactHtmlParser from 'react-html-parser';
 function LeftCard(props) {
     return (
         <div
-            className={`flex-col justify-between rounded-lg overflow-hidden border-2 border-primary-500
+            className={`flex-col justify-between rounded-lg overflow-hidden border-2 border-primary-500 shadow-innerShadow
             ${props.className}  
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight animate__slow` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)} `}
         >
