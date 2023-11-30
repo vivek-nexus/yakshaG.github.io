@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function NavBar() {
     return (
-        <div className="bg-primary-50/70 backdrop-blur-sm p-4 shadow-md sticky top-0 z-20 md:px-0 animate__animated animate__fadeIn">
+        <div className="bg-primary-50/70 backdrop-blur-md p-4 shadow-md sticky top-0 z-20 md:px-0 animate__animated animate__fadeIn">
             <div className="container flex gap-4 items-center">
                 <div className="basis-auto cursor-pointer">
                     <Link href="/">

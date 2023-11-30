@@ -2,13 +2,13 @@ const projectCardData = [
     {
         "cardNumber": "1",
         "projectImage": "aa-webapp.png",
-        "projectTitle": "Award winning AA consent approval UI (Samvaad 2023)",
+        "projectTitle": "Award winning AA consent approval UI",
         "projectDescription": "Designed one of the early consent approval UIs of the Account Aggregator(AA) framework in India",
         "tags": ["UX Design", "Motion design", "Front end development"],
         "buttons": [
             {
-                "buttonText": "Try it live ↗",
-                "buttonLink": "https://demo-aa.setu.co/"
+                "buttonText": "Read on Setu blog ↗",
+                "buttonLink": "https://blog.setu.co/articles/design-of-award-winning-aa-consent-approval-ui"
             },
             {
                 "buttonText": "See award video ↗",
@@ -52,7 +52,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.svg",
         "projectTitle": "Figma community — WhatsApp UI kit (Android)    ",
-        "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>7700+</b> downloads 😎",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>9000+</b> downloads 😎",
         "tags": ["Advanced auto layout", "Figma components"],
         "buttons": [
             {

@@ -7,12 +7,24 @@ import ReactHtmlParser from 'react-html-parser';
 function LeftCard(props) {
     return (
         <div
-            className={`flex-col justify-between group rounded-lg overflow-hidden shadow-md border-2 border-primary-500
+            className={`flex-col justify-between rounded-lg overflow-hidden border-2 border-primary-500
             ${props.className}  
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight animate__slow` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)} `}
         >
-            <img src={`/images/${props.projectImage}`} className="group-hover:grayscale duration-500"></img>
-            <h4 className="text-xl font-bold text-center rounded-b-lg py-4 px-8 md:px-6 bg-primary-100" style={{ boxShadow: "rgba(0, 0, 0, 0.15) 0px -4px 4px" }}>{props.projectTitle}</h4>
+            <style jsx>{`
+                .card-${props.cardNumber}{
+                    background: url("/images/${props.projectImage}") no-repeat center;
+                    background-size: cover;
+                } 
+            `}
+            </style>
+            <div className={`card-${props.cardNumber} relative w-full h-[35dvh] md:h-full shadow-innerShadow`}>
+                <h4
+                    className="absolute bottom-0 text-xl font-bold text-center rounded-b-lg py-4 px-8 md:px-6 bg-primary-100 left-0 right-0 shadow-reverseShadow"
+                >
+                    {props.projectTitle}
+                </h4>
+            </div>
         </div>)
 }
 
@@ -39,7 +51,7 @@ function Pin2(props) {
 function RightCard(props) {
     return (
         <div
-            className={`bg-white rounded-lg shadow-md border-2 border-primary-500 p-8 md:p-12 
+            className={` bg-white rounded-lg border-2 border-primary-500 p-8 md:p-12 shadow-innerShadow 
             ${props.className} 
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpLeft animate__slow` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)}`}
         >
@@ -65,6 +77,7 @@ function DesignProjectCard(props) {
         <div ref={ref}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 relative">
                 <LeftCard
+                    cardNumber={props.cardNumber}
                     inView={inView}
                     projectImage={projectCardData[props.cardNumber - 1].projectImage}
                     projectTitle={projectCardData[props.cardNumber - 1].projectTitle}
@@ -72,6 +85,7 @@ function DesignProjectCard(props) {
                     className="hidden md:flex"
                 />
                 <LeftCard
+                    cardNumber={props.cardNumber}
                     inView={inView}
                     projectImage={projectCardData[props.cardNumber - 1].projectImage}
                     projectTitle={projectCardData[props.cardNumber - 1].projectTitle}

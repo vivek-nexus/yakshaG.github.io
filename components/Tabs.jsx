@@ -20,7 +20,7 @@ function Tabs() {
 
     return (
         <>
-            <div className="py-2 mb-4 flex justify-center items-center rounded-b-lg sticky top-[80px] bg-white/70 backdrop-blur-sm z-20">
+            <div className="py-2 mb-4 flex justify-center items-center rounded-b-lg sticky top-[80px] bg-white/70 backdrop-blur-md z-20">
                 <Tab
                     number={1}
                     activeTab={activeTab}
