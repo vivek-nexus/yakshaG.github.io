@@ -32,7 +32,7 @@ module.exports = {
       boxShadow: {
         "designProjectCard": ["rgba(0, 0, 0, 0.16) 0px 3px 6px", "0px 3px 6px rgba(0, 0, 0, 0.23)"],
         "reverseShadow": ["rgba(0, 0, 0, 0.16) 0px -4px 4px 2px"],
-        "innerShadow": ["inset 0px 0px 16px -4px rgba(0, 0, 0, 0.75)", "rgba(0, 0, 0, 0.16) 0px 3px 6px"]
+        "innerShadow": ["inset 0px 0px 16px -2px rgba(0, 0, 0, 0.25)", "rgba(0, 0, 0, 0.16) 0px 3px 6px"]
       }
     },
   },
