@@ -33,12 +33,12 @@ const contentCardData = [
     },
     {
         "cardNumber": "4",
-        "cardIcon": "terminal",
-        "cardTitle": "Should designers be part of more hackathon teams?",
+        "cardIcon": "person_play",
+        "cardTitle": "Can AI bring back designer-developer hybrids?",
         "link":
         {
             "linkText": "UX Planet",
-            "linkURL": "https://yakshag.medium.com/should-designers-be-part-of-more-hackathon-teams-38948b460962"
+            "linkURL": "https://uxplanet.org/can-ai-bring-back-designer-developer-hybrids-114693882bc3"
         }
 
     },

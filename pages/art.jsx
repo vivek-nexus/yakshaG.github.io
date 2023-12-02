@@ -25,17 +25,21 @@ function Content() {
                     <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
 
                     <div className="mb-24">
-                        <h2 className="text-4xl text-center text-primary-700 mb-6">Mostly fine arts, trying digital art too</h2>
-                        <p className="text-center">
-                            <span className="text-2xl">🎨</span> Someone help me choose from a digital palette of 16 million colours!
-                        </p>
+                        <h2 className="text-4xl text-center text-primary-700 mb-6">Digital art</h2>
+                        <Tabs
+                            type="digital-art"
+                            count={2}
+                        />
                     </div>
 
                     <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
 
                     <div className="mb-24">
-                        <h2 className="text-4xl text-center text-primary-700 mb-6">Fine arts</h2>
-                        <Tabs />
+                        <h2 className="text-4xl text-center text-primary-700 mb-6">Fine art</h2>
+                        <Tabs
+                            type="fine-art"
+                            count={6}
+                        />
                     </div>
 
                     <div className="mb-24">
