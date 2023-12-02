@@ -4,6 +4,63 @@ import { useInView } from 'react-intersection-observer';
 import projectCardData from "../constants/project-cards";
 import ReactHtmlParser from 'react-html-parser';
 
+
+function DesignProjectCard(props) {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        rootMargin: "0px 0px",
+    })
+
+    return (
+        <div ref={ref}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 relative">
+                <LeftCard
+                    cardNumber={props.cardNumber}
+                    inView={inView}
+                    projectImage={projectCardData[props.cardNumber - 1].projectImage}
+                    projectTitle={projectCardData[props.cardNumber - 1].projectTitle}
+                    desktop
+                    className="hidden md:flex"
+                />
+                <LeftCard
+                    cardNumber={props.cardNumber}
+                    inView={inView}
+                    projectImage={projectCardData[props.cardNumber - 1].projectImage}
+                    projectTitle={projectCardData[props.cardNumber - 1].projectTitle}
+                    mobile
+                    className="flex md:hidden"
+                />
+
+                <Pin1 inView={inView} desktop className="hidden md:block" />
+                <Pin1 inView={inView} mobile className="block md:hidden" />
+                <Pin2 inView={inView} desktop className="hidden md:block" />
+                <Pin2 inView={inView} mobile className="block md:hidden" />
+
+                <RightCard
+                    inView={inView}
+                    projectDescription={projectCardData[props.cardNumber - 1].projectDescription}
+                    tags={projectCardData[props.cardNumber - 1].tags}
+                    buttons={projectCardData[props.cardNumber - 1].buttons}
+                    desktop
+                    className="hidden md:block"
+                />
+                <RightCard
+                    inView={inView}
+                    projectDescription={projectCardData[props.cardNumber - 1].projectDescription}
+                    tags={projectCardData[props.cardNumber - 1].tags}
+                    buttons={projectCardData[props.cardNumber - 1].buttons}
+                    mobile
+                    className="block md:hidden"
+                />
+            </div>
+        </div>
+    )
+}
+
+export default DesignProjectCard;
+
+
+
 function LeftCard(props) {
     return (
         <div
@@ -67,56 +124,3 @@ function RightCard(props) {
 }
 
 
-function DesignProjectCard(props) {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        rootMargin: "0px 0px",
-    })
-
-    return (
-        <div ref={ref}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-4 relative">
-                <LeftCard
-                    cardNumber={props.cardNumber}
-                    inView={inView}
-                    projectImage={projectCardData[props.cardNumber - 1].projectImage}
-                    projectTitle={projectCardData[props.cardNumber - 1].projectTitle}
-                    desktop
-                    className="hidden md:flex"
-                />
-                <LeftCard
-                    cardNumber={props.cardNumber}
-                    inView={inView}
-                    projectImage={projectCardData[props.cardNumber - 1].projectImage}
-                    projectTitle={projectCardData[props.cardNumber - 1].projectTitle}
-                    mobile
-                    className="flex md:hidden"
-                />
-
-                <Pin1 inView={inView} desktop className="hidden md:block" />
-                <Pin1 inView={inView} mobile className="block md:hidden" />
-                <Pin2 inView={inView} desktop className="hidden md:block" />
-                <Pin2 inView={inView} mobile className="block md:hidden" />
-
-                <RightCard
-                    inView={inView}
-                    projectDescription={projectCardData[props.cardNumber - 1].projectDescription}
-                    tags={projectCardData[props.cardNumber - 1].tags}
-                    buttons={projectCardData[props.cardNumber - 1].buttons}
-                    desktop
-                    className="hidden md:block"
-                />
-                <RightCard
-                    inView={inView}
-                    projectDescription={projectCardData[props.cardNumber - 1].projectDescription}
-                    tags={projectCardData[props.cardNumber - 1].tags}
-                    buttons={projectCardData[props.cardNumber - 1].buttons}
-                    mobile
-                    className="block md:hidden"
-                />
-            </div>
-        </div>
-    )
-}
-
-export default DesignProjectCard;
