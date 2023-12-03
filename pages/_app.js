@@ -14,7 +14,23 @@ function MyApp({ Component, pageProps }) {
     })();
   })
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-8EHNRT07YZ"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-8EHNRT07YZ');
+        `}
+      </Script>
+      <Component {...pageProps} />
+    </>)
 }
 
 export default MyApp
