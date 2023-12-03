@@ -4,16 +4,15 @@ const projectCardData = [
         "projectImage": "aa-webapp.png",
         "projectTitle": "Award winning AA consent approval UI",
         "projectDescription": "Designed one of the early consent approval UIs of the Account Aggregator(AA) framework in India",
-        "tags": ["UX Design", "Motion design", "Front end development"],
+        "tags": [
+            { "text": "UX Design", "icon": "web" },
+            { "text": "Motion design", "icon": "animation" },
+            { "text": "Front end development", "icon": "code" }],
         "buttons": [
             {
                 "buttonText": "Read on Setu blog ↗",
                 "buttonLink": "https://blog.setu.co/articles/design-of-award-winning-aa-consent-approval-ui"
             },
-            {
-                "buttonText": "See award video ↗",
-                "buttonLink": "https://youtu.be/KmmIXpXsKhs?t=419"
-            }
         ]
     },
     {
@@ -21,7 +20,10 @@ const projectCardData = [
         "projectImage": "project-pratima.png",
         "projectTitle": "Project Pratima, a payments icon library for India",
         "projectDescription": "Collaborated with designers from the payments industry, under the PCI umbrella. Additionally, developed the project website.",
-        "tags": ["Industry collaboration", "Icon metaphors", "Front end development"],
+        "tags": [
+            { "text": "Industry collaboration", "icon": "diversity_3" },
+            { "text": "Front end development", "icon": "code" },
+        ],
         "buttons": [
             {
                 "buttonText": "Project website ↗",
@@ -53,7 +55,11 @@ const projectCardData = [
         "projectImage": "whatsapp-ui-kit.svg",
         "projectTitle": "Figma community — WhatsApp UI kit (Android)    ",
         "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>9000+</b> downloads 😎",
-        "tags": ["Advanced auto layout", "Figma components"],
+        "tags": [
+            { "text": "Advanced auto layout", "icon": "vertical_split" },
+            { "text": "Rapid prototyping", "icon": "electric_bolt" },
+            { "text": "Figma components", "icon": "tab_unselected" },
+        ],
         "buttons": [
             {
                 "buttonText": "Get it from Figma ↗",
@@ -66,7 +72,10 @@ const projectCardData = [
         "projectImage": "e-resume.png",
         "projectTitle": "E-Resume — Open source resume builder",
         "projectDescription": "A free tool with <b>700+</b> stars on Github — supports multiple templates",
-        "tags": ["Full stack design", "Front end development"],
+        "tags": [
+            { "text": "Full stack design", "icon": "design_services" },
+            { "text": "Front end development", "icon": "code" },
+        ],
         "buttons": [
             {
                 "buttonText": "Try it live ↗",

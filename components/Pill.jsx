@@ -1,7 +1,8 @@
 function Pill(props) {
     return (
-        <p className={`inline-block mr-2 mb-2 py-1 px-3 w-fit text-sm rounded-full ${props.accent} ${props.bg}`}>
-            {props.children}
+        <p className={`flex-shrink-0 flex gap-1 items-center py-1 px-3 w-fit text-sm rounded-full ${props.accent} ${props.bg}`}>
+            <span className="material-symbols-outlined">{props.children.icon}</span>
+            {props.children.text}
         </p>)
 }
 

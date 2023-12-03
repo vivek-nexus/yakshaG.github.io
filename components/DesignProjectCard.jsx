@@ -64,7 +64,7 @@ export default DesignProjectCard;
 function LeftCard(props) {
     return (
         <div
-            className={`flex-col justify-between rounded-lg overflow-hidden border-2 border-primary-500 shadow-innerShadow
+            className={`flex-col justify-between rounded-lg overflow-hidden shadow-innerShadow
             ${props.className}  
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpRight animate__slow` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)} `}
         >
@@ -75,13 +75,13 @@ function LeftCard(props) {
                 } 
             `}
             </style>
-            <div className={`card-${props.cardNumber} relative w-full h-[35dvh] md:h-full shadow-innerShadow`}>
-                <h4
-                    className="absolute bottom-0 text-xl font-bold text-center rounded-b-lg py-4 px-8 md:px-6 bg-primary-100 left-0 right-0 shadow-reverseShadow"
-                >
-                    {props.projectTitle}
-                </h4>
+            <div className={`card-${props.cardNumber} w-full aspect-video md:aspect-auto md:h-full shadow-innerShadow2`}>
             </div>
+            <h4
+                className="text-xl font-bold text-center rounded-b-md py-4 px-8 md:px-6 bg-primary-200 left-0 right-0"
+            >
+                {props.projectTitle}
+            </h4>
         </div>)
 }
 
@@ -108,16 +108,16 @@ function Pin2(props) {
 function RightCard(props) {
     return (
         <div
-            className={` bg-white rounded-lg border-2 border-primary-500 p-8 md:p-12 shadow-innerShadow 
+            className={` bg-white rounded-lg border-0 border-primary-500 p-8 md:p-12 shadow-innerShadow 
             ${props.className} 
             ${props.desktop ? (props.inView ? `animate__animated animate__rotateInUpLeft animate__slow` : ``) : (props.inView ? `animate__animated animate__zoomIn` : ``)}`}
         >
             <p className="mb-4">{ReactHtmlParser(props.projectDescription)}</p>
-            <div className="mb-6">
+            <div className="mb-6 flex gap-2 flex-wrap">
                 {props.tags.map((item, i) => (<Pill key={i} accent="text-primary-700" bg="bg-primary-50">{item}</Pill>))}
             </div>
             <div className="flex gap-2 flex-wrap">
-                {props.buttons.map((item, i) => (<div className="shrink-0 mb-1" key={i}><a href={item.buttonLink} target="_blank"><Button type="secondary">{item.buttonText}</Button></a></div>))}
+                {props.buttons.map((item, i) => (<div className="shrink-0 mb-1" key={i}><a href={item.buttonLink} target="_blank"><Button type={i == 0 ? `primary` : `secondary`}>{item.buttonText}</Button></a></div>))}
             </div>
 
         </div>)
