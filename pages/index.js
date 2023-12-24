@@ -50,7 +50,7 @@ export default function Home() {
               <img src="/images/email.svg" alt="email" width={48}></img>
               <p>Email</p>
             </a>
-            <a href="https://www.linkedin.com/in/vivek-g-india" target="_blank">
+            <a href="https://www.linkedin.com/in/vivek-nexus/" target="_blank">
               <img className="mx-auto" src="/images/linkedin.svg" alt="linkedin" width={48}></img>
               <p>LinkedIn</p>
             </a>

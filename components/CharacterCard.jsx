@@ -66,7 +66,7 @@ function CharacterCard(props) {
     return (
         <>
             {props.cardNumber == 4
-                ? <a href="https://www.linkedin.com/in/vivek-g-india" target="_blank">
+                ? <a href="https://www.linkedin.com/in/vivek-nexus/" target="_blank">
                     <CardContent {...props} />
                 </a >
                 : <Link href={`${props.withButton ? characterCardData[props.cardNumber - 1].linkTo : ``}`}>
