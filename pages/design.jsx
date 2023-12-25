@@ -39,7 +39,7 @@ function Design() {
                             <DesignProjectCard cardNumber={1} />
                             <DesignProjectCard cardNumber={2} />
                         </div>
-                        <p className="text-center"><a href="https://yakshag.medium.com/" target="_blank" className="text-blue-500 font-bold">See more ↗</a></p>
+                        <p className="text-center"><a href="https://vivek-nexus.medium.com/" target="_blank" className="text-blue-500 font-bold">See more ↗</a></p>
                     </div>
 
                     <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>

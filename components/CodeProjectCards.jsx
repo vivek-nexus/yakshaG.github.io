@@ -79,7 +79,7 @@ function CodeProjectCards(props) {
                     repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface"
                     repoTags='{text-to-speech} {PWA} {next.js}'
                     repoButtons={
-                        [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://yakshag.github.io/listen/app" }]
+                        [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://vivek-nexus.github.io/listen/app" }]
                     }
                 />
                 <div ref={ref1} className="basis-1/2">
@@ -89,7 +89,7 @@ function CodeProjectCards(props) {
                             <p>Loading live web app..</p>
                         </div>
                     </div>
-                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://yakshag.github.io/listen/app" width="100%" height="600px" />
+                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="600px" />
                 </div>
             </div >
 
@@ -134,7 +134,7 @@ function CodeProjectCards(props) {
                             <p>Loading live site..</p>
                         </div>
                     </div>
-                    <iframe className={`${inView2Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://yakshag.github.io/project-pratima/icons" width="100%" height="480px" />
+                    <iframe className={`${inView2Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/project-pratima/icons" width="100%" height="480px" />
                 </div>
                 <RepoDetails
                     className="basis-1/2"
