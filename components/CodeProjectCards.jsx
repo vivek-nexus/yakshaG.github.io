@@ -75,7 +75,7 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="listen"
-                    repoURL="https://github.com/yakshaG/listen"
+                    repoURL="https://github.com/vivek-nexus/listen"
                     repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface"
                     repoTags='{text-to-speech} {PWA} {next.js}'
                     repoButtons={
@@ -100,7 +100,7 @@ function CodeProjectCards(props) {
                 </div>
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
-                    repoURL="https://github.com/yakshaG/google-meet-slack-integration"
+                    repoURL="https://github.com/vivek-nexus/google-meet-slack-integration"
                     repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>300+ users</b> world wide and growing 🚀"
                     repoTags='{chrome-extension} {slack-app} {express.js}'
                     repoButtons={
@@ -113,11 +113,11 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="slack-on-keys"
-                    repoURL="https://github.com/yakshaG/slack-on-keys"
+                    repoURL="https://github.com/vivek-nexus/slack-on-keys"
                     repoDescription="⚡ Control your Slack from any app window with keyboard shortcuts ⚡ Set up custom keyboard shortcuts for various Slack actions"
                     repoTags='{electron.js} {cross-platform-desktop-app} {slack-app}'
                     repoButtons={
-                        [{ "buttonText": "Download desktop app ↗", "buttonLink": "https://github.com/yakshaG/slack-on-keys#slack-on-keys" }]
+                        [{ "buttonText": "Download desktop app ↗", "buttonLink": "https://github.com/vivek-nexus/slack-on-keys#slack-on-keys" }]
                     }
                 />
                 <div className="basis-1/2 bg-[#382F5D] p-3">
@@ -139,7 +139,7 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="project-pratima"
-                    repoURL="https://github.com/yakshaG/project-pratima"
+                    repoURL="https://github.com/vivek-nexus/project-pratima"
                     repoDescription="Official website of Project Pratima, showcasing payment icons and usage documentation"
                     repoTags='{next.js} {framer motion} {tailwind CSS}'
                     repoButtons={

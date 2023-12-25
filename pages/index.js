@@ -54,7 +54,7 @@ export default function Home() {
               <img className="mx-auto" src="/images/linkedin.svg" alt="linkedin" width={48}></img>
               <p>LinkedIn</p>
             </a>
-            <a href="https://github.com/yakshaG" target="_blank">
+            <a href="https://github.com/vivek-nexus" target="_blank">
               <img src="/images/github.svg" alt="github" width={48}></img>
               <p>Github</p>
             </a>

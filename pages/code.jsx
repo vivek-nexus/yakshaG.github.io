@@ -36,7 +36,7 @@ function Design() {
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Current projects</h2>
                         <CodeProjectCards />
-                        <p className="text-center"><a href="https://github.com/yakshaG" target="_blank" className="text-blue-500 font-bold">See more projects on Github ↗</a></p>
+                        <p className="text-center"><a href="https://github.com/vivek-nexus" target="_blank" className="text-blue-500 font-bold">See more projects on Github ↗</a></p>
                     </div>
 
                     <div className="mb-24">
