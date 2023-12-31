@@ -96,7 +96,7 @@ function CodeProjectCards(props) {
 
             <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
                 <div>
-                    <img className="" src="/images/demo.gif"></img>
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/XtJR7ox_WH4?si=04FphiCuZw5yvj5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
@@ -109,7 +109,10 @@ function CodeProjectCards(props) {
                 />
             </div >
 
-            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12 flex flex-col-reverse md:flex-row">
+            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
+                <div className="basis-1/2">
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/dCxEe3uwRU8?si=Cq4DZm209bYvY-Mt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="slack-on-keys"
@@ -120,9 +123,6 @@ function CodeProjectCards(props) {
                         [{ "buttonText": "Download desktop app ↗", "buttonLink": "https://github.com/vivek-nexus/slack-on-keys#slack-on-keys" }]
                     }
                 />
-                <div className="basis-1/2 bg-[#382F5D] p-3">
-                    <img className="" src="/images/slack-on-keys.png"></img>
-                </div>
             </div >
 
 
