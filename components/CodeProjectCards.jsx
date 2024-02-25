@@ -83,13 +83,13 @@ function CodeProjectCards(props) {
                     }
                 />
                 <div ref={ref1} className="basis-1/2">
-                    <div className={`h-[600px] ${inView1Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
+                    <div className={`h-[680px] ${inView1Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
                         <div className="flex flex-col items-center">
                             <img className="w-24 ml-6" src="/images/loader.svg" />
                             <p>Loading live web app..</p>
                         </div>
                     </div>
-                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="600px" />
+                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="680px" />
                 </div>
             </div >
 
@@ -121,6 +121,22 @@ function CodeProjectCards(props) {
                     repoTags='{electron.js} {cross-platform-desktop-app} {slack-app}'
                     repoButtons={
                         [{ "buttonText": "Download desktop app ↗", "buttonLink": "https://github.com/vivek-nexus/slack-on-keys#slack-on-keys" }]
+                    }
+                />
+            </div >
+
+            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
+                <div className="basis-1/2">
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/ARL6HbkakX4?si=-S5rnvLyOhmZ6gH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <RepoDetails
+                    className="basis-1/2"
+                    repoTitle="transcriptonic"
+                    repoURL="https://github.com/vivek-nexus/transcriptonic"
+                    repoDescription="Simple Google Meet transcripts. Private and open source. Growing at ~5 downloads per day."
+                    repoTags='{chrome-extension} {vanilla-js}'
+                    repoButtons={
+                        [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]
                     }
                 />
             </div >
