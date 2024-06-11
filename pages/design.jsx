@@ -25,9 +25,9 @@ function Design() {
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Design generalist consciously, <br />UXer sub-consciously</h2>
                         <p className="text-center">
-                            <span className="text-2xl">🎭</span> Design intentionally<br />
-                            <span className="text-2xl">⚡️</span> UX of UX matters — advocate your designs<br />
-                            <span className="text-2xl">👀</span> Test, test, test</p>
+                            <span className="text-2xl">👀</span> Designers think they own the entire UX, but they control only a fraction of it<br />
+                            <span className="text-2xl">🎭</span> Design intentionally. Then test, test, test.
+                        </p>
                     </div>
 
                     <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
