@@ -38,6 +38,7 @@ function Design() {
                             {/* {projectCardData.map((item, i) => (<DesignProjectCard key={i} cardNumber={item.cardNumber} />))} */}
                             <DesignProjectCard cardNumber={1} />
                             <DesignProjectCard cardNumber={2} />
+                            {/* <DesignProjectCard cardNumber={3} /> */}
                         </div>
                         <p className="text-center"><a href="https://vivek-nexus.medium.com/" target="_blank" className="text-blue-500 font-bold">See more ↗</a></p>
                     </div>

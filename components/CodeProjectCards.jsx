@@ -15,7 +15,7 @@ function RepoDetails(props) {
             <p className="mb-4">{ReactHtmlParser(props.repoDescription)}</p>
             <p style={{ fontFamily: "'Courier Prime', monospace" }} className="inline-block text-primary-700 bg-gray-200 rounded p-2 mb-4">{props.repoTags}</p>
             {props.repoButtons.map((item) => (
-                <a href={item.buttonLink} target="_blank"><Button type="primary">{item.buttonText}</Button></a>)
+                <a key={item} href={item.buttonLink} target="_blank"><Button type="primary">{item.buttonText}</Button></a>)
             )}
 
         </div>
@@ -96,7 +96,7 @@ function CodeProjectCards(props) {
 
             <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
                 <div>
-                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/XtJR7ox_WH4?si=04FphiCuZw5yvj5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/XtJR7ox_WH4?si=04FphiCuZw5yvj5j" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
@@ -111,7 +111,7 @@ function CodeProjectCards(props) {
 
             <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
                 <div className="basis-1/2">
-                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/dCxEe3uwRU8?si=Cq4DZm209bYvY-Mt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/dCxEe3uwRU8?si=Cq4DZm209bYvY-Mt" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <RepoDetails
                     className="basis-1/2"
@@ -127,7 +127,7 @@ function CodeProjectCards(props) {
 
             <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
                 <div className="basis-1/2">
-                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/ARL6HbkakX4?si=-S5rnvLyOhmZ6gH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/ARL6HbkakX4?si=-S5rnvLyOhmZ6gH9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <RepoDetails
                     className="basis-1/2"

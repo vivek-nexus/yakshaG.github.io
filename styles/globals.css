@@ -27,3 +27,8 @@ body {
     'GRAD' 0,
     'opsz' 48
 }
+
+ol {
+  list-style: decimal;
+  padding: 1rem;
+}

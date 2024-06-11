@@ -35,26 +35,11 @@ const projectCardData = [
             }
         ]
     },
-
-
-    // {
-    //     "cardNumber": "2",
-    //     "projectImage": "mdn.svg",
-    //     "projectTitle": "Mozilla MDN Web Docs navigation redesign",
-    //     "projectDescription": "Parts incorporated by Mozilla in 2022 design release 🔥",
-    //     "tags": ["User research", "Information architecture"],
-    //     "buttons": [
-    //         {
-    //             "buttonText": "Read on UX Planet ↗",
-    //             "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
-    //         }
-    //     ]
-    // },
     {
         "cardNumber": "3",
-        "projectImage": "whatsapp-ui-kit.svg",
-        "projectTitle": "Figma community — WhatsApp UI kit (Android)    ",
-        "projectDescription": "Top Figma community resource for WhatsApp chat design, with <b>11000+</b> downloads 😎",
+        "projectImage": "whatsapp-ui-kit.png",
+        "projectTitle": "Figma WhatsApp UI kit for Android",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>13,800+</b> downloads 😎",
         "tags": [
             { "text": "Advanced auto layout", "icon": "vertical_split" },
             { "text": "Rapid prototyping", "icon": "electric_bolt" },
@@ -69,6 +54,39 @@ const projectCardData = [
     },
     {
         "cardNumber": "4",
+        "projectImage": "figma-plugin.png",
+        "projectTitle": "2 Figma plugins",
+        "projectDescription": "500+ users <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
+        "tags": [
+            { "text": "TypeScript", "icon": "code" },
+            { "text": "Figma variables", "icon": "token" },
+            { "text": "Advanced prototyping", "icon": "play_arrow" },
+        ],
+        "buttons": [
+            {
+                "buttonText": "Get them from Figma ↗",
+                "buttonLink": "https://www.figma.com/@vivek_nexus"
+            }
+        ]
+    },
+    {
+        "cardNumber": "5",
+        "projectImage": "mdn.png",
+        "projectTitle": "Mozilla MDN Web Docs navigation redesign",
+        "projectDescription": "Parts incorporated by Mozilla in 2022 design release 🔥",
+        "tags": [
+            { "text": "User research", "icon": "science" },
+            { "text": "Information architecture", "icon": "conversion_path" },
+        ],
+        "buttons": [
+            {
+                "buttonText": "Read on UX Planet ↗",
+                "buttonLink": "https://uxplanet.org/mdn-docs-left-right-nav-pane-redesign-a77dc45f42e1"
+            }
+        ]
+    },
+    {
+        "cardNumber": "6",
         "projectImage": "e-resume.png",
         "projectTitle": "E-Resume — Open source resume builder",
         "projectDescription": "A free tool with <b>700+</b> stars on Github — supports multiple templates",
