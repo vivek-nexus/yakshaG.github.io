@@ -24,54 +24,32 @@ function RepoDetails(props) {
 
 
 function CodeProjectCards(props) {
-    const [ref1, inView1] = useInView({
+    const [ref, inView] = useInView({
         // triggerOnce: true,
         rootMargin: '0px 0px',
         threshold: 0.2,
     })
 
-    const [ref2, inView2] = useInView({
-        // triggerOnce: true,
-        rootMargin: '0px 0px',
-        threshold: 0.2,
-    })
-
-    const [inView1Delayed, setInView1Delayed] = useState(false);
-    const [inView2Delayed, setInView2Delayed] = useState(false);
+    const [inViewDelayed, setInViewDelayed] = useState(false);
 
     useEffect(() => {
         let timeOut1;
-        if (inView1 == true) {
+        if (inView == true) {
             timeOut1 = setTimeout(() => {
-                setInView1Delayed(true);
+                setInViewDelayed(true);
             }, 3000);
         }
         else {
             return () => {
                 clearTimeout(timeOut1)
-                setInView1Delayed(false);
+                setInViewDelayed(false);
             }
         }
-    }, [inView1])
-
-    useEffect(() => {
-        let timeOut2;
-        if (inView2 == true) {
-            timeOut2 = setTimeout(() => {
-                setInView2Delayed(true);
-            }, 3000);
-        }
-        else {
-            return () => {
-                clearTimeout(timeOut2)
-                setInView2Delayed(false);
-            }
-        }
-    }, [inView2])
+    }, [inView])
 
     return (
         <>
-            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12 flex flex-col-reverse md:flex-row">
+            <div ref={ref} className={`${inView ? "animate__animated animate__fadeIn animate__slow" : ""}overflow-hidden rounded-xl shadow-designProjectCard mb-12 flex flex-col-reverse md:flex-row`}>
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="listen"
@@ -82,14 +60,14 @@ function CodeProjectCards(props) {
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://vivek-nexus.github.io/listen/app" }]
                     }
                 />
-                <div ref={ref1} className="basis-1/2">
-                    <div className={`h-[680px] ${inView1Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
+                <div ref={ref} className="basis-1/2">
+                    <div className={`h-[680px] ${inViewDelayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
                         <div className="flex flex-col items-center">
                             <img className="w-24 ml-6" src="/images/loader.svg" />
                             <p>Loading live web app..</p>
                         </div>
                     </div>
-                    <iframe className={`${inView1Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="680px" />
+                    <iframe className={`${inViewDelayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="680px" />
                 </div>
             </div >
 
@@ -140,31 +118,6 @@ function CodeProjectCards(props) {
                     }
                 />
             </div >
-
-
-            {/* <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-6">
-                <div ref={ref2} className="basis-1/2">
-                    <div className={`h-[480px] ${inView2Delayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
-                        <div className="flex flex-col items-center">
-                            <img className="w-24 ml-6" src="/images/loader.svg" />
-                            <p>Loading live site..</p>
-                        </div>
-                    </div>
-                    <iframe className={`${inView2Delayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/project-pratima/icons" width="100%" height="480px" />
-                </div>
-                <RepoDetails
-                    className="basis-1/2"
-                    repoTitle="project-pratima"
-                    repoURL="https://github.com/vivek-nexus/project-pratima"
-                    repoDescription="Official website of Project Pratima, showcasing payment icons and usage documentation"
-                    repoTags='{next.js} {framer motion} {tailwind CSS}'
-                    repoButtons={
-                        [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://paymentscouncil.in/project-pratima/" }]
-                    }
-                />
-            </div > */}
-
-
         </>
     )
 }

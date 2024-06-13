@@ -39,8 +39,8 @@ function DesignProjectCard(props) {
                     }
                 }`}
                 </style>
-                <div className={`${inView ? "animate__animated animate__fadeIn" : ""} card-${props.cardNumber} grid grid-cols-2 p-8 md:p-12 rounded-lg shadow-innerShadow md:aspect-video`}>
-                    <div className={`${inView ? "animate__animated animate__pulse" : ""} col-span-2 md:col-span-1 flex flex-col h-full`}>
+                <div className={`${inView ? "animate__animated animate__fadeIn animate__slow" : ""} card-${props.cardNumber} grid grid-cols-2 p-8 md:p-12 rounded-lg shadow-innerShadow md:aspect-video`}>
+                    <div className={`col-span-2 md:col-span-1 flex flex-col h-full`}>
                         <div className="flex-grow">
                             <h4 className="text-xl md:text-2xl font-bold text-primary-700 mb-6">
                                 {temp.projectTitle}
