@@ -76,8 +76,8 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="listen"
                     repoURL="https://github.com/vivek-nexus/listen"
-                    repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface"
-                    repoTags='{text-to-speech} {PWA} {next.js}'
+                    repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface. <b>Integrated on production by an <a href='https://www.linkedin.com/feed/update/urn:li:activity:7206490843493326850/' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website</a></b>."
+                    repoTags='{text-to-speech} {PWA} {next.js} {Web APIs}'
                     repoButtons={
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://vivek-nexus.github.io/listen/app" }]
                     }
@@ -133,7 +133,7 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="transcriptonic"
                     repoURL="https://github.com/vivek-nexus/transcriptonic"
-                    repoDescription="Simple Google Meet transcripts. Private and open source. Growing at ~5 downloads per day."
+                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>200+ users</b> and growing!"
                     repoTags='{chrome-extension} {vanilla-js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]
