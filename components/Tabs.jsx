@@ -34,8 +34,15 @@ function Tab({ type, number, activeTab, setActiveTab }) {
             className={`px-0.5 font-bold cursor-pointer rounded-md`}
             onClick={() => { setActiveTab(number) }}
         >
-            <div className={`p-1 rounded-lg transition-colors delay-100 duration-500 ${(number == activeTab) ? `bg-primary-700` : `bg-transparent`}`}>
-                <img className="rounded-md" src={`/images/${type}/${number}.jpg`} width="36px" />
+            <div
+                className={`p-1 mr-2 rounded-md transition-colors delay-100 duration-500 shadow-designProjectCard w-10 h-10 border-[3px] ${(number == activeTab) ? `border-primary-700` : `border-primary-50`}`}
+                style={{
+                    backgroundImage: `url(${`/images/${type}/${number}.jpg`})`,
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"
+                }}
+            >
             </div>
         </div >)
 }
