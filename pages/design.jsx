@@ -25,7 +25,7 @@ function Design() {
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Design generalist consciously, <br />UXer sub-consciously</h2>
                         <p className="text-center">
-                            🤥 "I am the user's saviour" is mostly a lie that designers tell themselves<br />
+                            📌 Designers can be so much user centric, as much as the business model allows<br />
                             🎭 Design intentionally. Then test, test, test.
                         </p>
                     </div>
