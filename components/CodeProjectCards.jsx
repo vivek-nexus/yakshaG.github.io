@@ -49,12 +49,12 @@ function CodeProjectCards(props) {
 
     return (
         <>
-            <div ref={ref} className={`${inView ? "animate__animated animate__fadeIn animate__slow" : ""}overflow-hidden rounded-xl shadow-designProjectCard mb-12 flex flex-col-reverse md:flex-row`}>
+            <div ref={ref} className={`${inView ? "animate__animated animate__fadeIn animate__slow" : ""}overflow-hidden rounded-xl shadow-designProjectCard overflow-clip mb-12 flex flex-col-reverse md:flex-row`}>
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="listen"
                     repoURL="https://github.com/vivek-nexus/listen"
-                    repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface. <b>Integrated on production by an <a href='https://www.linkedin.com/feed/update/urn:li:activity:7206490843493326850/' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website</a></b>."
+                    repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface. <b>~200 hits a day and integrated on production by an <a href='https://www.linkedin.com/feed/update/urn:li:activity:7206490843493326850/' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website.</a></b>"
                     repoTags='{text-to-speech} {PWA} {next.js} {Web APIs}'
                     repoButtons={
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://vivek-nexus.github.io/listen/app" }]
