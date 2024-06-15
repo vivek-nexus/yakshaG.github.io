@@ -17,7 +17,7 @@ function Tabs({ type, count }) {
                 )}
             </div>
             <div key={activeTab} className="mb-12">
-                <img className="mx-auto w-auto max-h-[60vh] animate__animated animate__zoomIn rounded-lg shadow-designProjectCard hover:grayscale duration-500" src={`/images/${type}/${activeTab}.jpg`} />
+                <img className="mx-auto w-auto max-h-[60vh] animate__animated animate__zoomIn rounded-lg shadow-designProjectCard hover:grayscale duration-500" src={`/images/${type}/${activeTab}.webp`} />
             </div>
         </>
     )
@@ -37,7 +37,7 @@ function Tab({ type, number, activeTab, setActiveTab }) {
             <div
                 className={`p-1 mr-2 rounded-md transition-colors delay-100 duration-500 shadow-designProjectCard w-10 h-10 border-[3px] ${(number == activeTab) ? `border-primary-700` : `border-primary-50`}`}
                 style={{
-                    backgroundImage: `url(${`/images/${type}/${number}.jpg`})`,
+                    backgroundImage: `url(${`/images/${type}/${number}.webp`})`,
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center"
