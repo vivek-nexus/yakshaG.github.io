@@ -61,15 +61,15 @@ function CodeProjectCards(props) {
                     }
                 />
                 <div ref={ref} className="basis-1/2">
-                    <div className={`h-[680px] ${inViewDelayed ? `hidden mx-auto text-center animate__animated animate__bounceOut` : `block`}`}>
+                    <div className={`h-[680px] ${inViewDelayed ? `hidden mx-auto text-center animate__animated animate__fadeOut` : `block`}`}>
                         <div className="flex flex-col items-center">
                             <img className="w-24 ml-6" src="/images/loader.svg" />
                             <p>Loading live web app..</p>
                         </div>
                     </div>
-                    <iframe className={`${inViewDelayed ? `block animate__animated animate__bounceIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="680px" />
+                    <iframe className={`${inViewDelayed ? `block animate__animated animate__fadeIn` : `hidden`} `} src="https://vivek-nexus.github.io/listen/app" width="100%" height="680px" />
                 </div>
-            </div >
+            </div>
 
 
             <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">

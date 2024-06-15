@@ -17,7 +17,7 @@ function Tabs({ type, count }) {
                 )}
             </div>
             <div key={activeTab} className="mb-12">
-                <img className="mx-auto w-auto max-h-[60vh] animate__animated animate__zoomIn rounded-lg shadow-designProjectCard hover:grayscale duration-500" src={`/images/${type}/${activeTab}.webp`} />
+                <img className="mx-auto w-auto max-h-[60vh] animate__animated animate__fadeIn rounded-lg shadow-designProjectCard hover:grayscale duration-500" src={`/images/${type}/${activeTab}.webp`} />
             </div>
         </>
     )
