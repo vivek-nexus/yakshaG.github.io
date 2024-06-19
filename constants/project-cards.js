@@ -3,7 +3,7 @@ const projectCardData = [
         "cardNumber": "1",
         "projectImage": "aa-webapp.png",
         "projectTitle": "Award winning AA consent approval UI",
-        "projectDescription": "Consent approval UI with industry best conversions. A B2B2C product, that elegantly balances user centricity and powerful business customisation.",
+        "projectDescription": "Consent approval UI with <b>industry best conversions</b>. A B2B2C product, that elegantly balances user centricity and powerful business customisation.",
         "tags": [
             { "text": "UX Design", "icon": "web" },
             { "text": "Motion design", "icon": "animation" },
@@ -39,7 +39,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.png",
         "projectTitle": "Figma WhatsApp UI kit for Android",
-        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>13,800+</b> downloads 😎",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>14,000+</b> downloads 😎",
         "tags": [
             { "text": "Advanced auto layout", "icon": "vertical_split" },
             { "text": "Rapid prototyping", "icon": "electric_bolt" },
