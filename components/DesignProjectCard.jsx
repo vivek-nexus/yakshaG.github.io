@@ -33,7 +33,7 @@ function DesignProjectCard(props) {
                     
 
                     @media only screen and (min-width: 840px) {
-                        background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.2)100%),url("/images/${temp.projectImage}");
+                        background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.2)100%),url("/images/${temp.projectImage}");
                         background-size: cover;
                         background-position: right;
                     }
