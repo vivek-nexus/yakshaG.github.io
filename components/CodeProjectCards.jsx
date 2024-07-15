@@ -49,12 +49,12 @@ function CodeProjectCards(props) {
 
     return (
         <>
-            <div ref={ref} className={`${inView ? "animate__animated animate__fadeIn animate__slow" : ""}overflow-hidden rounded-xl shadow-designProjectCard overflow-clip mb-12 flex flex-col-reverse md:flex-row`}>
+            <div ref={ref} className={`${inView ? "animate__animated animate__fadeIn animate__slow" : ""} rounded-xl shadow-designProjectCard overflow-clip mb-12 flex flex-col-reverse md:flex-row`}>
                 <RepoDetails
                     className="basis-1/2"
                     repoTitle="listen"
                     repoURL="https://github.com/vivek-nexus/listen"
-                    repoDescription="A web app that speaks words, sentences or even long articles — in a music player like interface. <b>~200 hits a day and integrated on production by an <a href='https://www.linkedin.com/feed/update/urn:li:activity:7206490843493326850/' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website.</a></b>"
+                    repoDescription="A world-class reading companion that speaks words, sentences or even long articles — in a music player like interface. <b>~200 hits a day and integrated on production by an <a href='https://www.linkedin.com/feed/update/urn:li:activity:7206490843493326850/' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website.</a></b>"
                     repoTags='{text-to-speech} {PWA} {next.js} {Web APIs}'
                     repoButtons={
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://vivek-nexus.github.io/listen/app" }]
@@ -79,7 +79,7 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
                     repoURL="https://github.com/vivek-nexus/google-meet-slack-integration"
-                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>300+ users</b> world wide and growing 🚀"
+                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>400+ users</b> world wide and growing 🚀"
                     repoTags='{chrome-extension} {slack-app} {express.js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chrome.google.com/webstore/detail/kddjlbegfaiogihndmglihcgommbjmkc" }]
@@ -111,7 +111,7 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="transcriptonic"
                     repoURL="https://github.com/vivek-nexus/transcriptonic"
-                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>200+ users</b> and growing!"
+                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>250+ users</b> and growing!"
                     repoTags='{chrome-extension} {vanilla-js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]

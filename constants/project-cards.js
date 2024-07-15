@@ -56,7 +56,7 @@ const projectCardData = [
         "cardNumber": "4",
         "projectImage": "figma-plugin.png",
         "projectTitle": "2 Figma plugins",
-        "projectDescription": "500+ users <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
+        "projectDescription": "800+ users <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
         "tags": [
             { "text": "TypeScript", "icon": "code" },
             { "text": "Figma variables", "icon": "token" },
