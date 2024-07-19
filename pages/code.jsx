@@ -27,7 +27,7 @@ function Design() {
                         <h2 className="text-4xl text-center text-primary-700 mb-6">An engineer at heart, <br /> front end dev in reality</h2>
                         <p className="text-center">
                             🌟 Build and break first, tutorials next<br />
-                            😈 Not a big fan of DS and Algo, yet
+                            😈 Not a big fan of DS and Algo, but hey, I'll get there!
                         </p>
                     </div>
 
