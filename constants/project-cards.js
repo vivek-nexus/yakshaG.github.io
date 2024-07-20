@@ -17,21 +17,21 @@ const projectCardData = [
     },
     {
         "cardNumber": "2",
-        "projectImage": "project-pratima.png",
-        "projectTitle": "Project Pratima, a payments icon library for India",
-        "projectDescription": "Collaborated with designers from the payments industry, under the PCI umbrella. Additionally, developed the project website.",
+        "projectImage": "listen.gif",
+        "projectTitle": "Listen, a word-class reading companion",
+        "projectDescription": "A web app that helps you listen to any written material (instead of reading on your screen), in a variety of languages.",
         "tags": [
-            { "text": "Industry collaboration", "icon": "diversity_3" },
-            { "text": "Front end development", "icon": "code" },
+            { "text": "Full stack design", "icon": "design_services" },
+            { "text": "Full stack development", "icon": "code" },
         ],
         "buttons": [
             {
-                "buttonText": "Project website ↗",
-                "buttonLink": "https://paymentscouncil.in/project-pratima/"
+                "buttonText": "Tech+design fusion saga ↗",
+                "buttonLink": "https://vivek-nexus.medium.com/listen-a-world-class-reading-companion-809ae09c06c4"
             },
             {
-                "buttonText": "Media coverage ↗",
-                "buttonLink": "https://www.moneycontrol.com/news/business/can-standardising-app-icons-build-trust-familiarity-in-digital-payments-10066071.html"
+                "buttonText": "Try it live ↗",
+                "buttonLink": "https://vivek.nexus/listen?utm_source=portfolio"
             }
         ]
     },
