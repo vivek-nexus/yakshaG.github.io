@@ -10,8 +10,12 @@ const projectCardData = [
             { "text": "Front end development", "icon": "code" }],
         "buttons": [
             {
-                "buttonText": "Read on Setu blog ↗",
+                "buttonText": "Design story ↗",
                 "buttonLink": "https://blog.setu.co/articles/design-of-award-winning-aa-consent-approval-ui"
+            },
+            {
+                "buttonText": "<span class='material-symbols-outlined' style='font-size:110%'>lock</span>&nbsp; My contributions ↗",
+                "buttonLink": "https://www.vivek.nexus/my-docs/consent-approval-ui/"
             },
         ]
     },
@@ -26,7 +30,7 @@ const projectCardData = [
         ],
         "buttons": [
             {
-                "buttonText": "Tech+design fusion saga ↗",
+                "buttonText": "Tech+design story ↗",
                 "buttonLink": "https://vivek-nexus.medium.com/listen-a-world-class-reading-companion-809ae09c06c4"
             },
             {

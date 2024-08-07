@@ -51,7 +51,7 @@ function DesignProjectCard(props) {
                             <p className="mb-6">{ReactHtmlParser(temp.projectDescription)}</p>
                         </div>
                         <div className="flex gap-2 flex-wrap">
-                            {temp.buttons.map((item, i) => (<div className="shrink-0 mb-1" key={i}><a href={item.buttonLink} target="_blank"><Button type={i == 0 ? `primary` : `secondary`}>{item.buttonText}</Button></a></div>))}
+                            {temp.buttons.map((item, i) => (<div className="shrink-0 mb-1" key={i}><a href={item.buttonLink} target="_blank"><Button type={i == 0 ? `primary` : `secondary`}>{ReactHtmlParser(item.buttonText)}</Button></a></div>))}
                         </div>
                     </div>
                 </div>
