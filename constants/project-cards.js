@@ -11,7 +11,7 @@ const projectCardData = [
         "buttons": [
             {
                 "buttonText": "Design story ↗",
-                "buttonLink": "https://vivek-nexus.medium.com/cf708e2d0e66"
+                "buttonLink": "https://blog.setu.co/articles/design-of-award-winning-aa-consent-approval-ui"
             },
             {
                 "buttonText": "<span class='material-symbols-outlined' style='font-size:110%'>lock</span>&nbsp; My contributions ↗",
