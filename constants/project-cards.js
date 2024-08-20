@@ -22,8 +22,8 @@ const projectCardData = [
     {
         "cardNumber": "2",
         "projectImage": "listen.gif",
-        "projectTitle": "Listen, a word-class reading companion",
-        "projectDescription": "A web app that helps you listen to any written material (instead of reading on your screen), in a variety of languages.",
+        "projectTitle": "Listen — a word-class reading companion",
+        "projectDescription": "A web app that helps you listen to any text (instead of reading on your screen), in a variety of languages.",
         "tags": [
             { "text": "Full stack design", "icon": "design_services" },
             { "text": "Full stack development", "icon": "code" },
@@ -43,7 +43,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.png",
         "projectTitle": "Figma WhatsApp UI kit for Android",
-        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>15,000+</b> downloads 😎",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>15,500+</b> downloads 😎",
         "tags": [
             { "text": "Advanced auto layout", "icon": "vertical_split" },
             { "text": "Rapid prototyping", "icon": "electric_bolt" },
@@ -60,7 +60,7 @@ const projectCardData = [
         "cardNumber": "4",
         "projectImage": "figma-plugin.png",
         "projectTitle": "2 Figma plugins",
-        "projectDescription": "1000+ users <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
+        "projectDescription": "<b>1200+ users</b> <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
         "tags": [
             { "text": "TypeScript", "icon": "code" },
             { "text": "Figma variables", "icon": "token" },

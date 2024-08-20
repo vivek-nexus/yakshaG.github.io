@@ -54,7 +54,7 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="listen"
                     repoURL="https://github.com/vivek-nexus/listen"
-                    repoDescription="A world-class reading companion that speaks words, sentences or even long articles — in a music player like interface. <b>~200 hits a day and integrated on production by an <a href='https://www.youtube.com/watch?v=PCONlyrCrw4' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website.</a></b>"
+                    repoDescription="A world-class reading companion that speaks words, sentences or even long articles — in a music player like interface. <b>Integrated on production by an <a href='https://www.youtube.com/watch?v=PCONlyrCrw4' target='_blank' style='color: #3B82F6; font-weight:bold;'>Italian news website.</a></b>"
                     repoTags='{text-to-speech} {PWA} {next.js} {Web APIs}'
                     repoButtons={
                         [{ "buttonText": "Open in a new tab ↗", "buttonLink": "https://vivek-nexus.github.io/listen/app" }]
@@ -111,7 +111,7 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="transcriptonic"
                     repoURL="https://github.com/vivek-nexus/transcriptonic"
-                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>250+ users</b> and growing!"
+                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>350+ users</b> and growing!"
                     repoTags='{chrome-extension} {vanilla-js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]
