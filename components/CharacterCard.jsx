@@ -21,12 +21,12 @@ function CardContent(props) {
             {!isClicked
                 ?
                 <>
-                    {props.heroCard &&
+                    {/* {props.heroCard &&
                         <>
                             <div className="absolute -top-2 left-10 px-1 py-3 bg-primary-200 rounded-full shadow-md animate__animated animate__bounceInDown" ></div>
                             <div className="absolute -top-2 right-10 px-1 py-3 bg-primary-200 rounded-full shadow-md animate__animated animate__bounceInDown" ></div>
                         </>
-                    }
+                    } */}
 
                     <h3
                         className={`text-primary-700 ${props.heroCard ? `md:text-5xl text-3xl` : `text-3xl`} pb-4`}

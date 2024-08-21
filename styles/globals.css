@@ -32,3 +32,32 @@ ol {
   list-style: decimal;
   padding: 1rem;
 }
+
+
+/* Tone down bounceInUp */
+
+@keyframes bounceInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100vh, 0);
+    /* Start from below the viewport */
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -8px, 0);
+    /* Slight overshoot for easing effect */
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    /* End at the final position */
+  }
+}
+
+.bounceInUp {
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-name: bounceInUp;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  /* Easing for smooth fly-in */
+}

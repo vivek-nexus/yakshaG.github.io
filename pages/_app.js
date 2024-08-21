@@ -1,5 +1,5 @@
-import '../styles/globals.css'
 import 'animate.css';
+import '../styles/globals.css'
 import Script from "next/script";
 import { useEffect } from "react";
 
