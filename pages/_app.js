@@ -2,6 +2,7 @@ import 'animate.css';
 import '../styles/globals.css'
 import Script from "next/script";
 import { useEffect } from "react";
+import FontLoader from '../components/FontLoader';
 
 
 function MyApp({ Component, pageProps }) {
@@ -30,7 +31,10 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-8EHNRT07YZ');
         `}
       </Script>
-      <Component {...pageProps} />
+      <FontLoader>
+        <Component {...pageProps} />
+      </FontLoader>
+
     </>)
 }
 
