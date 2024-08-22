@@ -14,7 +14,7 @@ const projectCardData = [
                 "buttonLink": "https://blog.setu.co/articles/design-of-award-winning-aa-consent-approval-ui"
             },
             {
-                "buttonText": "<span class='material-icons-round-round' style='font-size:110%'>lock</span>&nbsp; My contributions ↗",
+                "buttonText": "<span class='material-icons-round' style='font-size:110%'>lock</span>&nbsp; My contributions ↗",
                 "buttonLink": "https://www.vivek.nexus/my-docs/consent-approval-ui/"
             },
         ]
