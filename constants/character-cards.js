@@ -46,7 +46,7 @@ const characterCardData = [
     },
     {
         "cardNumber": "7",
-        "cardIcon": "person_celebrate",
+        "cardIcon": "person_play",
         "cardTitle": "I'm a story teller",
         "cardSubTitle": "Because who doesn't love them?",
     },
