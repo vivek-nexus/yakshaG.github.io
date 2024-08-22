@@ -9,7 +9,7 @@ const characterCardData = [
     },
     {
         "cardNumber": "2",
-        "cardIcon": "deployed_code",
+        "cardIcon": "integration_instructions",
         "cardTitle": "I am a developer",
         "cardSubTitle": "Because execution is the real game",
         "cardButtonText": "See projects ->",
@@ -46,7 +46,7 @@ const characterCardData = [
     },
     {
         "cardNumber": "7",
-        "cardIcon": "person_play",
+        "cardIcon": "favorite",
         "cardTitle": "I'm a story teller",
         "cardSubTitle": "Because who doesn't love them?",
     },

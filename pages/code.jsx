@@ -43,7 +43,7 @@ function Design() {
                         <div className="flex justify-between items-center">
                             <Link href="/design"><a className="mr-auto"><Button type="secondary">&lt;- Design</Button></a></Link>
                             <Link href="/"><a className="mx-auto"><Button type="secondary">
-                                <span className="material-symbols-outlined">home</span></Button></a>
+                                <span className="material-icons-round">home</span></Button></a>
                             </Link>
                             <Link href="/content"><a className="ml-auto break-none"><Button type="primary">Content -&gt;</Button></a></Link>
                         </div>

@@ -29,10 +29,11 @@ function CardContent(props) {
                     } */}
 
                     <h3>
-                        <span className={`text-secondary-300 material-symbols-outlined ${props.heroCard ? `md:!text-5xl !text-3xl` : `!text-3xl`} pb-4`}>
+                        <span className={`text-secondary-300 material-icons-round ${props.heroCard ? `md:!text-5xl !text-3xl` : `!text-3xl`} pb-4`}>
                             {characterCardData[props.cardNumber - 1].cardIcon}
                         </span>
                     </h3>
+                    {/* <img src={`/images/character-icons/${characterCardData[props.cardNumber - 1].cardIcon}.svg`} className={`${props.heroCard ? `w-[48px]` : `w-[32px]`} pb-4`}></img> */}
 
                     <div>
                         <h3

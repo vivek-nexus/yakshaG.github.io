@@ -33,7 +33,7 @@ const contentCardData = [
     },
     {
         "cardNumber": "4",
-        "cardIcon": "person_play",
+        "cardIcon": "api",
         "cardTitle": "Can AI bring back designer-developer hybrids?",
         "link":
         {

@@ -45,7 +45,7 @@ function Content() {
                     <div className="mb-24">
                         <div className="flex justify-between items-center">
                             <Link href="/content"><a><Button type="primary">&lt;- Content</Button></a></Link>
-                            <Link href="/"><a><Button type="secondary"><span className="material-symbols-outlined mr-1">home</span></Button></a></Link>
+                            <Link href="/"><a><Button type="secondary"><span className="material-icons-round mr-1">home</span></Button></a></Link>
                         </div>
                     </div>
                 </div>
