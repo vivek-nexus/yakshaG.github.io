@@ -22,7 +22,7 @@ function Content() {
                 <NavBar />
 
                 <div className="container px-4 md:px-0">
-                    {/* <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
+                    {/* <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Read to understand, write to clarify</h2>
@@ -32,7 +32,7 @@ function Content() {
                     </div> */}
 
 
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Technical writing</h2>
@@ -41,7 +41,7 @@ function Content() {
                         </p>
                     </div>
 
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Free form writing</h2>

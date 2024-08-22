@@ -13,7 +13,7 @@ function RepoDetails(props) {
                 </a>
             </h4>
             <p className="mb-4">{ReactHtmlParser(props.repoDescription)}</p>
-            <p style={{ fontFamily: "'Courier Prime', monospace" }} className="inline-block text-primary-700 bg-gray-200 rounded p-2 mb-4">{props.repoTags}</p>
+            <p style={{ fontFamily: "'Courier Prime', monospace" }} className="inline-block text-secondary-300 bg-gray-200 rounded p-2 mb-4">{props.repoTags}</p>
             {props.repoButtons.map((item) => (
                 <a key={item} href={item.buttonLink} target="_blank"><Button type="primary">{item.buttonText}</Button></a>)
             )}

@@ -46,7 +46,7 @@ function DesignProjectCard(props) {
                                 {temp.projectTitle}
                             </h4>
                             <div className="mb-6 flex gap-2 flex-wrap hide-scrollbar">
-                                {temp.tags.map((item, i) => (<Pill key={i} accent="text-primary-700" bg="bg-primary-50">{item}</Pill>))}
+                                {temp.tags.map((item, i) => (<Pill key={i} accent="text-secondary-300" bg="bg-secondary-50">{item}</Pill>))}
                             </div>
                             <p className="mb-6">{ReactHtmlParser(temp.projectDescription)}</p>
                         </div>

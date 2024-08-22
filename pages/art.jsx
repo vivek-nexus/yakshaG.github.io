@@ -22,7 +22,7 @@ function Content() {
                 <div className="container px-4 md:px-0">
 
 
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Digital art</h2>
@@ -32,7 +32,7 @@ function Content() {
                         />
                     </div>
 
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Fine art</h2>

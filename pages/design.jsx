@@ -19,18 +19,18 @@ function Design() {
 
                 <NavBar />
 
-                <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
 
                 <div className="container px-4 md:px-0">
+                    {/* <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Design generalist consciously, <br />UXer sub-consciously</h2>
                         <p className="text-center">
                             📌 Designers can be so much user centric, as much as the business model allows<br />
                             🎭 Design intentionally. Then test, test, test.
                         </p>
-                    </div>
+                    </div> */}
 
-                    <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Recent work</h2>
@@ -43,7 +43,7 @@ function Design() {
                         <p className="text-center"><a href="https://vivek-nexus.medium.com/" target="_blank" className="text-blue-500 font-bold">See more ↗</a></p>
                     </div>
 
-                    <div className="mx-auto mb-6 p-2 bg-primary-700 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 bg-secondary-300 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Community and open source</h2>
