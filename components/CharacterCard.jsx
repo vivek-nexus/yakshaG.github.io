@@ -28,13 +28,11 @@ function CardContent(props) {
                         </>
                     } */}
 
-                    <h3>
-                        <span className={`text-secondary-300 material-icons-round ${props.heroCard ? `md:!text-5xl !text-3xl` : `!text-3xl`} pb-4`}>
+                    <div>
+                        <span className={`max-w-[48px] text-secondary-300 material-icons-round ${props.heroCard ? `md:!text-5xl !text-3xl` : `!text-3xl`} pb-4`}>
                             {characterCardData[props.cardNumber - 1].cardIcon}
                         </span>
-                    </h3>
-                    {/* <img src={`/images/character-icons/${characterCardData[props.cardNumber - 1].cardIcon}.svg`} className={`${props.heroCard ? `w-[48px]` : `w-[32px]`} pb-4`}></img> */}
-
+                    </div>
                     <div>
                         <h3
                             className={`font-semibold pb-2 ${props.heroCard ? `md:text-3xl text-xl` : `text-xl`}`}
