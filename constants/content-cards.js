@@ -11,7 +11,7 @@ const contentCardData = [
     },
     {
         "cardNumber": "2",
-        "cardIcon": "filter_center_focus",
+        "cardIcon": "videocam",
         "cardTitle": "CCTVs & Digital payment in retail: Security risks",
         "link":
         {
