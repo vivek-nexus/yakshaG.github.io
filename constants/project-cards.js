@@ -21,7 +21,7 @@ const projectCardData = [
     },
     {
         "cardNumber": "2",
-        "projectImage": "listen.gif",
+        "projectImage": "listen.png",
         "projectTitle": "Listen — a word-class reading companion",
         "projectDescription": "A web app that helps you listen to any text (instead of reading on your screen), in a variety of languages.",
         "tags": [

@@ -22,7 +22,7 @@ function Content() {
                 <NavBar />
 
                 <div className="container px-4 md:px-0">
-                    {/* <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
+                    {/* <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Read to understand, write to clarify</h2>
@@ -32,7 +32,7 @@ function Content() {
                     </div> */}
 
 
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Technical writing</h2>
@@ -41,7 +41,7 @@ function Content() {
                         </p>
                     </div>
 
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
+                    <div className="mx-auto mb-6 p-2 mt-16 bg-primary-700 w-2 rounded"></div>
 
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">Free form writing</h2>
@@ -51,17 +51,17 @@ function Content() {
                         /> */}
                         <h4 className="text-2xl text-center text-primary-700 mb-6">In and around design</h4>
                         <div className="mb-12 mx-4 md:mx-32 grid gap-4 grid-cols-1 sm:grid-cols-2">
-                            <ContentCard cardNumber={4} />
-                            <ContentCard cardNumber={5} />
-                            <ContentCard cardNumber={6} />
-                            <ContentCard cardNumber={7} />
+                            <ContentCard cardNumber={4} bgColour="primary" />
+                            <ContentCard cardNumber={5} bgColour="primary" />
+                            <ContentCard cardNumber={6} bgColour="primary" />
+                            <ContentCard cardNumber={7} bgColour="primary" />
                         </div>
 
                         <h4 className="text-2xl text-center text-primary-700 mb-6">Everything else</h4>
                         <div className="mb-12 mx-4 md:mx-32 grid gap-4 grid-cols-1 sm:grid-cols-2">
-                            <ContentCard cardNumber={1} />
-                            <ContentCard cardNumber={2} />
-                            <ContentCard cardNumber={3} />
+                            <ContentCard cardNumber={1} bgColour="seconda0" />
+                            <ContentCard cardNumber={2} bgColour="seconda0" />
+                            <ContentCard cardNumber={3} bgColour="seconda0" />
                         </div>
                     </div>
 

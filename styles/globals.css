@@ -19,6 +19,9 @@ html {
 body {
   font-family: 'Manrope', sans-serif;
   cursor: url('cursor.svg'), not-allowed !important;
+  background-color: #FFFFFF;
+  background-image: url("/images/background-pattern.svg");
+  background-attachment: fixed;
 }
 
 ol {

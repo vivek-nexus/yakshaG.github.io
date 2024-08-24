@@ -9,10 +9,9 @@ function CardContent(props) {
 
     return (
         <div
-            className={`relative shadow-lg animate__animated animate__bounceInUp transition-all ease-in-out duration-300 p-8 rounded-lg border border-gray-200 
-            ${!isClicked && !props.heroCard ? `bg-white` : `bg-primary-50`}  
-            ${props.withButton && `hover:shadow-xl hover:z-10`}
-            ${props.heroCard ? `md:flex gap-10 items-center bg-primary-50` : `flex flex-col justify-center animate__delay-1s`}`}
+            className={`relative shadow animate__animated animate__bounceInUp transition-all ease-in duration-300 p-8 rounded-lg border border-gray-200 
+            ${props.withButton && `hover:shadow-lg hover:z-10`}
+            ${props.heroCard ? `md:flex gap-10 items-center bg-primary-100 hover:bg-primary-200` : `flex flex-col justify-center animate__delay-1s bg-secondary-50 hover:bg-secondary-100`}`}
             onClick={() => {
                 if (!props.withButton)
                     setIsClicked(!isClicked)
@@ -40,7 +39,7 @@ function CardContent(props) {
                             {characterCardData[props.cardNumber - 1].cardTitle}
                         </h3>
                         <p
-                            className={`${props.heroCard ? `md:text-xl text-gray-500` : `text-gray-400`}`}
+                            className={`${props.heroCard ? `md:text-xl text-gray-500` : `text-gray-500`}`}
                         >
                             {characterCardData[props.cardNumber - 1].cardSubTitle}
                         </p>
