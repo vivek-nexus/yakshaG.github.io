@@ -20,26 +20,8 @@ function Content() {
                 <NavBar />
 
                 <div className="container px-4 md:px-0">
-
-
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
-
-                    <div className="mb-24">
-                        <h2 className="text-4xl text-center text-primary-700 mb-6">Digital art</h2>
-                        <Tabs
-                            type="digital-art"
-                            count={2}
-                        />
-                    </div>
-
-                    <div className="mx-auto mb-6 p-2 mt-16 bg-secondary-300 w-2 rounded"></div>
-
-                    <div className="mb-24">
-                        <h2 className="text-4xl text-center text-primary-700 mb-6">Fine art</h2>
-                        <Tabs
-                            type="fine-art"
-                            count={6}
-                        />
+                    <div className="mt-16 mb-24">
+                        <img src="/images/art-grid.png" alt="a bento grid of 6 images" />
                     </div>
 
                     <div className="mb-24">
