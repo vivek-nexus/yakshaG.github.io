@@ -111,7 +111,7 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="transcriptonic"
                     repoURL="https://github.com/vivek-nexus/transcriptonic"
-                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>350+ users</b> and growing!"
+                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>400+ users</b> and growing!"
                     repoTags='{chrome-extension} {vanilla-js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]

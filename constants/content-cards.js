@@ -66,15 +66,26 @@ const contentCardData = [
     },
     {
         "cardNumber": "7",
-        "cardIcon": "view_sidebar",
-        "cardTitle": "ಯುಎಕ್ಸ್ ಡಿಸೈನ್ ಅಂದರೆ ಏನು? (What is UX Design — in Kannada)",
+        "cardIcon": "developer_mode",
+        "cardTitle": "Should designers be part of more hackathon teams?",
         "link":
         {
-            "linkText": "ejnana.com",
-            "linkURL": "https://www.ejnana.com/question-and-answer/what-is-ux-design"
+            "linkText": "UX Planet",
+            "linkURL": "https://uxplanet.org/should-designers-be-part-of-more-hackathon-teams-38948b460962"
         }
 
     },
+    // {
+    //     "cardNumber": "7",
+    //     "cardIcon": "view_sidebar",
+    //     "cardTitle": "ಯುಎಕ್ಸ್ ಡಿಸೈನ್ ಅಂದರೆ ಏನು? (What is UX Design — in Kannada)",
+    //     "link":
+    //     {
+    //         "linkText": "ejnana.com",
+    //         "linkURL": "https://www.ejnana.com/question-and-answer/what-is-ux-design"
+    //     }
+
+    // },
 ]
 
 export default contentCardData;

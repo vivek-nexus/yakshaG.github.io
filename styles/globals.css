@@ -19,6 +19,7 @@ html {
 body {
   font-family: 'Manrope', sans-serif;
   cursor: url('cursor.svg'), not-allowed !important;
+  color: #001815;
   background-color: #FFFFFF;
   background-image: url("/images/background-pattern.svg");
   background-attachment: fixed;

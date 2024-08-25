@@ -51,17 +51,17 @@ function Content() {
                         /> */}
                         <h4 className="text-2xl text-center text-primary-700 mb-6">In and around design</h4>
                         <div className="mb-12 mx-4 md:mx-32 grid gap-4 grid-cols-1 sm:grid-cols-2">
-                            <ContentCard cardNumber={4} bgColour="secondary" />
-                            <ContentCard cardNumber={5} bgColour="secondary" />
-                            <ContentCard cardNumber={6} bgColour="secondary" />
-                            <ContentCard cardNumber={7} bgColour="secondary" />
+                            <ContentCard cardNumber={4} />
+                            <ContentCard cardNumber={5} />
+                            <ContentCard cardNumber={6} />
+                            <ContentCard cardNumber={7} />
                         </div>
 
                         <h4 className="text-2xl text-center text-primary-700 mb-6">Everything else</h4>
                         <div className="mb-12 mx-4 md:mx-32 grid gap-4 grid-cols-1 sm:grid-cols-2">
-                            <ContentCard cardNumber={1} bgColour="primary" />
-                            <ContentCard cardNumber={2} bgColour="primary" />
-                            <ContentCard cardNumber={3} bgColour="primary" />
+                            <ContentCard cardNumber={1} />
+                            <ContentCard cardNumber={2} />
+                            <ContentCard cardNumber={3} />
                         </div>
                     </div>
 

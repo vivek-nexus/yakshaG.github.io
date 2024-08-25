@@ -11,7 +11,11 @@ function ContentCard(props) {
     return (
         <>
             <a href={contentCardData[props.cardNumber - 1].link.linkURL} target="_blank" referrerPolicy="no-referrer" className="h-full">
-                <div ref={ref} className={`flex flex-col justify-between ${props.bgColour == "primary" ? `bg-primary-100 hover:bg-primary-200/70` : `bg-secondary-100 hover:bg-secondary-200/70`} p-8 rounded-lg shadow hover:shadow-lg border-2 border-transparent transition duration-500 h-full ${inView && `animate__animated animate__zoomIn`} `}>
+                <div
+                    ref={ref}
+                    className={`flex flex-col justify-between p-8 rounded-lg shadow hover:shadow-lg transition duration-500 h-full ${inView && `animate__animated animate__zoomIn`} `}
+                    style={{ background: "radial-gradient(100% 100% at 0% 0%, #fde6e2 40%, #b2dfdb 100%" }}
+                >
                     <div className="mb-8">
                         <p className="!text-4xl text-secondary-300 material-icons-round">{contentCardData[props.cardNumber - 1].cardIcon}</p>
                         <p className="font-bold">{contentCardData[props.cardNumber - 1].cardTitle}</p>

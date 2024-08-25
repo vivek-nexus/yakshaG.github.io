@@ -3,6 +3,14 @@ import characterCardData from "../constants/character-cards";
 import { useState } from "react";
 import Link from "next/link";
 
+function getBackground(heroCard) {
+    switch (heroCard) {
+        case true:
+            return `radial-gradient(75% 200% at 10% 30%, #fde6e2 20%, rgb(107, 207, 198) 100%)`
+        default:
+            return `radial-gradient(100% 100% at 10% 10%, #fde6e2 20%, #b2dfdb 100%)`
+    }
+}
 
 function CardContent(props) {
     const [isClicked, setIsClicked] = useState(false);
@@ -11,7 +19,10 @@ function CardContent(props) {
         <div
             className={`relative shadow animate__animated animate__bounceInUp transition-all ease-in duration-300 p-8 rounded-lg border border-gray-200 
             ${props.withButton && `hover:shadow-lg hover:z-10`}
-            ${props.heroCard ? `md:flex gap-10 items-center bg-secondary-100 hover:bg-secondary-200/70` : `flex flex-col justify-center animate__delay-1s  bg-primary-100 hover:bg-primary-200/70`}`}
+            ${props.heroCard ? `md:flex gap-10 items-center bg-secondary-100 hover:bg-secondary-200/70` : `flex flex-col justify-center animate__delay-1s bg-[#be8fc0]/30 hover:bg-primary-200/70`}`}
+            style={{
+                background: getBackground(props.heroCard)
+            }}
             onClick={() => {
                 if (!props.withButton)
                     setIsClicked(!isClicked)
@@ -56,7 +67,7 @@ function CardContent(props) {
                     <p className="text-lg text-gray-500">We'll talk about this when you say hi!😉</p>
                 </div>
             }
-        </div>
+        </div >
     )
 }
 
