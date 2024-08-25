@@ -11,7 +11,7 @@ function CardContent(props) {
         <div
             className={`relative shadow animate__animated animate__bounceInUp transition-all ease-in duration-300 p-8 rounded-lg border border-gray-200 
             ${props.withButton && `hover:shadow-lg hover:z-10`}
-            ${props.heroCard ? `md:flex gap-10 items-center bg-primary-100 hover:bg-primary-200` : `flex flex-col justify-center animate__delay-1s bg-secondary-50 hover:bg-secondary-100`}`}
+            ${props.heroCard ? `md:flex gap-10 items-center bg-secondary-100 hover:bg-secondary-200/70` : `flex flex-col justify-center animate__delay-1s  bg-primary-100 hover:bg-primary-200/70`}`}
             onClick={() => {
                 if (!props.withButton)
                     setIsClicked(!isClicked)
