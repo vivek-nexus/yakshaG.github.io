@@ -12,6 +12,13 @@ function Button(props) {
                 {props.children}
             </button>
         )
+
+    else if (props.type == "tertiary")
+        return (
+            <button className="py-2 text-primary-700 flex items-center font-bold transition-all ease-in-out duration-300">
+                {props.children}
+            </button>
+        )
 }
 
 export default Button;

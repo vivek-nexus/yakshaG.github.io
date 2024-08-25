@@ -28,7 +28,8 @@ const characterCardData = [
         "cardIcon": "work",
         "cardTitle": "I understand business and scale",
         "cardSubTitle": "Because I was in a biz role",
-        "cardButtonText": "Oh really? ↗"
+        "cardButtonText": "Oh really? ↗",
+        "linkTo": "https://www.linkedin.com/in/vivek-nexus"
     },
     {
         "cardNumber": "5",
@@ -43,6 +44,8 @@ const characterCardData = [
         "cardIcon": "science",
         "cardTitle": "I'm a UX researcher",
         "cardSubTitle": "Because I don't want to fly blind",
+        "cardButtonText": "Curious? ↗",
+        "linkTo": "https://x.com/nikhilkumarks/status/1529442406575116289"
     },
     {
         "cardNumber": "7",

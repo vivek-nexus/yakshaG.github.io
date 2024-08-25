@@ -13,8 +13,8 @@ function ContentCard(props) {
             <a href={contentCardData[props.cardNumber - 1].link.linkURL} target="_blank" referrerPolicy="no-referrer" className="h-full">
                 <div
                     ref={ref}
-                    className={`flex flex-col justify-between p-8 rounded-lg shadow hover:shadow-lg transition duration-500 h-full ${inView && `animate__animated animate__zoomIn`} `}
-                    style={{ background: "radial-gradient(100% 100% at 0% 0%, #fde6e2 40%, #b2dfdb 100%" }}
+                    className={`flex flex-col justify-between p-8 rounded-lg shadow hover:shadow-lg transition duration-500 h-full border-2 border-primary-100 bg-primary-50 ${inView && `animate__animated animate__zoomIn`} `}
+                // style={{ background: "radial-gradient(100% 100% at 0% 0%, #fde6e2 40%, #b2dfdb 100%" }}
                 >
                     <div className="mb-8">
                         <p className="!text-4xl text-secondary-300 material-icons-round">{contentCardData[props.cardNumber - 1].cardIcon}</p>

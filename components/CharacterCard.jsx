@@ -3,12 +3,18 @@ import characterCardData from "../constants/character-cards";
 import { useState } from "react";
 import Link from "next/link";
 
-function getBackground(heroCard) {
-    switch (heroCard) {
-        case true:
-            return `radial-gradient(75% 200% at 10% 30%, #fde6e2 20%, rgb(107, 207, 198) 100%)`
-        default:
+function getBackground(heroCard, cardNumber) {
+    if (heroCard) {
+        return `radial-gradient(75% 200% at 10% 30%, #fde6e2 20%, rgb(107, 207, 198) 100%)`
+    }
+    else {
+        if (cardNumber <= 3) {
             return `radial-gradient(100% 100% at 10% 10%, #fde6e2 20%, #b2dfdb 100%)`
+
+        }
+        else {
+            return `#f3eada`
+        }
     }
 }
 
@@ -17,11 +23,11 @@ function CardContent(props) {
 
     return (
         <div
-            className={`relative shadow animate__animated animate__bounceInUp transition-all ease-in duration-300 p-8 rounded-lg border border-gray-200 
+            className={`relative h-full shadow animate__animated animate__bounceInUp transition-all ease-in duration-300 p-8 rounded-lg border-gray-200 
             ${props.withButton && `hover:shadow-lg hover:z-10`}
-            ${props.heroCard ? `md:flex gap-10 items-center bg-secondary-100 hover:bg-secondary-200/70` : `flex flex-col justify-center animate__delay-1s bg-[#be8fc0]/30 hover:bg-primary-200/70`}`}
+            ${props.heroCard ? `md:flex gap-10 items-center` : `flex flex-col item animate__delay-1s`}`}
             style={{
-                background: getBackground(props.heroCard)
+                background: getBackground(props.heroCard, props.cardNumber)
             }}
             onClick={() => {
                 if (!props.withButton)
@@ -56,7 +62,10 @@ function CardContent(props) {
                         </p>
                         {props.withButton &&
                             <div className="mt-6">
-                                <Button type={`${props.heroCard ? `primary` : `secondary`}`}>{characterCardData[props.cardNumber - 1].cardButtonText}</Button>
+                                {props.cardNumber <= 3
+                                    ? <Button type={`${props.heroCard ? `primary` : `secondary`}`}>{characterCardData[props.cardNumber - 1].cardButtonText}</Button>
+                                    : <Button type="tertiary">{characterCardData[props.cardNumber - 1].cardButtonText}</Button>
+                                }
                             </div>
                         }
                     </div>
@@ -74,8 +83,8 @@ function CardContent(props) {
 function CharacterCard(props) {
     return (
         <>
-            {props.cardNumber == 4
-                ? <a href="https://www.linkedin.com/in/vivek-nexus/" target="_blank">
+            {characterCardData[props.cardNumber - 1].linkTo?.slice(0, 5) == "https"
+                ? <a href={characterCardData[props.cardNumber - 1].linkTo} target="_blank">
                     <CardContent {...props} />
                 </a >
                 : <Link href={`${props.withButton ? characterCardData[props.cardNumber - 1].linkTo : ``}`}>

@@ -21,12 +21,12 @@ export default function Home() {
           <CharacterCard cardNumber={3} withButton />
         </div>
 
-        <div className="mb-24">
-          <h4 className="text-2xl text-center text-primary-700 mb-4 animate__animated animate__delay-1s animate__bounceInUp">There's more!</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mb-24 animate__animated animate__delay-2s animate__bounceInUp">
+          <h4 className="text-2xl text-center text-primary-700 mb-4">There's more!</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
             <CharacterCard cardNumber={4} withButton />
             <CharacterCard cardNumber={5} withButton />
-            <CharacterCard cardNumber={6} />
+            <CharacterCard cardNumber={6} withButton />
             <CharacterCard cardNumber={7} />
             <CharacterCard cardNumber={8} />
             <CharacterCard cardNumber={9} />
