@@ -26,11 +26,10 @@ function DesignProjectCard(props) {
             ? <div ref={ref}>
                 <style jsx>{`
                 .card-${props.cardNumber}{
-                    background-repeat: no-repeat;
                     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0.2)100%),url("/images/${temp.projectImage}");
                     background-size: contain;
                     background-position: bottom;
-                    
+                    background-repeat: no-repeat;
 
                     @media only screen and (min-width: 840px) {
                         background: url("/images/${temp.projectImage}");
@@ -45,7 +44,7 @@ function DesignProjectCard(props) {
                             <h4 className="text-xl md:text-2xl font-bold text-primary-700 mb-6">
                                 {temp.projectTitle}
                             </h4>
-                            <div className="mb-6 flex gap-2 flex-wrap hide-scrollbar">
+                            <div className="overflow-x-scroll mb-6 flex md:flex-wrap gap-2 hide-scrollbar">
                                 {temp.tags.map((item, i) => (<Pill key={i} accent="text-secondary-300" bg="bg-secondary-50">{item}</Pill>))}
                             </div>
                             <p className="mb-6">{ReactHtmlParser(temp.projectDescription)}</p>

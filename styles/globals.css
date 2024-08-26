@@ -32,9 +32,15 @@ ol {
   padding: 1rem;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  /* Remove scrollbar space */
+  width: 0;
+  /* Make scrollbar invisible */
+  background: transparent;
+}
+
 
 /* Tone down bounceInUp */
-
 @keyframes bounceInUp {
   from {
     opacity: 0;
