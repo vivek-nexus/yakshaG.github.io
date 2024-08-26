@@ -69,17 +69,17 @@ ol {
 }
 
 
-/* Tone down bounceInLeft */
-@keyframes bounceInLeft {
+/* Tone down bounceInDown */
+@keyframes bounceInDown {
   from {
     opacity: 0;
-    transform: translate3d(-100vh, 0, 0);
+    transform: translate3d(0, -100vh, 0);
     /* Start from below the viewport */
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(8px, 0px, 0);
+    transform: translate3d(0px, 8px, 0);
     /* Slight overshoot for easing effect */
   }
 
@@ -89,9 +89,9 @@ ol {
   }
 }
 
-.bounceInLeft {
+.bounceInDown {
   animation-duration: calc(var(--animate-duration) * 0.75);
-  animation-name: bounceInLeft;
+  animation-name: bounceInDown;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   /* Easing for smooth fly-in */
 }

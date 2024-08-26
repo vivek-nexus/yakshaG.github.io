@@ -19,7 +19,7 @@ export default function Home() {
           <CharacterCard cardNumber={1} heroCard withButton />
         </div> */}
         <div className="mb-24 p-4 md:px-0 grid grid-cols-3 gap-12 md:gap-24">
-          <div className="col-span-4 sm:col-span-1 animate__animated animate__bounceInLeft">
+          <div className="col-span-4 sm:col-span-1 animate__animated animate__bounceInDown">
             <img src="/images/face-hero.svg" className="max-h-[30vmax]" />
           </div>
           <div className="col-span-4 sm:col-span-2 md:pt-4 flex flex-col justify-center animate__animated animate__bounceInUp">
