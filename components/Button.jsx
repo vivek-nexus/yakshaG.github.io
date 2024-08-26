@@ -8,7 +8,7 @@ function Button(props) {
 
     else if (props.type == "secondary")
         return (
-            <button className="px-4 py-2 bg-primary-50 text-primary-700 rounded-lg shadow-lg flex items-center font-bold transition-all ease-in-out duration-300">
+            <button className="px-4 py-2 bg-primary-50 hover:bg-primary-100/50 text-primary-700 rounded-lg shadow-lg flex items-center font-bold transition-all ease-in-out duration-300">
                 {props.children}
             </button>
         )

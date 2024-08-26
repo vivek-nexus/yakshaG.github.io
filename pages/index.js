@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/images/face-white-bg.png" />
       </Head>
       <NavBar />
-      <div className="container pt-8 px-4 md:px-0">
+      <div className="container pt-8 px-4 md:px-0 animate__animated animate__fadeIn animate__slow">
         {/* <div className="mb-4">
           <CharacterCard cardNumber={1} heroCard withButton />
         </div> */}
