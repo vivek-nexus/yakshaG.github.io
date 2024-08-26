@@ -45,18 +45,18 @@ function CardContent(props) {
                     } */}
 
                     <div>
-                        <span className={`max-w-[48px] text-secondary-300 material-icons-round ${props.heroCard ? `md:!text-5xl !text-3xl` : `!text-3xl`} pb-4`}>
+                        <span className={`max-w-[48px] text-secondary-300 material-icons-round ${props.heroCard ? `!text-5xl` : `!text-3xl`} pb-4`}>
                             {characterCardData[props.cardNumber - 1].cardIcon}
                         </span>
                     </div>
                     <div>
                         <h3
-                            className={`font-semibold pb-2 ${props.heroCard ? `md:text-3xl text-xl` : `text-xl`}`}
+                            className={`font-semibold pb-2 ${props.heroCard ? `text-3xl` : `text-xl`}`}
                         >
                             {characterCardData[props.cardNumber - 1].cardTitle}
                         </h3>
                         <p
-                            className={`${props.heroCard ? `md:text-xl text-gray-500` : `text-gray-500`}`}
+                            className={`${props.heroCard ? `text-xl text-gray-500` : `text-gray-500`}`}
                         >
                             {characterCardData[props.cardNumber - 1].cardSubTitle}
                         </p>
