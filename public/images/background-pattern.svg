@@ -1,56 +1,56 @@
 <svg width="1600" height="800" viewBox="0 0 1600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.5">
 <g opacity="0.7" clip-path="url(#clip0_346_865)">
-<path d="M25 300L25 156L-3 129" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M8 286L8 162L-15 139" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M100 400L56 356L56 248" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M83.5 402.5L42 361L42 247" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M145 452L116 421.5L78 420.5L30.5 373L29 330L-4 298" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M146 477L107 435L67 433L15 380L14 339L-17 308" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M50 437L-4 382" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M38 144L-16 89" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M32 440L-22 385" stroke="#7FBBB4" stroke-width="2"/>
-<circle cx="32" cy="440" r="4" transform="rotate(-180 32 440)" fill="#FAB18C"/>
-<circle cx="49" cy="436" r="4" transform="rotate(-180 49 436)" fill="#FAB18C"/>
-<circle cx="142" cy="450" r="4" transform="rotate(-180 142 450)" fill="#FAB18C"/>
-<circle cx="145" cy="475" r="4" transform="rotate(-180 145 475)" fill="#FAB18C"/>
-<circle cx="84" cy="403" r="4" transform="rotate(-180 84 403)" fill="#FAB18C"/>
-<circle cx="97" cy="398" r="4" transform="rotate(-180 97 398)" fill="#FAB18C"/>
-<circle cx="56" cy="247" r="4" transform="rotate(-180 56 247)" fill="#FAB18C"/>
-<circle cx="42" cy="247" r="4" transform="rotate(-180 42 247)" fill="#FAB18C"/>
-<circle cx="25" cy="299" r="4" transform="rotate(-180 25 299)" fill="#FAB18C"/>
-<circle cx="8" cy="288" r="4" transform="rotate(-180 8 288)" fill="#FAB18C"/>
-<circle cx="38" cy="144" r="4" transform="rotate(-180 38 144)" fill="#FAB18C"/>
+<path d="M1575 300V156L1603 129" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1592 286V162L1615 139" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1500 400L1544 356V248" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1516.5 402.5L1558 361V247" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1455 452L1484 421.5L1522 420.5L1569.5 373L1571 330L1604 298" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1454 477L1493 435L1533 433L1585 380L1586 339L1617 308" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1550 437L1604 382" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1562 144L1616 89" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M1568 440L1622 385" stroke="#7FBBB4" stroke-width="2"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1564 444)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1547 440)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1454 454)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1451 479)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1512 407)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1499 402)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1540 251)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1554 251)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1571 303)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1588 292)" fill="#FAB18C"/>
+<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1558 148)" fill="#FAB18C"/>
 </g>
 <g opacity="0.7" clip-path="url(#clip1_346_865)">
-<path d="M1575 544V400L1603 373" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1592 530V406L1615 383" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1500 644L1544 600V492" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1516.5 646.5L1558 605V491" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1455 696L1484 665.5L1522 664.5L1569.5 617L1571 574L1604 542" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1454 721L1493 679L1533 677L1585 624L1586 583L1617 552" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1550 681L1604 626" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1562 388L1616 333" stroke="#7FBBB4" stroke-width="2"/>
-<path d="M1568 684L1622 629" stroke="#7FBBB4" stroke-width="2"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1564 688)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1547 684)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1454 698)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1451 723)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1512 651)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1499 646)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1540 495)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1554 495)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1571 547)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1588 536)" fill="#FAB18C"/>
-<circle cx="4" cy="4" r="4" transform="matrix(1 0 0 -1 1558 392)" fill="#FAB18C"/>
+<path d="M25 544L25 400L-3 373" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M8 530L8 406L-15 383" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M100 644L56 600L56 492" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M83.5 646.5L42 605L42 491" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M145 696L116 665.5L78 664.5L30.5 617L29 574L-4 542" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M146 721L107 679L67 677L15 624L14 583L-17 552" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M50 681L-4 626" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M38 388L-16 333" stroke="#7FBBB4" stroke-width="2"/>
+<path d="M32 684L-22 629" stroke="#7FBBB4" stroke-width="2"/>
+<circle cx="32" cy="684" r="4" transform="rotate(-180 32 684)" fill="#FAB18C"/>
+<circle cx="49" cy="680" r="4" transform="rotate(-180 49 680)" fill="#FAB18C"/>
+<circle cx="142" cy="694" r="4" transform="rotate(-180 142 694)" fill="#FAB18C"/>
+<circle cx="145" cy="719" r="4" transform="rotate(-180 145 719)" fill="#FAB18C"/>
+<circle cx="84" cy="647" r="4" transform="rotate(-180 84 647)" fill="#FAB18C"/>
+<circle cx="97" cy="642" r="4" transform="rotate(-180 97 642)" fill="#FAB18C"/>
+<circle cx="56" cy="491" r="4" transform="rotate(-180 56 491)" fill="#FAB18C"/>
+<circle cx="42" cy="491" r="4" transform="rotate(-180 42 491)" fill="#FAB18C"/>
+<circle cx="25" cy="543" r="4" transform="rotate(-180 25 543)" fill="#FAB18C"/>
+<circle cx="8" cy="532" r="4" transform="rotate(-180 8 532)" fill="#FAB18C"/>
+<circle cx="38" cy="388" r="4" transform="rotate(-180 38 388)" fill="#FAB18C"/>
 </g>
 </g>
 <defs>
 <clipPath id="clip0_346_865">
-<rect width="158" height="386" fill="white" transform="matrix(-1 0 0 -1 158 486)"/>
+<rect width="158" height="386" fill="white" transform="matrix(1 0 0 -1 1442 486)"/>
 </clipPath>
 <clipPath id="clip1_346_865">
-<rect width="158" height="386" fill="white" transform="matrix(1 0 0 -1 1442 730)"/>
+<rect width="158" height="386" fill="white" transform="matrix(-1 0 0 -1 158 730)"/>
 </clipPath>
 </defs>
 </svg>

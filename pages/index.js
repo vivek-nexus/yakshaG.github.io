@@ -2,6 +2,8 @@ import Head from 'next/head'
 import CharacterCard from "../components/CharacterCard"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
+import Button from '../components/Button'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,11 +14,30 @@ export default function Home() {
         <link rel="icon" href="/images/face-white-bg.png" />
       </Head>
       <NavBar />
-      <div className="container pt-16 px-4 md:px-0">
-        <div className="mb-4">
+      <div className="container pt-8 px-4 md:px-0">
+        {/* <div className="mb-4">
           <CharacterCard cardNumber={1} heroCard withButton />
+        </div> */}
+        <div className="mb-24 p-4 md:px-0 grid grid-cols-3 gap-12 md:gap-24">
+          <div className="col-span-4 sm:col-span-1 animate__animated animate__bounceInLeft">
+            <img src="/images/face-hero.svg" className="max-h-[30vmax]" />
+          </div>
+          <div className="col-span-4 sm:col-span-2 md:pt-4 flex flex-col justify-center animate__animated animate__bounceInUp">
+            <h3 className={`font-semibold pb-2 text-4xl text-primary-700 mb-2`} >
+              I am a product designer
+            </h3>
+            <p className={`text-2xl text-gray-500 mb-6`}>
+              Because I blend craft, business and tech
+            </p>
+
+            <Link href="/design">
+              <div>
+                <Button type="primary">{"Take a look ->"}</Button>
+              </div>
+            </Link>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12 animate__animated animate__delay-1s animate__bounceInUp">
           <CharacterCard cardNumber={2} withButton />
           <CharacterCard cardNumber={3} withButton />
         </div>
@@ -60,7 +81,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </div >
       <Footer />
     </>
 

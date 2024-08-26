@@ -25,6 +25,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 
 ol {
@@ -63,6 +64,34 @@ ol {
 .bounceInUp {
   animation-duration: calc(var(--animate-duration) * 0.75);
   animation-name: bounceInUp;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  /* Easing for smooth fly-in */
+}
+
+
+/* Tone down bounceInLeft */
+@keyframes bounceInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100vh, 0, 0);
+    /* Start from below the viewport */
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(8px, 0px, 0);
+    /* Slight overshoot for easing effect */
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    /* End at the final position */
+  }
+}
+
+.bounceInLeft {
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-name: bounceInLeft;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   /* Easing for smooth fly-in */
 }

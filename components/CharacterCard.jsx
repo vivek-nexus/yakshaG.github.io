@@ -9,11 +9,11 @@ function getBackground(heroCard, cardNumber) {
     }
     else {
         if (cardNumber <= 3) {
-            return `radial-gradient(100% 100% at 10% 10%, #fde6e2 20%, #b2dfdb 100%)`
-
+            return `radial-gradient(150% 100% at 0% 0%, #e0f2f1 20%, white 100%)`
         }
         else {
-            return `#f3eada`
+            return `radial-gradient(150% 100% at 0% 0%, #f3eada 20%, white 100%)`
+            // return `#f3eada`
         }
     }
 }
@@ -23,9 +23,9 @@ function CardContent(props) {
 
     return (
         <div
-            className={`relative h-full shadow animate__animated animate__bounceInUp transition-all ease-in duration-300 p-8 rounded-lg border-gray-200 
+            className={`relative h-full transition-all ease-in duration-300 p-8 rounded-lg border-gray-200 
             ${props.withButton && `hover:shadow-lg hover:z-10`}
-            ${props.heroCard ? `md:flex gap-10 items-center` : `flex flex-col item animate__delay-1s`}`}
+            ${props.heroCard ? `md:flex gap-10 items-center` : `flex flex-col item`}`}
             style={{
                 background: getBackground(props.heroCard, props.cardNumber)
             }}
@@ -45,7 +45,9 @@ function CardContent(props) {
                     } */}
 
                     <div>
-                        <span className={`max-w-[48px] text-secondary-300 material-icons-round ${props.heroCard ? `!text-5xl` : `!text-3xl`} pb-4`}>
+                        <span
+                            className={`max-w-[48px] text-secondary-300 material-icons-round ${props.heroCard ? `!text-5xl` : `!text-3xl`} pb-4`}
+                        >
                             {characterCardData[props.cardNumber - 1].cardIcon}
                         </span>
                     </div>
