@@ -1,5 +1,6 @@
 import contentCardData from "../constants/content-cards";
 import { useInView } from 'react-intersection-observer';
+import Button from "./Button";
 
 
 function ContentCard(props) {
@@ -20,7 +21,9 @@ function ContentCard(props) {
                         <p className="!text-4xl text-secondary-300 material-icons-round">{contentCardData[props.cardNumber - 1].cardIcon}</p>
                         <p className="font-bold">{contentCardData[props.cardNumber - 1].cardTitle}</p>
                     </div>
-                    <p><a href={contentCardData[props.cardNumber - 1].link.linkURL} target="_blank" className="text-blue-500 font-bold">{contentCardData[props.cardNumber - 1].link.linkText} ↗</a></p>
+                    <Button type="tertiary">
+                        {contentCardData[props.cardNumber - 1].link.linkText} ↗
+                    </Button>
                 </div>
             </a>
         </>
