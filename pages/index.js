@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="animate__animated animate__delay-1s animate__bounceInUp">
-          <h4 className="font-semibold text-2xl sm:text-center text-primary-700 mb-4">I'm more than a designer!</h4>
+          <h4 className="font-semibold text-2xl sm:text-center text-primary-700 mb-4">I'm more than a traditional designer!</h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <CharacterCard cardNumber={2} withButton />
             <CharacterCard cardNumber={3} withButton />
