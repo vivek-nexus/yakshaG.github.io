@@ -14,16 +14,14 @@ export default function Home() {
         <link rel="icon" href="/images/face-white-bg.png" />
       </Head>
       <NavBar />
-      <div className="container pt-8 px-4 md:px-0 animate__animated animate__fadeIn animate__slow">
-        {/* <div className="mb-4">
-          <CharacterCard cardNumber={1} heroCard withButton />
-        </div> */}
+      <div className="container bg-mobileHero sm:bg-desktopHero pt-8 px-4 md:px-0 animate__animated animate__fadeIn animate__slow">
         <div className="mb-24 p-4 md:px-0 grid grid-cols-3 gap-12 md:gap-24">
           <div className="col-span-4 sm:col-span-1 animate__animated animate__bounceInDown">
             <img src="/images/face-hero.svg" className="max-h-[30vmax]" alt="line art avatar" />
           </div>
-          <div className="col-span-4 sm:col-span-2 md:pt-4 flex flex-col justify-center animate__animated animate__bounceInUp">
-            <h3 className={`font-semibold pb-2 text-4xl text-primary-700 mb-2`} >
+          <div className="col-span-4 sm:col-span-2 md:pt-4 flex flex-col justify-center animate__animated animate__bounceInUp"
+          >
+            <h3 className={`font-bold pb-2 text-4xl text-primary-700 mb-2`} >
               I'm a product designer
             </h3>
             <p className={`text-2xl text-gray-500 mb-6`}>
@@ -37,13 +35,15 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12 animate__animated animate__delay-1s animate__bounceInUp">
-          <CharacterCard cardNumber={2} withButton />
-          <CharacterCard cardNumber={3} withButton />
+        <div className="animate__animated animate__delay-1s animate__bounceInUp">
+          <h4 className="font-semibold text-2xl sm:text-center text-primary-700 mb-4">I'm more than a designer!</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <CharacterCard cardNumber={2} withButton />
+            <CharacterCard cardNumber={3} withButton />
+          </div>
         </div>
 
-        <div className="mb-24 animate__animated animate__delay-2s animate__bounceInUp">
-          <h4 className="text-2xl text-center text-primary-700 mb-4">There's more!</h4>
+        <div className="mb-24 animate__animated animate__delay-1s animate__bounceInUp">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
             <CharacterCard cardNumber={4} withButton />
             <CharacterCard cardNumber={5} withButton />

@@ -46,6 +46,10 @@ module.exports = {
         "reverseShadow": ["rgba(0, 0, 0, 0.25) 0px -4px 16px 4px"],
         "innerShadow": ["inset 0px 0px 8px 0px rgba(0, 0, 0, 0.25)", "rgba(0, 0, 0, 0.16) 0px 3px 6px"],
         "innerShadow2": ["inset 0px 0px 16px 0px rgba(0, 0, 0, 0.5)"]
+      },
+      backgroundImage: {
+        "mobileHero": "radial-gradient(70% 10% at 35% 15%, #fde6e2 10%, #fde6e2 20%, white 60%)",
+        "desktopHero": "radial-gradient(50% 20% at 50% 12%, #fde6e2 10%, #fde6e2 20%, white 60%)"
       }
     },
   },
