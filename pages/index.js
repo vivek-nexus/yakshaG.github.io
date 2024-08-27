@@ -20,11 +20,11 @@ export default function Home() {
         </div> */}
         <div className="mb-24 p-4 md:px-0 grid grid-cols-3 gap-12 md:gap-24">
           <div className="col-span-4 sm:col-span-1 animate__animated animate__bounceInDown">
-            <img src="/images/face-hero.svg" className="max-h-[30vmax]" />
+            <img src="/images/face-hero.svg" className="max-h-[30vmax]" alt="line art avatar" />
           </div>
           <div className="col-span-4 sm:col-span-2 md:pt-4 flex flex-col justify-center animate__animated animate__bounceInUp">
             <h3 className={`font-semibold pb-2 text-4xl text-primary-700 mb-2`} >
-              I am a product designer
+              I'm a product designer
             </h3>
             <p className={`text-2xl text-gray-500 mb-6`}>
               Because I blend craft, business and tech

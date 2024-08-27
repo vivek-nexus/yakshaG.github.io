@@ -2,7 +2,7 @@ const characterCardData = [
     {
         "cardNumber": "1",
         "cardIcon": "view_carousel",
-        "cardTitle": "I am a product designer",
+        "cardTitle": "I'm a product designer",
         "cardSubTitle": "Because I blend craft, business and tech",
         "cardButtonText": "Take a look ->",
         "linkTo": "/design"
@@ -10,7 +10,7 @@ const characterCardData = [
     {
         "cardNumber": "2",
         "cardIcon": "integration_instructions",
-        "cardTitle": "I am a developer",
+        "cardTitle": "I'm a developer",
         "cardSubTitle": "Because execution is the real game",
         "cardButtonText": "See projects ->",
         "linkTo": "/code"
