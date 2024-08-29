@@ -3,7 +3,7 @@ const projectCardData = [
         "cardNumber": "1",
         "projectImage": "aa-webapp.png",
         "projectTitle": "Award winning AA consent approval UI",
-        "projectDescription": "Consent approval UI with <b>industry best conversions</b>. A B2B2C product, that elegantly balances user centricity and powerful business customisation.",
+        "projectDescription": "Consent approval UI with <b>industry best conversions</b>. I designed both B2B and B2C aspects of the product.",
         "tags": [
             { "text": "UX Design", "icon": "web" },
             { "text": "Motion design", "icon": "animation" },
