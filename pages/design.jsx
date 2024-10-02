@@ -58,9 +58,11 @@ function Design() {
                     <div className="mb-24">
                         <h2 className="text-4xl text-center text-primary-700 mb-6">UI Design + Development Challenges</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <iframe width="100%" className="aspect-video rounded-lg shadow-designProjectCard" src="https://www.youtube.com/embed/Vc0826nKzXU?si=vFyGULUtZltZKy7N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             <iframe width="100%" className="aspect-video rounded-lg shadow-designProjectCard" src="https://www.youtube.com/embed/0B8ztZHTSyQ?si=dwqMiNy1yKWkTmlg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             <iframe width="100%" className="aspect-video rounded-lg shadow-designProjectCard" src="https://www.youtube.com/embed/JIHhMmOO0Vs?si=iIVn68urJpf0_zSk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             <iframe width="100%" className="aspect-video rounded-lg shadow-designProjectCard" src="https://www.youtube.com/embed/5iUes7wM_fE?si=bc7LemYnylvCofP5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
                         </div>
 
                     </div>
