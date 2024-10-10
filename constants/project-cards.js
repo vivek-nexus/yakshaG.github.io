@@ -11,12 +11,12 @@ const projectCardData = [
         "buttons": [
             {
                 "buttonText": "Design story ↗",
-                "buttonLink": "https://blog.setu.co/articles/design-of-award-winning-aa-consent-approval-ui"
+                "buttonLink": "https://vivek-nexus.medium.com/design-of-award-winning-aa-consent-approval-ui-1c09d3e27a5a"
             },
-            {
-                "buttonText": "<span class='material-icons-round' style='font-size:110%'>lock</span>&nbsp; My contributions ↗",
-                "buttonLink": "https://www.vivek.nexus/my-docs/consent-approval-ui/"
-            },
+            // {
+            //     "buttonText": "<span class='material-icons-round' style='font-size:110%'>lock</span>&nbsp; My contributions ↗",
+            //     "buttonLink": "https://www.vivek.nexus/my-docs/consent-approval-ui/"
+            // },
         ]
     },
     {
@@ -43,7 +43,7 @@ const projectCardData = [
         "cardNumber": "3",
         "projectImage": "whatsapp-ui-kit.png",
         "projectTitle": "Figma WhatsApp UI kit for Android",
-        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>15,500+</b> downloads 😎",
+        "projectDescription": "Top Figma community resource for WhatsApp chat design with <b>16,900+</b> downloads 😎",
         "tags": [
             { "text": "Advanced auto layout", "icon": "vertical_split" },
             { "text": "Rapid prototyping", "icon": "electric_bolt" },
@@ -60,7 +60,7 @@ const projectCardData = [
         "cardNumber": "4",
         "projectImage": "figma-plugin.png",
         "projectTitle": "2 Figma plugins",
-        "projectDescription": "<b>1200+ users</b> <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
+        "projectDescription": "<b>1800+ users</b> <ol><li><b>Variables Inspector</b> — Debug your variables </li> <li><b>Variables CSV</b> — Export/import variables</li></ol>",
         "tags": [
             { "text": "TypeScript", "icon": "code" },
             { "text": "Figma variables", "icon": "token" },

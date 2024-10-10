@@ -71,6 +71,21 @@ function CodeProjectCards(props) {
                 </div>
             </div>
 
+            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
+                <div className="basis-1/2">
+                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/ARL6HbkakX4?si=-S5rnvLyOhmZ6gH9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                </div>
+                <RepoDetails
+                    className="basis-1/2"
+                    repoTitle="transcriptonic"
+                    repoURL="https://github.com/vivek-nexus/transcriptonic"
+                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>650+ users</b> and growing!"
+                    repoTags='{chrome-extension} {vanilla-js}'
+                    repoButtons={
+                        [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]
+                    }
+                />
+            </div >
 
             <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
                 <div>
@@ -103,21 +118,7 @@ function CodeProjectCards(props) {
                 />
             </div >
 
-            <div className="overflow-hidden rounded-xl shadow-designProjectCard mb-12">
-                <div className="basis-1/2">
-                    <iframe width="100%" className="aspect-video" src="https://www.youtube.com/embed/ARL6HbkakX4?si=-S5rnvLyOhmZ6gH9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                </div>
-                <RepoDetails
-                    className="basis-1/2"
-                    repoTitle="transcriptonic"
-                    repoURL="https://github.com/vivek-nexus/transcriptonic"
-                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>400+ users</b> and growing!"
-                    repoTags='{chrome-extension} {vanilla-js}'
-                    repoButtons={
-                        [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]
-                    }
-                />
-            </div >
+
         </>
     )
 }
