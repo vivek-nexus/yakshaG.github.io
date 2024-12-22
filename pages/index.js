@@ -67,7 +67,7 @@ export default function Home() {
         <div className="mb-24" id="contact">
           <h2 className="text-4xl text-center text-primary-700 mb-6">What say?</h2>
           <div className="flex gap-4 justify-center text-center mb-4">
-            <a href="mailto:vivek@vivek.nexus">
+            <a href="mailto:in.vivek.g@gmail.com">
               <img src="/images/email.svg" alt="email" width={48}></img>
               <p>Email</p>
             </a>
