@@ -79,7 +79,7 @@ function CodeProjectCards(props) {
                     className="basis-1/2"
                     repoTitle="transcriptonic"
                     repoURL="https://github.com/vivek-nexus/transcriptonic"
-                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>650+ users</b> and growing!"
+                    repoDescription="Simple Google Meet transcripts. Private and open source. <b>1100+ users</b> and growing!"
                     repoTags='{chrome-extension} {vanilla-js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chromewebstore.google.com/detail/ciepnfnceimjehngolkijpnbappkkiag" }]
@@ -94,7 +94,7 @@ function CodeProjectCards(props) {
                 <RepoDetails
                     repoTitle="google-meet-slack-integration"
                     repoURL="https://github.com/vivek-nexus/google-meet-slack-integration"
-                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles. <b>400+ users</b> world wide and growing 🚀"
+                    repoDescription="Real-time Google Meet status on Slack, just like Slack huddles."
                     repoTags='{chrome-extension} {slack-app} {express.js}'
                     repoButtons={
                         [{ "buttonText": "Get from Chrome store ↗", "buttonLink": "https://chrome.google.com/webstore/detail/kddjlbegfaiogihndmglihcgommbjmkc" }]
